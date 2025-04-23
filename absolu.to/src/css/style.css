@@ -1812,8 +1812,8 @@ right: 0%;
   font-size: 1em;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  color:white;
-  background-color: #f94144;
+  color: rgb(5, 11, 21);
+  
   text-align: center;
 }
 /* .item:hover >.img__item{
