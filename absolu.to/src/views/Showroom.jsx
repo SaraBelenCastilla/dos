@@ -215,7 +215,7 @@ function Showroom() {
        initial={{opacity:0, y:100}}
        whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
        viewport={{once: false, amount:.5}}
-      >Las niñas de mis ojos</motion.h2>
+      >LAS NIÑAS DE MIS OJOS</motion.h2>
       <motion.div className="ojos"
        initial={{opacity:0, y:100}}
        whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
@@ -294,19 +294,15 @@ function Showroom() {
     
       
      
-     <div className="show__logo" id='logos'>
+     {/* <div className="show__logo" id='logos'>
      <LogoSlider2 />
      <LogoSlider />
      <LogoSlider1 /> 
      <LogoSlider3 />
     
-      {/* <a className='flechi' href={"#palabras"}> <DotLottieReact
-                                  src="https://lottie.host/f5971e61-ee33-4189-a1c1-2d96772a02ef/Dn7DtM90z0.lottie"
-                                  loop
-                                  autoplay
-                                /></a>  */}
-     </div>
-     <motion.div className="show__palabras" id='palabras'
+     
+     </div> */}
+     {/* <motion.div className="show__palabras" id='palabras'
      ref={palabrasRef}
      >
     
@@ -327,16 +323,9 @@ function Showroom() {
        
       
       
-         {/* <a className="movimiento" href='#nosotros'
-><DotLottieReact className='abajo'
-    src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-    loop
-    autoplay
-  />
-
-      </a>  */}
+       
      
-     </motion.div> 
+     </motion.div>  */}
    
     
     </>

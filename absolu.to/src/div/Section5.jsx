@@ -175,7 +175,7 @@ function Section5() {
                           </div>
                             <div className="abslUno">
                            
-                            <h3 className="quinta__h3">No.</h3>
+                            <h3 className="quinta__h3">NO.</h3>
                             <p className="quinta__p">Quiero saber más sobre el  <span className='quinta__span'>Capitán Branding</span> & Absoluto.</p>
                             </div> 
                            

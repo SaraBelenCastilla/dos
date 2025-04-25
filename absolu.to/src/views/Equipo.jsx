@@ -210,7 +210,7 @@ const plegarSiete=()=>{
  </>
  )
 }
-const SECTION_HEIGHT = 1100;
+const SECTION_HEIGHT = 900;
 
 const Hero = () => {
   return (

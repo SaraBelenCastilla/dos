@@ -44,10 +44,10 @@ export default function Footer() {
         <div className="footer__izq">
         <div className="footer__email"  onClick={(e) => {window.location.href ='mailto: hola@absolu.to';}}> hola@absolu.to </div>
           {/* <p className="footer__email"> hola@absolu.to</p> */}
-          <div className="footer__llamar">
+          {/* <div className="footer__llamar">
           <FaPhoneAlt className='fono' />
           <p className="footer__telf">+34 643 470 163</p>
-          </div>
+          </div> */}
           <button className='footer__botonA'>Proveedores</button>
           <button className='footer__botonB'>Trabaja con nosotros</button>
           
@@ -55,7 +55,7 @@ export default function Footer() {
       </div>
       <div className="footer__pie">
       <FaRegCopyright className='copy'/>
-      <p className="footer__p"> 2024 Absoluto | Newsletter | Legal | Privacidad | Cookieless Friendly</p>
+      <p className="footer__p"> 2025 Absoluto | Legal |  Privacidad | We are Cookieless</p>
       </div>
     </footer>
     

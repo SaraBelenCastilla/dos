@@ -17,6 +17,7 @@ import Papel from '../assets/papelitos/fuck.png'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import {Link,useNavigate} from 'react-router-dom'
 import Nop from '../assets/papelitos/nop.png'
+import Palabras from '../Components/palabras'
 
 function Nosotros() {
  
@@ -59,7 +60,7 @@ function Nosotros() {
           //   syncTouch: true,
         }}
       >
-       
+       <Palabras/>
         <Hero />
         <HeroUno/>
        

@@ -128,30 +128,30 @@ function Reactiva() {
       </div>
       {/* {sections.map((section, index) => ( */}
           <section id='section1' className='reactiva__uno' >
-            <motion.h2 className="reactiva__h2"
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
-              viewport={{ once: false, amount: .5 }}
+            <motion.div className="experiencias"
+             initial={{ opacity: 0, y: 100 }}
+             whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
+             viewport={{ once: false, amount: .5 }}
+            >
+            <h2 className="reactiva__h2"
+             
             >
               EXPERIENCIAS
-            </motion.h2>
+            </h2>
             {/* {section.title2 && ( */}
-              <motion.h2 className="reactiva__h2"
-                initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
-                viewport={{ once: false, amount: .5 }}
+              <h2 className="reactiva__h2"
+               
               >
                QUE GENERAN
-              </motion.h2>
+              </h2>
             
             {/* {section.title3 && ( */}
-              <motion.h2 className="reactiva__h2"
-                initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
-                viewport={{ once: false, amount: .5 }}
+              <h2 className="reactiva__h2"
+               
               >
                 CONTENIDO
-              </motion.h2>
+              </h2>
+              </motion.div>
             {/* )} */}
              <a className="movimiento" href='#section2'
             ><DotLottieReact className='abajo'
@@ -163,30 +163,30 @@ function Reactiva() {
                   </a> 
           </section>
           <section id='section2' className='reactiva__uno' >
-            <motion.h2 className="reactiva__h2"
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
-              viewport={{ once: false, amount: .5 }}
+            <motion.div className="contenidos"
+             initial={{ opacity: 0, y: 100 }}
+             whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
+             viewport={{ once: false, amount: .5 }}
+            >
+            <h2 className="reactiva__h2"
+             
             >
               CONTENIDOS
-            </motion.h2>
+            </h2>
             {/* {section.title2 && ( */}
-              <motion.h2 className="reactiva__h2"
-                initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
-                viewport={{ once: false, amount: .5 }}
+              <h2 className="reactiva__h2"
+               
               >
                QUE ACTIVAN
-              </motion.h2>
+              </h2>
             
             {/* {section.title3 && ( */}
-              <motion.h2 className="reactiva__h2"
-                initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
-                viewport={{ once: false, amount: .5 }}
+              <h2 className="reactiva__h2"
+                
               >
                 EXPERIENCIAS
-              </motion.h2>
+              </h2>
+              </motion.div>
             {/* )} */}
              <a className="movimiento" href='#section3'
             ><DotLottieReact className='abajo'
@@ -198,6 +198,7 @@ function Reactiva() {
                   </a> 
           </section>
           <section id='section3' className='reactiva__uno' >
+            
             <motion.h2 className="reactiva__h2"
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
@@ -362,7 +363,7 @@ function Reactiva() {
   </>
   )
 }
-const SECTION_HEIGHT = 1000;
+const SECTION_HEIGHT = 900;
 
 const Hero = () => {
   return (

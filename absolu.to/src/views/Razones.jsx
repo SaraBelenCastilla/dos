@@ -32,7 +32,7 @@ const Inicio =()=>{
          initial={{opacity:0, y:150,scale:0.5}}
          whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
          viewport={{once: false, amount:.5}}
-        >7 razones</motion.h1>
+        >7 RAZONES</motion.h1>
         <motion.img src={Plus} alt="" className="plus"
          initial={{opacity:0, y:150,scale:0.5}}
          whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.6, duration:1.2,  ease:'easyInOut',type:'spring'}}}
@@ -42,7 +42,7 @@ const Inicio =()=>{
          initial={{opacity:0, y:150,scale:0.5}}
          whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.8, duration:1.2,  ease:'easyInOut',type:'spring'}}}
          viewport={{once: false, amount:.5}}
-        >para creer</motion.h2>
+        >PARA CREER</motion.h2>
     
          {/* <a className='flechitas' href={"#carro"}> <DotLottieReact
                        src="https://lottie.host/54e68d0e-fe08-4044-acd0-ea9942e856fb/UmjcekdDNO.lottie"
