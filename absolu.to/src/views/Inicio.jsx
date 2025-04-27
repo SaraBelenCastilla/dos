@@ -36,7 +36,7 @@ const Inicio =()=>{
    
     {/* <div> */}
     {/* <Pagepilling> */}
-    <section className='primera'>
+    <section id='section1' className='primera'>
       <div className='loop'>
      
            <ReactPlayer
@@ -57,7 +57,7 @@ const Inicio =()=>{
             title="prueba video inicio"
           ></iframe>  */}
        
-      <a className='enlace-bajar' href="#section__dos"><DotLottieReact
+      <a className='enlace-bajar' href="#section-with-carousel"><DotLottieReact
                src="https://lottie.host/653b6be2-63a6-4a21-8a3e-d72fc73303ea/muHGJJhidI.lottie"
                loop
                autoplay
@@ -66,7 +66,7 @@ const Inicio =()=>{
     
     </section>
      
-   <section id="section__dos">
+   <section id="section-with-carousel">
     <Carrusell0/>
     </section>
    
@@ -74,15 +74,15 @@ const Inicio =()=>{
     {/* <Carrusell01/> */}
     {/* </div> */}
        
-    <section id={'carrusell'}>
+    <section id={'section-with-carousel1'} >
     <Carrusell  />
     </section> 
     
-    <section id={'dos'}>
+    <section id={'section-with-carousel-2'}>
    <CarrusellUno />
    </section>
    
-    <section id={'section_tres'}>
+    <section id={'section5'}>
   < Section5/>
   </section  >
   {/* <section id={'ninas'}>

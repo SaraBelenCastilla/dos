@@ -2,6 +2,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import useWindowWidth from '../Components/useWindowWidth';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { IoIosArrowForward } from "react-icons/io"
 
 
 function Section34() {
@@ -65,12 +66,8 @@ function Section34() {
                 <p>20 años superando retos. </p>
                 
                             </motion.div>
-       <a className="movimiento" href='#dos'
-         ><DotLottieReact className='abajo'
-             src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-             loop
-             autoplay
-           />
+       <a className="boton__abajo" href='#section-with-carousel-2'
+         > <IoIosArrowForward className='drch' />
            </a> 
         </div>
     {/* </div> */}

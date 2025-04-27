@@ -404,8 +404,15 @@ right: 0%;
 }
 .movimiento{
   position: absolute;
-  top: 40%;
-  left: 85%;
+  top: 70%;
+  left: 92%;
+ transform: rotate(-90deg);
+ 
+}
+.mov{
+  position: absolute;
+  top: 75%;
+  left: 45%;
  transform: rotate(-90deg);
  
 }
@@ -418,13 +425,13 @@ right: 0%;
 }
 .movimiento1{
   position: absolute;
-  top: 30%;
-  left: 75%;
+  top: 80%;
+  left: 90%;
  
  
 }
 .abajo1{
-  width: 170%;
+  width: 160%;
 }
 .segundaTres{
    min-width: 100%; 
@@ -772,6 +779,21 @@ right: 0%;
   width: 5rem;
   height: 5rem;
   z-index: 4;
+ 
+} 
+.boton__abajo{
+  position: absolute;
+  right: -45%;
+  top: -40%;
+  color: white;
+   margin: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  z-index: 4;
+  transform: rotate(90deg);
  
 } 
 .botonDerch{
@@ -1328,7 +1350,7 @@ right: 0%;
 
  .abajo{
   color: white;
-  width: 17rem;
+  width: 7rem;
   height: auto;
  }
 .showroon{
@@ -1831,7 +1853,7 @@ right: 0%;
   font-size: 1em;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  color: rgb(5, 11, 21);
+  color: rgb(255, 255, 255);
   
   text-align: center;
 }
@@ -1844,7 +1866,7 @@ transform: scale(1.5);
   align-items: center;
   /* transform: scale(1.5); */
   z-index: 100;
-  border-radius: 8%;
+ 
 }
 
 .item:hover{
@@ -2310,6 +2332,20 @@ background-color: rgb(5, 11, 21);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.nos__p4{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.nos__p5{
+  font-family: "veneer", sans-serif;
+ 
+  font-size: 6em;
   text-align: center;
   padding-bottom: 2%;
 }

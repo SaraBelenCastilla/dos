@@ -35,14 +35,14 @@ function palabras() {
           id:7, pala:'Tras la Escena', tipo:'"altesse-std-24pt", sans-serif',size:'7vw'
         },
         {
-          id:8, pala:'tras el telon', tipo:'"veneer", sans-serif',size:'7vw'
+          id:8, pala:'tras el telon', tipo:'"alta-california", sans-serif',size:'7vw'
     
         },
         {
          id:9,  pala:'BACKSTAGE',  tipo:'"aw-conqueror-carved", sans-serif',size:'7vw'
         },
         {
-         id:10,  pala:'trascenio', tipo:'"alta-california", sans-serif',size:'11vw'
+         id:10,  pala:'trascenio', tipo:'"veneer", sans-serif',size:'11vw'
         }
       ]
       

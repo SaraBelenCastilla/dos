@@ -62,7 +62,7 @@ function Nosotros() {
       >
        <Palabras/>
         <Hero />
-        <HeroUno/>
+       
        
       </ReactLenis>
      
@@ -164,7 +164,7 @@ function Nosotros() {
              whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
              viewport={{once: false, amount:.5}}
             >HACE ESTA PEÑA?</motion.h2>
-             <a className="movimiento" href='#png'
+             <a className="movimiento" href='#servicios'
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
@@ -173,10 +173,10 @@ function Nosotros() {
             
                   </a> 
           </div>
-          <div className="png" id="png"
+          {/* <div className="png" id="png"
           
-          >
-            <motion.div className="png__div"
+          > */}
+            {/* <motion.div className="png__div"
              initial={{opacity:0, y:100}}
              whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
              viewport={{once: false, amount:.5}}
@@ -192,15 +192,11 @@ function Nosotros() {
               />
             
                   </a> 
-             {/* <Link className='flechita__png' to={'#servicios'}> <DotLottieReact
-                                  src="https://lottie.host/653b6be2-63a6-4a21-8a3e-d72fc73303ea/muHGJJhidI.lottie"
-                                  loop
-                                  autoplay
-                                /></Link> */}
+            
            
-            </motion.div>
+            </motion.div> */}
            
-          </div>
+          {/* </div> */}
           </div>
           <section id={'servicios'}>
           <Servicios/>
@@ -214,7 +210,7 @@ function Nosotros() {
   </>
   )
 }
-const SECTION_HEIGHT = 500;
+const SECTION_HEIGHT = 1000;
 
 const Hero = () => {
   return (
@@ -324,17 +320,17 @@ const ParallaxImages = () => {
         
       
         />
-          {/* <ParallaxImg
+           <ParallaxImg
         
         start={200}
         end={-100}
         className="nosotros__segunda"
-        texto1='¿RECIÉN ATERRIZADOS?'
-        img={Nop}
-        texto2='Todo comenzó en 2001 como Areté Comunicación.'
+        texto4='¿RECIÉN ATERRIZADOS?'
+        texto5='¡NOP!'
+        texto6='Todo comenzó en 2001 como Areté Comunicación.'
         texto3=''
-      />    */}
-         {/* <ParallaxImg
+      />    
+          <ParallaxImg
         
         start={200}
         end={-100}
@@ -353,7 +349,7 @@ const ParallaxImages = () => {
         texto3=''
         texto4=''
 
-      />   */}
+      />   
         {/* <a className="movimiento" href='#nosotros'
       ><DotLottieReact className='abajo'
           src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
@@ -366,7 +362,7 @@ const ParallaxImages = () => {
   );
 };
 
-const ParallaxImg = ({ className,title,texto1,texto3,texto2,texto4,  start, end }) => {
+const ParallaxImg = ({ className,title,texto1,texto3,texto2,texto4,texto5,texto6,  start, end }) => {
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -395,7 +391,9 @@ const ParallaxImg = ({ className,title,texto1,texto3,texto2,texto4,  start, end 
        
         <p  className="nos__p1">{texto2}</p> 
         <p className="nos__p">{texto3}</p>
-        <p className="nos__p">{texto4}</p>
+        <p className="nos__p4">{texto4}</p>
+        <p className="nos__p5">{texto5}</p>
+        <p className="nos__p">{texto6}</p>
 
       </motion.div>
      

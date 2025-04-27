@@ -192,7 +192,7 @@ const plegarSiete=()=>{
       <img src="https://live.staticflickr.com/65535/54355438187_a3d5d6b821_n.jpg" alt=""  onMouseEnter={desplegarSiete}  onMouseLeave={plegarSiete}/>
      </div>
 
-     <a className="movimiento" href='#reactiva'
+     <a className="movimiento" href='#footer'
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
@@ -210,7 +210,7 @@ const plegarSiete=()=>{
  </>
  )
 }
-const SECTION_HEIGHT = 900;
+const SECTION_HEIGHT = 600;
 
 const Hero = () => {
   return (

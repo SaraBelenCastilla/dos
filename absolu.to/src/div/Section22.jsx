@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { redirect ,useNavigate,Navigate} from "react-router-dom";
 import Carrusell from '../Components/Carrusell'
 import useWindowWidth from '../Components/useWindowWidth';
+import { IoIosArrowForward } from "react-icons/io"
 
 function mover() {
   window.location.replace('/Carrusell')
@@ -75,12 +76,8 @@ Cuando la &quot;Agencia&quot; se enfrenta a un brief complicado y los obstáculo
       autoplay
     /></a> */}
 
-    <a className="movimiento" href={"#carrusell"}
-   ><DotLottieReact className='abajo'
-       src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-       loop
-       autoplay
-     />
+    <a className="boton__abajo" href={"#section-with-carousel1"}
+   >  <IoIosArrowForward className='drch' />
      </a>
          
       

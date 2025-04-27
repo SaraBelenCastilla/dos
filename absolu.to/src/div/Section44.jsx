@@ -2,6 +2,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import useWindowWidth from '../Components/useWindowWidth';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { IoIosArrowForward } from "react-icons/io"
 
 function Section44() {
   const anchoVentana = useWindowWidth();
@@ -41,12 +42,8 @@ Minuto y medio para sorprender.
             
                         </motion.div>
     </div>
-     <a className="movimiento" href='#section_tres'
-             ><DotLottieReact className='abajo'
-                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-                 loop
-                 autoplay
-               />
+     <a className="boton__abajo" href='#section5'
+             ><IoIosArrowForward className='drch' />
                </a> 
     </div>
     </>

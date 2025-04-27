@@ -227,7 +227,7 @@ function Reactiva() {
             </motion.h2>
           
             {/* )} */}
-             <a className="movimiento" href='#warning'
+             <a className="movimiento" href='#footer'
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
@@ -293,7 +293,7 @@ function Reactiva() {
         >SIN HISTORIAS</motion.h2>
        
       </div>  */}
-      <div className="reactiva__dos" id="warning">
+      {/* <div className="reactiva__dos" id="warning">
         <motion.div className="reactiva__aviso"
          initial={{ scale: 0 }}
          whileInView={{ scale: 1 }}
@@ -345,15 +345,8 @@ function Reactiva() {
                 </AnimatePresence>
                    
         </motion.div>
-        {/* <a className="movimiento" href='#razones'
-            ><DotLottieReact className='abajo'
-                src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-                loop
-                autoplay
-              />
-            
-                  </a>  */}
-      </div>
+       
+      </div> */}
      
       {/* <Schedule/>
       <Tercerita/>

@@ -17,6 +17,40 @@ function CarrusellUno() {
        
       ]
     let [index, setIndex] = useState(0);
+    
+        const [activeSection, setActiveSection] = useState(null);
+         // Detectar el cambio de sección
+         useEffect(() => {
+          const observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.5, // Detecta cuando el 50% de la sección es visible
+          };
+      
+          const observerCallback = (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                setActiveSection(entry.target.id); // Actualiza la sección activa
+              }
+            });
+          };
+      
+          const observer = new IntersectionObserver(observerCallback, observerOptions);
+      
+          // Observa las secciones por sus IDs únicos
+          const sections = document.querySelectorAll("[id^='section']");
+          sections.forEach((section) => observer.observe(section));
+      
+          return () => {
+            sections.forEach((section) => observer.unobserve(section));
+          };
+        }, []);
+       // Reiniciar el carrusel cuando se detecta la sección
+       useEffect(() => {
+        if (activeSection === "section-with-carousel1") {
+          setIndex(0); // Reinicia el índice del carrusel
+        }
+      }, [activeSection]);
   return (
     <MotionConfig
       transition={{
@@ -24,7 +58,7 @@ function CarrusellUno() {
         ease: [0.32, 0.72, 0, 1],
       }}
     >
-         <div className="h-full">
+         <div id='section-with-carousel1' className="h-full">
         <div className="mx-auto ">
           <div className="relative ">
       <motion.div animate= {{ x: `-${index * 100}%` }} className="flex">
