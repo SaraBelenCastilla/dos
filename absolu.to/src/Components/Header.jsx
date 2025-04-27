@@ -55,18 +55,10 @@ function Header() {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
     }}>EL EQUIPO ES LO PRIMERO</Link></li>
-                <li className='enlaces5'>
-  <a
-    className="header__linkLista"
-    href="/reactiva"
-    onClick={() => {
+                 <li className='enlaces5'><Link className="header__linkLista" to={'/reactiva'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}
-  >
-    REACTIVA Y CLANDESTINA
-  </a>
-</li>
+    }}>REACTIVA Y CLANDESTINA</Link></li>
                 <li className='enlaces6'><Link className="header__linkLista" to={'/razones'} onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
