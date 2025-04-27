@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom/client'
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Routes,Route,useLocation} from 'react-router-dom'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Inicio from './views/Inicio'
@@ -17,6 +17,19 @@ import Otra from './views/Otra'
 
 
 import './css/style.css'
+import { useEffect } from 'react'
+
+// Componente para manejar el scroll al inicio
+function ScrollToTop() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location]);
+
+  return null;
+}
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     
@@ -24,6 +37,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   
  
     <Router>
+       <ScrollToTop />
    {/* el header que es comun para todaslas rutas */}
     <Header/>
     

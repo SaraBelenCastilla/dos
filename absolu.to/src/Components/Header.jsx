@@ -1,5 +1,5 @@
 
-import logo from '../assets/img/logo.png'
+import logo from '../assets/img/logoVertical.png'
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
@@ -55,10 +55,18 @@ function Header() {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
     }}>EL EQUIPO ES LO PRIMERO</Link></li>
-                <li className='enlaces5'><Link className="header__linkLista" to={'/reactiva'}  onClick={() => {
+                <li className='enlaces5'>
+  <a
+    className="header__linkLista"
+    href="/reactiva"
+    onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>REACTIVA Y CLANDESTINA</Link></li>
+    }}
+  >
+    REACTIVA Y CLANDESTINA
+  </a>
+</li>
                 <li className='enlaces6'><Link className="header__linkLista" to={'/razones'} onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
