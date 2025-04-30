@@ -276,7 +276,7 @@ const CenterImage = ({start,end}) => {
       }}
     /> */}
      <div className="titulo__nosotros">
-        <motion.h1 className="nosotros__h1"
+        <motion.h1 className="otra__h1"
       //  style={{opacity,
       //   fontSize,
       //  }}

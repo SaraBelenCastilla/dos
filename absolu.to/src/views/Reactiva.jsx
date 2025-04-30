@@ -360,7 +360,7 @@ const SECTION_HEIGHT = 900;
 
 const Hero = () => {
   return (
-    <div
+    <section
       style={{ height: `calc(${SECTION_HEIGHT}px + 120vh)` }}
       className="cotenedor"
     >
@@ -371,7 +371,7 @@ const Hero = () => {
 
       <div className="final" />
       
-    </div>
+    </section>
   );
 };
 const CenterImage = () => {
@@ -417,7 +417,7 @@ const CenterImage = () => {
       //  style={{opacity,
       //   fontSize,
       //  }}
-      >Reactiva y Clandestina</motion.h1>
+      >REACTIVA Y CLANDESTINA</motion.h1>
         </div>
    
        

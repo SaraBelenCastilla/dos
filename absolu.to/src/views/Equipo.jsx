@@ -210,7 +210,7 @@ const plegarSiete=()=>{
  </>
  )
 }
-const SECTION_HEIGHT = 600;
+const SECTION_HEIGHT = 700;
 
 const Hero = () => {
   return (
@@ -271,7 +271,7 @@ const CenterImage = () => {
       //  style={{opacity,
       //   fontSize,
       //  }}
-      >El equipo es lo primero</motion.h1>
+      >EL EQUIPO ES LO PRIMERO</motion.h1>
         </div>
    
        

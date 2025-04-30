@@ -77,7 +77,8 @@
    
   } 
   .logo{
-    width: 12.5rem;
+    padding-top: 65%;
+    width: 8rem;
   } 
   .header__menu{
     position: absolute;

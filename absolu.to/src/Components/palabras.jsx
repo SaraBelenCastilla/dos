@@ -42,7 +42,7 @@ function palabras() {
          id:9,  pala:'BACKSTAGE',  tipo:'"aw-conqueror-carved", sans-serif',size:'7vw'
         },
         {
-         id:10,  pala:'trascenio', tipo:'"veneer", sans-serif',size:'11vw'
+         id:10,  pala:'TRASCENIO', tipo:'"veneer", sans-serif',size:'11vw'
         }
       ]
       

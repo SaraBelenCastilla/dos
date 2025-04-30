@@ -22,13 +22,13 @@ function Section44() {
             >
               <h2 className="amarilla__h2">El desafío:</h2>
               <h3 className="amarilla__h3">90 SEGUNDOS</h3>
-                <p>El tiempo que tarda nuestro cerebro en activar las emociones.
+                <p className='amarill__p'>El tiempo que tarda nuestro cerebro en activar las emociones.
 </p>
 <p className='amarilla__p'>
 Minuto y medio para sorprender.
 
 </p>
-<p>Una única oportunidad.</p>
+<p className='amarilla__p'>Una única oportunidad.</p>
 
             </motion.div>
               <motion.div className="segunda__movil"
