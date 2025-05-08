@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
   import video from '../assets/video.mp4'
+  import Vertical from '../assets/vertical.mp4'
 // import HorizontalScroll from '../Components/HorizontalScroll/HorizontalScroll'
 // import HorizontalScroll1 from '../Components/HorizontalScroll/HorizontalScroll1'
 // import HorizontalScroll2 from '../Components/HorizontalScroll/HorizontalScroll2'
@@ -57,12 +58,39 @@ const Inicio =()=>{
             title="prueba video inicio"
           ></iframe>  */}
        
+      
+      </div>
       <a className='enlace-bajar' href="#section-with-carousel"><DotLottieReact
                src="https://lottie.host/653b6be2-63a6-4a21-8a3e-d72fc73303ea/muHGJJhidI.lottie"
                loop
                autoplay
              /></a> 
-      </div>
+      <div className='loop__vertical'>
+     
+     <ReactPlayer
+      url={Vertical}
+      playing={true}
+      muted={true}
+      width="100%"
+      height="100%"
+      controls={true}
+    /> 
+ 
+     {/* <iframe
+      src="https://player.vimeo.com/video/1006688970?autoplay=1&muted=1"
+      width="100%"
+      height="100%"
+      frameBorder="0"
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+      title="prueba video inicio"
+    ></iframe>  */}
+ 
+{/* <a className='enlace-bajar' href="#section-with-carousel"><DotLottieReact
+         src="https://lottie.host/653b6be2-63a6-4a21-8a3e-d72fc73303ea/muHGJJhidI.lottie"
+         loop
+         autoplay
+       /></a>  */}
+</div>
     
     </section>
      
