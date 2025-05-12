@@ -16,6 +16,7 @@ import { IoClose } from "react-icons/io5";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { GrStatusWarning } from "react-icons/gr";
+import { useMediaQuery } from "react-responsive";
 
 
  const sections = [
@@ -26,7 +27,7 @@ import { GrStatusWarning } from "react-icons/gr";
    ];
 
 function Reactiva() {
- 
+  const isMobile = useMediaQuery({ maxWidth: 768 }); // Detecta pantallas de ancho menor o igual a 768px
     useEffect(() => {
         const observerOptions = {
           root: null,
@@ -47,7 +48,7 @@ function Reactiva() {
     
         const observer = new IntersectionObserver(observerCallback, observerOptions);
     
-        const sectionElements = document.querySelectorAll('.reactiva__uno');
+        const sectionElements = document.querySelectorAll('.nosotros');
         sectionElements.forEach(section => observer.observe(section));
     
         return () => {
@@ -86,7 +87,7 @@ function Reactiva() {
     
     <div
     
-     className="nosotros" >
+     className="nosotros" id="section1" >
         <ReactLenis
         root
         options={{
@@ -97,12 +98,13 @@ function Reactiva() {
         }}
       >
        
-        <Hero />
+        {/* Renderiza Hero o HeroMobile según el tamaño de la pantalla */}
+        {isMobile ? <HeroMobile /> : <Hero />}
         
        
       </ReactLenis>
       </div>
-      <div className="reactiva__clara">
+      <div className="reactiva__clara" id="section2">
         <motion.div className="contenido__clara"
         initial={{opacity:0, y:100}}
         whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
@@ -117,7 +119,24 @@ function Reactiva() {
             <p className="clara__p">En un "plis plas" cristaliza</p>
             
         </motion.div>
-        <a className="movimiento1" href='#section1'
+        <motion.div className="clara__movil"
+         initial={{opacity:0, y:100}}
+         whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
+         viewport={{once: false, amount:.5}}
+        >
+          <p className="movil__clara">"Mezclamos Esencia de Marca</p>
+          <p className="movil__clara">con Estrategia en la misma</p>
+          <p className="movil__clara">proporción.</p>
+          <p className="movil__clara">Le metemos una buena dosis de</p>
+          <p className="movil__clara">Creatividad (nunca es</p>
+          <p className="movil__clara">demasiada, mejor que rebose) y</p>
+          <p className="movil__clara">agregamos Contenido fresco,</p>
+          <p className="movil__clara">clave para establecer </p>
+          <p className="movil__clara">conexiones duraderas."</p>
+          <p className="movil__clarap">En un "plis plas" cristaliza en</p>
+
+        </motion.div>
+        <a className="movimiento1" href='#section3'
       ><DotLottieReact className='abajo1'
           src="https://lottie.host/0e3e0733-1a05-4293-9b5a-6484b91e19f2/07AJWgdqS3.lottie"
           loop
@@ -127,7 +146,7 @@ function Reactiva() {
             </a> 
       </div>
       {/* {sections.map((section, index) => ( */}
-          <section id='section1' className='reactiva__uno' >
+          <section id='section3' className='reactiva__uno' >
             <motion.div className="experiencias"
              initial={{ opacity: 0, y: 100 }}
              whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
@@ -153,7 +172,7 @@ function Reactiva() {
               </h2>
               </motion.div>
             {/* )} */}
-             <a className="movimiento" href='#section2'
+             <a className="movimiento" href='#section4'
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
@@ -162,7 +181,7 @@ function Reactiva() {
             
                   </a> 
           </section>
-          <section id='section2' className='reactiva__uno' >
+          <section id='section4' className='reactiva__uno' >
             <motion.div className="contenidos"
              initial={{ opacity: 0, y: 100 }}
              whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
@@ -188,7 +207,7 @@ function Reactiva() {
               </h2>
               </motion.div>
             {/* )} */}
-             <a className="movimiento" href='#section3'
+             <a className="movimiento" href={isMobile ? "#section5-6" : "#section5"}
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
@@ -197,45 +216,93 @@ function Reactiva() {
             
                   </a> 
           </section>
-          <section id='section3' className='reactiva__uno' >
-            
-            <motion.h2 className="reactiva__h2"
+          {isMobile ? (
+        // Renderiza una sola sección para móviles
+        <section id="section5-6" className="reactiva__uno">
+        <motion.h2
+          className="reactiva__h2"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.4, duration: 1, ease: "easeInOut", type: "spring" },
+          }}
+          viewport={{ once: false, amount: 0.5 }}
+        >
+          SIN CUENTOS
+        </motion.h2>
+        <motion.h2
+          className="reactiva__h2"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.6, duration: 1, ease: "easeInOut", type: "spring" },
+          }}
+          viewport={{ once: false, amount: 0.5 }}
+        >
+          SIN HISTORIAS
+        </motion.h2>
+        <a className="movimiento" href="#footer">
+            <DotLottieReact
+              className="abajo"
+              src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
+              loop
+              autoplay
+            />
+          </a>
+        </section>
+      ) : (
+        <>
+         <section id="section5" className="reactiva__uno">
+            <motion.h2
+              className="reactiva__h2"
               initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
-              viewport={{ once: false, amount: .5 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.4, duration: 1, ease: "easeInOut", type: "spring" },
+              }}
+              viewport={{ once: false, amount: 0.5 }}
             >
               SIN CUENTOS
             </motion.h2>
-          
-            {/* )} */}
-             <a className="movimiento" href='#section4'
-            ><DotLottieReact className='abajo'
+            <a className="movimiento" href="#section6">
+              <DotLottieReact
+                className="abajo"
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
                 autoplay
               />
-            
-                  </a> 
+            </a>
           </section>
-          <section id='section4' className='reactiva__uno' >
-            <motion.h2 className="reactiva__h2"
+          <section id="section6" className="reactiva__uno">
+            <motion.h2
+              className="reactiva__h2"
               initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
-              viewport={{ once: false, amount: .5 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.4, duration: 1, ease: "easeInOut", type: "spring" },
+              }}
+              viewport={{ once: false, amount: 0.5 }}
             >
               SIN HISTORIAS
             </motion.h2>
-          
-            {/* )} */}
-             <a className="movimiento" href='#footer'
-            ><DotLottieReact className='abajo'
+            <a className="movimiento" href="#footer">
+              <DotLottieReact
+                className="abajo"
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
                 autoplay
               />
-            
-                  </a> 
+            </a>
           </section>
+        </>
+      )}
+        // Renderiza las secciones por separado para pantallas más grandes
+          
+        
 
         {/* ))}  */}
        {/* <div className="reactiva__uno"
@@ -356,6 +423,152 @@ function Reactiva() {
   </>
   )
 }
+
+const SECTION_HEIGHT_MOVIL = 100;
+const HeroMobile = () => {
+  return (
+    <div
+      style={{ height: `calc(${SECTION_HEIGHT_MOVIL}px + 200vh)` }}
+      className="cotenedor"
+    >
+      <CenterImageMovil />
+
+       <ParallaxImagesMovil />
+      
+
+      <div className="final" />
+      
+    </div>
+  );
+};
+
+const CenterImageMovil = ({start,end}) => {return (
+  <>
+  {/* <motion.div
+    className="primer"
+    style={{
+      clipPath,
+      backgroundSize,
+      opacity,
+      // backgroundImage:
+      //   "url(https://images.unsplash.com/photo-1460186136353-977e9d6085a1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+      // backgroundPosition: "center",
+      // backgroundRepeat: "no-repeat",
+    }}
+  /> */}
+   <div className="titulo__nosotros">
+      <motion.h2 className="movil__h1P"
+    //  style={{opacity,
+    //   fontSize,
+    //  }}
+    //  ref={ref}
+    
+    >REACTIVA Y</motion.h2>
+    <motion.h2 className="movil__h1"
+    //  style={{opacity,
+    //   fontSize,
+    //  }}
+    //  ref={ref}
+    
+    > CLANDESTINA</motion.h2>
+      </div>
+ 
+     
+      </>
+);
+};
+
+const ParallaxImagesMovil = () => {
+  return (
+    <div className="segun">
+      {/* <ParallaxImg
+        src="https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="And example of a space launch"
+        start={-200}
+        end={200}
+        className="uno"
+      />
+      <ParallaxImg
+        src="https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="An example of a space launch"
+        start={200}
+        end={-250}
+        className="dos"
+      /> */}
+      <ParallaxImgMovil
+         start={-800}
+         end={100}
+         className="nosotros__primera"
+         
+        texto1='Más de 20 años de darle'
+        texto2='al coco, noches en vela y '
+        texto3='café a litros nos llevaron a'
+        texto4='crear el método infalible.'
+       
+        
+      
+        />
+           <ParallaxImgMovil
+        
+        start={-100}
+        end={0}
+        className="nosotros__segunda"
+        texto1='La fórmula definitiva para '
+        texto2='la activación de marcas y '
+         texto3='llevarlas al next level.'
+        
+      />    
+        
+        {/* <a className="movimiento" href='#nosotros'
+      ><DotLottieReact className='abajo'
+          src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
+          loop
+          autoplay
+        />
+      
+            </a>     */}
+    </div>
+  );
+};
+
+const ParallaxImgMovil = ({ className,title,texto1,texto3,texto2,texto4,  start, end }) => {
+  const ref = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: [`${start}px end`, `end ${end * -1}px`],
+  });
+
+  const opacity = useTransform(scrollYProgress, [0.75, 1], [1, 0]);
+  const scale = useTransform(scrollYProgress, [0.75, 1], [1, 0.85]);
+
+  const y = useTransform(scrollYProgress, [0, 1], [start, end]);
+  const transform = useMotionTemplate`translateY(${y}px) scale(${scale})`;
+
+  return (
+    <>
+    <motion.div
+     
+      className={className}
+      ref={ref}
+      style={{ transform, opacity }}
+      >
+      
+       
+        {/* <img className="nop" src={img} alt="nop" />
+        <img className="nop" src={img} alt="nop" /> */}
+       
+        <p  className="nos__pmovilp">{texto1}</p> 
+        <p className="nos__pmovilp">{texto2}</p>
+        <p className="nos__pmovilp">{texto3}</p>
+        <p className="nos__pmovilp">{texto4}</p>
+       
+
+      </motion.div>
+     
+      </>
+  );
+};
 const SECTION_HEIGHT = 900;
 
 const Hero = () => {

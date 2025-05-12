@@ -38,6 +38,19 @@ function Razon3() {
                 >última hora. 
                 </motion.p>
                 </motion.div>
+                 <motion.div className='razones__movil'
+                                         initial={{opacity:0, y:100}}
+                                         whileInView={{opacity:1, y:0, transition:{delay:0.8, duration:1,  ease:'easyInOut',type:'spring'}}}
+                                         viewport={{once: false, amount:.5}}
+                                         >
+                                            <p className="razones__p">Porque sacamos   </p>
+                                            <p className="razones__p">músculo para  </p>
+                                            <p className="razones__p">gestionar plazos  </p>
+                                            <p className="razones__p">imposibles y  </p>
+                                            <p className="razones__p">cambios de última </p>
+                                            <p className="razones__p">hora. </p>
+                                            
+                                         </motion.div>
          <motion.div className="razon__pie"
          initial={{opacity:0, y:100}}
          whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}

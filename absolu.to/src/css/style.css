@@ -542,6 +542,9 @@ right: 0%;
  margin-top: 5%;
   cursor: pointer;
 }
+.instagram__movil{
+  display: none;
+}
 .insta__h3{
   font-family: "poppins";
   font-weight: 500;
@@ -2169,10 +2172,22 @@ background-color: rgb(5, 11, 21);
   align-items:flex-start;
   
   padding-top: 10%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-family: "veneer", sans-serif;
+  
   color: white;
-  font-size: 4vw; 
+  font-size: 12vw; 
+}
+.movil__h1P{
+  position: sticky;
+  display: flex;
+  justify-content:center;
+  align-items:flex-start;
+  
+  padding-top: 80%;
+  font-family: "veneer", sans-serif;
+  
+  color: white;
+  font-size: 12vw; 
 }
 @keyframes movil{
   30%
@@ -2231,7 +2246,15 @@ background-color: rgb(5, 11, 21);
   view-timeline-axis:block ;
   animation-timeline: --titulo ;
   animation-name: movil;
-   animation-range: entry 20% exit 20%  ; 
+   animation-range: entry 110% exit 20%  ; 
+  animation-fill-mode: both;
+}
+.movil__h1P{
+  view-timeline-name: --titulo;
+  view-timeline-axis:block ;
+  animation-timeline: --titulo ;
+  animation-name: movil;
+   animation-range: entry 110% exit 20%  ; 
   animation-fill-mode: both;
 }
 .otra__h1{
@@ -2378,6 +2401,9 @@ background-color: rgb(5, 11, 21);
   
 
  }
+ .fuck__h2{
+  display: block;
+ }
  .per__papel{
   position: relative;
   width: 25%;
@@ -2456,7 +2482,14 @@ background-color: rgb(5, 11, 21);
 .nos__pmovil{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 1.5em;
+  text-align: justify;
+  padding-bottom: 2%;
+}
+.nos__pmovilp{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
   text-align: center;
   padding-bottom: 2%;
 }
@@ -2690,6 +2723,10 @@ overflow: hidden;
 width: 150px;
 height: 150px;
  }
+ .razones__movil{
+  display: none;
+ }
+ 
  /* -----------razon01------- */
  .razon__01{
   min-width: 100%;
@@ -2962,11 +2999,24 @@ overflow: hidden;
   justify-content: center;
   align-items: center;
 }
+.clara__movil{
+  display: none;
+}
 .clara__p{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
  color: rgb(5, 11, 21);
+}
+.movil__clara{ font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+ color: rgb(5, 11, 21);}
+ .movil__clarap{ font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+ color: rgb(5, 11, 21);
+ padding-top: 50%;
 }
 .clara__p1{
   font-family: "Poppins", sans-serif;
@@ -3020,6 +3070,10 @@ overflow: hidden;
   z-index: 250;
   cursor: pointer;
 }
+.insta__movil{
+  display: none;
+}
+.segunda__contenidoDos{display: block;}
 
 /* ----------equipo---------- */
 .equipo__primera{
@@ -3164,13 +3218,13 @@ overflow: hidden;
 
 }
 .nosotros__pero{
-  padding-left: 5%;
+  padding-left: 15%;
 }
 .pero__h2{
   font-size: 2.5em;
 }
 .razon__pie{
-  padding-top: 90%;
+  padding-top: 70%;
   margin-bottom: 5%;
 }
 .movimiento1{
@@ -3181,18 +3235,26 @@ overflow: hidden;
   width: 170%;
 }
 .pero__papel{
-  gap: 0%;
+  gap: 30px;
 }
 .per__papel{
-  width: 70%;
-  height: 70%;
-  transform: rotate(-10deg);
+ 
+  transform: rotate(-5deg);
+  
+}
+.fuck__h2{
+ 
+  color:rgb(238, 66, 88);
+  font-family:"Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 2em;
 }
 .pero__h2{
   font-size: 2em;}
 .per__img{
   width: 100%;
   height: 100%;
+  display: none;
 }
 .nosotros__h2{
   font-size: 1.5em;
@@ -3228,7 +3290,7 @@ width: 75%;}
   padding-top: 5%;}
 /* ----------niñas---------------- */
 .show__h2{
-  font-size: 10vw;
+  font-size: 12vw;
   width: 80%;
   padding-left: 5%;
   text-align: center;
@@ -3244,7 +3306,8 @@ width: 75%;}
   transform: rotate(-90deg);
 }
 .porfolio{
-  margin-top: 15%;
+  margin-top: 10%;
+  
 }
 /* -----------inicio------------- */
 .h__full{
@@ -3297,14 +3360,14 @@ width: 75%;}
   padding-left: 10%;
 }
 .boton__drch {
-  left: 30%; /* Ajusta la posición desde el borde izquierdo */
+  left: 35%; /* Ajusta la posición desde el borde izquierdo */
  
   width: 4rem; /* Ajusta el ancho del botón */
   height: 4rem; /* Ajusta la altura del botón */
   top: 15%;
 }
 .boton__abajo{
-  left: 30%; /* Ajusta la posición desde el borde izquierdo */
+  left: 35%; /* Ajusta la posición desde el borde izquierdo */
  
   width: 4rem; /* Ajusta el ancho del botón */
   height: 4rem; /* Ajusta la altura del botón */
@@ -3315,7 +3378,7 @@ width: 75%;}
   height: 4rem;
 }
 .boton__izq {
-  left: -45%; /* Ajusta la posición desde el borde izquierdo */
+  left: -50%; /* Ajusta la posición desde el borde izquierdo */
  
   width: 4rem; /* Ajusta el ancho del botón */
   height: 4rem; /* Ajusta la altura del botón */
@@ -3370,18 +3433,35 @@ width: 75%;}
   margin-left: 10%;
   margin-top: 70%;
 }
-.instagram{
+.instagram__movil{
+  background-image: url(../assets/papelitos/botonrosa.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+ width: 300px;
+ height: 90px;
+ z-index: 200;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 55%;
+ margin-top: 5%;
+  cursor: pointer;
+ 
   width: 37%;
   height: auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   margin-bottom: 5%;
-  margin-top: 110%;
-  margin-right: 20%;
+ 
+  margin-right: 10%;
 }
 .insta__h3{
   font-size: 1em;
   font-family: 'Poppins', sans-serif ;
+}
+.segunda__contenidoDos{
+  display: none;
 }
 .segunda34{
   background-image: url(https://live.staticflickr.com/65535/54438115342_7b318a4782_w.jpg);
@@ -3406,6 +3486,18 @@ width: 75%;}
   padding-bottom: 5%;
   padding-top: 0;
   justify-content: center;
+ 
+}
+.insta__movil{
+  display: block;
+  padding-left: 15%;
+  width: 400px;
+  padding-bottom: 95%;
+  padding-top: 0;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
 }
 .cuatrito__div{
   display: none;
@@ -3484,10 +3576,14 @@ padding-top: 5%;
 .absl{
   width: 300px;
   height: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .abslUno{
   width: 300px;
   height: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .quinta__h3{
   font-size: 2em;
@@ -3549,9 +3645,19 @@ padding-top: 5%;
 }
 .servicios__container {
   grid-template-columns: repeat(2, 1fr); /* En pantallas muy pequeñas, 2 columnas */
-  gap: 10px; /* Reduce el espaciado */
+  grid-template-rows: repeat(4,2fr);
+  gap: 25px; /* Reduce el espaciado */
+  margin-top: 2%;
+  padding: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-
+/* .img__item {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: rgb(5, 11, 21);
+} */
 
 .item {
 display: flex;
@@ -3591,23 +3697,61 @@ justify-content: center;
   padding: 2%;
   color: white;
 }
+.contenido__clara{display: none;}
+.clara__movil{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* -----razones---------- */
+
+.razones{
+  flex-direction: column;
+
+}
 .razones__h1{
-  font-size: 1.5em;
+  font-size: 4em;
 }
 .razones__h2{
-  font-size: 1.5em;
+  font-size: 4em;
 }
 .plus{
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 .razon__h2{
   font-size: 3em;
   padding-bottom: 10%;
+  padding-top: 5%1;
+}
+.razones__div{
+  display: none;
+}
+.razones__movil{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5%;
+  height: 50%;
+  
 }
 .razones__p{
-  font-size: 1.5em;
+  font-size: 2em;
+}
+.razones__p1{
+  font-size: 2em;
+  padding-top: 35%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.razones__p2{
+  font-size: 2em;
+  padding-top: 15%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
 }
 .razones__punto{
   font-size:3em ;
@@ -3699,3 +3843,91 @@ justify-content: center;
   left: 47%;
 }
 } 
+.animacio{
+  width: 550px;
+  height: 175px;
+}
+.contacto{
+  gap: 20%;
+}
+.ojos{
+  height: 200px;
+}
+@media only screen and (max-width: 380px){
+   /* Estilos específicos para móviles pequeños */
+  
+  .enlace-bajar {
+    width: 80%; /* Ajusta el tamaño del enlace */
+    bottom: 40px; /* Reduce la distancia desde la parte inferior */
+  }
+
+  .reactiva__h2 {
+    font-size: 2em; /* Reduce el tamaño del texto */
+  }
+
+  .footer__h2 {
+    font-size: 1.2em; /* Ajusta el tamaño del texto en el footer */
+  }
+  .footer__botonA,
+  .footer__botonB {
+    font-size: 0.8em; /* Reduce el tamaño de los botones */
+    padding: 5px; /* Ajusta el padding */
+  }
+  .cero__h1{
+    font-size: 7em;
+  }
+  .segunda__h1Uno{
+    font-size: 2em;
+    padding-top: 80%;
+  }
+  .segunda__movil{
+    font-size: 1.2em;
+  }
+  .insta__movil{
+    font-size: 1.2em;
+    padding-bottom: 60%;
+  }
+  .tercera__h2{
+    font-size: 2em;
+  }
+  .ter__h2{
+    font-size: 2em;
+    margin-top: 10%;
+  }
+  .movil__h4{
+    font-size: 2.5em;
+  }
+  .cinco__p{
+    font-size: 0.8em;
+  }
+  .servicios {
+    position: relative;
+    width: 100%;
+    height: auto; /* Cambia de 100vh a auto */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 11, 21);
+    overflow: hidden;
+  }
+ 
+  .item {
+    width: auto; /* Reduce el tamaño */
+    height: auto;
+  }
+  .movil__clara{
+    font-size: 1.2em;
+  }
+  .razones__p{
+    font-size: 1.5em;
+  }
+  .contacto__h2{
+    font-size: 1.5em;
+  }
+  .animacio{width: 400px;
+  height: 100px;}
+}
+

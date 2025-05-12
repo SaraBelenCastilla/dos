@@ -11,6 +11,27 @@ function Section32() {
      <div className='segunda32'
       style={{with:anchoVentana}}
      >
+       <motion.div className="insta__movil"
+                                 initial={{opacity:0, y:150,scale:0.5}}
+                                 whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
+                                 viewport={{once: false, amount:.5}}
+                                 
+                                 >
+                                    <p>No soy un superhéroe </p>
+                                    <p>común. No vuelo, no  </p>
+                                    <p>llevo máscara ni escudo.</p>
+                                    <p>Mi misión no  es salvar el</p>
+                                    <p>mundo. </p>
+                     
+                                 </motion.div> 
+                                 <div className="instagram__movil"
+       
+       >
+        <h3 className="insta__h3">Be a Brander</h3>
+        <p className="insta__p"> Instagram</p>
+        
+       </div>
+      
         <motion.h1 className="tercera__h2"
         initial={{opacity:0, y:100}}
         whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
@@ -47,17 +68,9 @@ Mi misión no  es salvar el mundo.
        </div>
             </motion.div>
             
-           <motion.div className="segunda__movil"
-                                 initial={{opacity:0, y:150,scale:0.5}}
-                                 whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
-                                 viewport={{once: false, amount:.5}}
-                                 
-                                 >
-                                    <p>No soy un superhéroe </p>
-                     
-                                 </motion.div> 
+          
         </div>
-      
+       
         </div>
     {/* </div> */}
     </>

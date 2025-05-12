@@ -39,6 +39,18 @@ function Razon5() {
                 >¡Petarlo siempre! 
                 </motion.p>
                 </motion.div>
+          <motion.div className='razones__movil'
+                                  initial={{opacity:0, y:100}}
+                                  whileInView={{opacity:1, y:0, transition:{delay:0.8, duration:1,  ease:'easyInOut',type:'spring'}}}
+                                  viewport={{once: false, amount:.5}}
+                                  >
+                                     <p className="razones__p">Porque nos   </p>
+                                     <p className="razones__p">encanta ser el  </p>
+                                     <p className="razones__p">alma de la fiesta, </p>
+                                     <p className="razones__p">y cómo no... </p>
+                                     <p className="razones__p1">¡Petarlo siempre! </p>
+                                    
+                                  </motion.div>
          <motion.div className="razon__pie"
           initial={{opacity:0, y:100}}
           whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}

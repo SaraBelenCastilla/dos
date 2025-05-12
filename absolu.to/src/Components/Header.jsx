@@ -31,7 +31,7 @@ function Header() {
       </div>
       <nav className={`header__menu ${menu ? 'isActive' : ''}`}>
         <div className="header__cabecera">
-          {/* <img className='logo' src={logo} alt="logo" /> */}
+          <img className='logo' src={logo} alt="logo" /> 
           <button className='header__boton' onClick={toggleMenu}>
             <IoClose className="menu__close" />
           </button>

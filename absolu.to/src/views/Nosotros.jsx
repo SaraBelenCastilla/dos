@@ -156,11 +156,18 @@ function Nosotros() {
             whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
             viewport={{once: false, amount:.5}}
             >¿PERO QUÉ</motion.h2> 
-            <div className="per__papel"> <motion.img src={Papel} alt="fuck" className="per__img" 
+            <div className="per__papel"> 
+              <motion.img src={Papel} alt="fuck" className="per__img" 
              initial={{opacity:0, y:100}}
              whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
              viewport={{once: false, amount:.5}}
-            /></div>
+            />
+            <motion.p className="fuck__h2"
+             initial={{opacity:0, y:100}}
+             whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
+             viewport={{once: false, amount:.5}}
+            >F#Ç*</motion.p>
+            </div>
            
             </div>
            

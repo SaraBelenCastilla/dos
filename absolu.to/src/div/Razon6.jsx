@@ -42,6 +42,23 @@ function Razon6() {
                 >todo, y además lo hacemos bien.
                 </motion.p>
                 </motion.div>
+          <motion.div className='razones__movil'
+                                  initial={{opacity:0, y:100}}
+                                  whileInView={{opacity:1, y:0, transition:{delay:0.8, duration:1,  ease:'easyInOut',type:'spring'}}}
+                                  viewport={{once: false, amount:.5}}
+                                  >
+                                     <p className="razones__p">Porque somos:  </p>
+                                     <p className="razones__p">· Creativos 
+                                     </p>
+                                     <p className="razones__p">· Multidisciplinares  </p>
+                                     <p className="razones__p">· Intuitivos </p>
+                                     <p className="razones__p">· Versátiles... </p>
+                                     <p className="razones__p2">Vamos que,  </p>
+                                     <p className="razones__p">hacemos casi de  </p>
+                                     <p className="razones__p">todo, y además lo  </p>
+                                     <p className="razones__p">hacemos bien. </p>
+                                     
+                                  </motion.div>
          <motion.div className="razon__pie"
           initial={{opacity:0, y:100}}
           whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}

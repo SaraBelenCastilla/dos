@@ -9,34 +9,11 @@ import {
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 import { useRef,useState,useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 
-// const textos = [
-//   {
-//     index: 1,h3:'hola',h4:'adios'
-//   },
-//   {
-//     index: 2,h3:'adios',h4:'hola'
-//   },
-//   {
-//     index: 3,h3:'hola',h4:'adios'
-//   },
-//   {
-//     index: 4,h3:'hola',h4:'adios'
-//   },
-//   {
-//     index: 5,h3:'hola',h4:'adios'
-//   },
-//   {
-//     index: 6,h3:'hola',h4:'adios'
-//   },
-//   {
-//     index: 7,h3:'hola',h4:'adios'
-//   },
-//   {
-//     index: 1,h3:'hola',h4:'adios'
-//   },
-// ]
+
 function Equipo() {
+  const isMobile = useMediaQuery({ maxWidth: 768 }); // Detecta pantallas de ancho menor o igual a 768px
    
   
  const [desplegado,setDesplegado]=useState(false)
@@ -114,7 +91,8 @@ const plegarSiete=()=>{
         }}
       >
        
-        <Hero />
+        {/* Renderiza Hero o HeroMobile según el tamaño de la pantalla */}
+        {isMobile ? <HeroMobile /> : <Hero />}
         
        
       </ReactLenis>
@@ -210,6 +188,155 @@ const plegarSiete=()=>{
  </>
  )
 }
+
+const SECTION_HEIGHT_MOVIL = 100;
+const HeroMobile = () => {
+  return (
+    <div
+      style={{ height: `calc(${SECTION_HEIGHT_MOVIL}px + 200vh)` }}
+      className="cotenedor"
+    >
+      <CenterImageMovil />
+
+       <ParallaxImagesMovil />
+      
+
+      <div className="final" />
+      
+    </div>
+  );
+};
+
+const CenterImageMovil = ({start,end}) => {return (
+  <>
+  {/* <motion.div
+    className="primer"
+    style={{
+      clipPath,
+      backgroundSize,
+      opacity,
+      // backgroundImage:
+      //   "url(https://images.unsplash.com/photo-1460186136353-977e9d6085a1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+      // backgroundPosition: "center",
+      // backgroundRepeat: "no-repeat",
+    }}
+  /> */}
+   <div className="titulo__nosotros">
+      <motion.h2 className="movil__h1P"
+    //  style={{opacity,
+    //   fontSize,
+    //  }}
+    //  ref={ref}
+    
+    >EL EQUIPO</motion.h2>
+    <motion.h2 className="movil__h1"
+    //  style={{opacity,
+    //   fontSize,
+    //  }}
+    //  ref={ref}
+    
+    > ES LO PRIMERO</motion.h2>
+      </div>
+ 
+     
+      </>
+);
+};
+
+const ParallaxImagesMovil = () => {
+  return (
+    <div className="segun">
+      {/* <ParallaxImg
+        src="https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="And example of a space launch"
+        start={-200}
+        end={200}
+        className="uno"
+      />
+      <ParallaxImg
+        src="https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="An example of a space launch"
+        start={200}
+        end={-250}
+        className="dos"
+      /> */}
+      <ParallaxImgMovil
+         start={-700}
+         end={100}
+         className="nosotros__primera"
+         
+        texto1='Dada la naturaleza de  '
+        texto2='los proyectos en los'
+        texto3='que trabajamos, '
+        texto4='mantener nuestra'
+        texto5='identidad oculta es '
+        texto6='fundamental. '
+       
+        
+      
+        />
+           {/* <ParallaxImgMovil
+        
+        start={-100}
+        end={0}
+        className="nosotros__segunda"
+        texto1='Chiquitos pero con  '
+        texto2='mucho Swag. '
+        
+      />     */}
+        
+        {/* <a className="movimiento" href='#nosotros'
+      ><DotLottieReact className='abajo'
+          src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
+          loop
+          autoplay
+        />
+      
+            </a>     */}
+    </div>
+  );
+};
+
+const ParallaxImgMovil = ({ className,title,texto1,texto3,texto2,texto4,texto5,texto6,  start, end }) => {
+  const ref = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: [`${start}px end`, `end ${end * -1}px`],
+  });
+
+  const opacity = useTransform(scrollYProgress, [0.75, 1], [1, 0]);
+  const scale = useTransform(scrollYProgress, [0.75, 1], [1, 0.85]);
+
+  const y = useTransform(scrollYProgress, [0, 1], [start, end]);
+  const transform = useMotionTemplate`translateY(${y}px) scale(${scale})`;
+
+  return (
+    <>
+    <motion.div
+     
+      className={className}
+      ref={ref}
+      style={{ transform, opacity }}
+      >
+      
+       
+        {/* <img className="nop" src={img} alt="nop" />
+        <img className="nop" src={img} alt="nop" /> */}
+       
+        <p  className="nos__pmovil">{texto1}</p> 
+        <p className="nos__pmovil">{texto2}</p>
+        <p className="nos__pmovil">{texto3}</p>
+        <p className="nos__pmovil">{texto4}</p>
+        <p className="nos__pmovil">{texto5}</p>
+        <p className="nos__pmovil">{texto6}</p>
+       
+
+      </motion.div>
+     
+      </>
+  );
+};
 const SECTION_HEIGHT = 700;
 
 const Hero = () => {

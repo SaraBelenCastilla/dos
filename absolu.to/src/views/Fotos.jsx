@@ -73,7 +73,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
       }
     };
     
-    function Servicios() {
+    function Fotos() {
       const [isVisible, setIsVisible] = useState(false);
       const serviciosRef = useRef(null);
     
@@ -142,4 +142,4 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
       )
     }
     
-    export default Servicios
+    export default Fotos

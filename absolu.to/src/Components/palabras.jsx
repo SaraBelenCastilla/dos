@@ -14,32 +14,32 @@ function palabras() {
 
      const palabras=[
         {
-         id:1 ,pala:'CHÀCENA', tipo:'"anodyne", sans-serif',size:'9vw'
+         id:1 ,pala:'CHÀCENA', tipo:'"anodyne", sans-serif',size:'12vw'
         },
         {
-          id:2,pala:'la cocina', tipo:'"taboo-pro", sans-serif',size:'9vw'
+          id:2,pala:'la cocina', tipo:'"taboo-pro", sans-serif',size:'12vw'
         },
         {
-          id:3, pala:'ENTRE CAJAS', tipo:'"battery-park", sans-serif',size:'7vw'
+          id:3, pala:'ENTRE CAJAS', tipo:'"battery-park", sans-serif',size:'9vw'
         },
         {
-         id:4, pala:'trastienda', tipo:'"variex", sans-serif',size:'7vw'
+         id:4, pala:'trastienda', tipo:'"variex", sans-serif',size:'9vw'
         },
         {
-          id:5, pala:'Bambalinas', tipo:'"didoni-urw", serif',size:'8vw'
+          id:5, pala:'Bambalinas', tipo:'"didoni-urw", serif',size:'10vw'
         },
         {
-          id:6, pala:'ENTRE BASTIDORES', tipo:'"rig-solid-bold-inline", sans-serif',size:'5vw'
+          id:6, pala:'ENTRE BASTIDORES', tipo:'"rig-solid-bold-inline", sans-serif',size:'7vw'
         },
         {
-          id:7, pala:'Tras la Escena', tipo:'"altesse-std-24pt", sans-serif',size:'7vw'
+          id:7, pala:'Tras la Escena', tipo:'"altesse-std-24pt", sans-serif',size:'9vw'
         },
         {
-          id:8, pala:'tras el telon', tipo:'"alta-california", sans-serif',size:'7vw'
+          id:8, pala:'tras el telon', tipo:'"alta-california", sans-serif',size:'9vw'
     
         },
         {
-         id:9,  pala:'BACKSTAGE',  tipo:'"aw-conqueror-carved", sans-serif',size:'7vw'
+         id:9,  pala:'BACKSTAGE',  tipo:'"aw-conqueror-carved", sans-serif',size:'9vw'
         },
         {
          id:10,  pala:'TRASCENIO', tipo:'"veneer", sans-serif',size:'14vw'

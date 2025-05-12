@@ -77,8 +77,8 @@
    
   } 
   .logo{
-    padding-top: 65%;
-    width: 8rem;
+    padding-top: 0;
+    width: 9rem;
   } 
   .header__menu{
     position: absolute;
@@ -101,7 +101,7 @@
   } 
   .header__menu.isActive{
    opacity: 1;
-   width: 70%;
+   width: 95%;
   
   
     

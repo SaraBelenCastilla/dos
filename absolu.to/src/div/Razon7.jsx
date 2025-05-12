@@ -34,6 +34,19 @@ function Razon7() {
                 >esos somos nosotros. 
                 </motion.p>
                 </motion.div>
+                 <motion.div className='razones__movil'
+                                         initial={{opacity:0, y:100}}
+                                         whileInView={{opacity:1, y:0, transition:{delay:0.8, duration:1,  ease:'easyInOut',type:'spring'}}}
+                                         viewport={{once: false, amount:.5}}
+                                         >
+                                            <p className="razones__p">Porque,  </p>
+                                            <p className="razones__p">si alguien puede </p>
+                                            <p className="razones__p">hacerlo,  </p>
+                                            <p className="razones__p">esos somos   </p>
+                                            <p className="razones__p">nosotros. </p>
+                                           
+                                            
+                                         </motion.div>
                 <motion.p className="razones__punto"
                   initial={{opacity:0, y:100}}
                   whileInView={{opacity:1, y:0, transition:{delay:1.5, duration:1,  ease:'easyInOut',type:'spring'}}}

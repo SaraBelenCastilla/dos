@@ -41,6 +41,19 @@ function Razon1() {
                 >Actuamos, no teorizamos. 
                 </motion.p>
                 </motion.div>
+         <motion.div className='razones__movil'
+         initial={{opacity:0, y:100}}
+         whileInView={{opacity:1, y:0, transition:{delay:0.8, duration:1,  ease:'easyInOut',type:'spring'}}}
+         viewport={{once: false, amount:.5}}
+         >
+            <p className="razones__p">Porque nuestro </p>
+            <p className="razones__p">know-how no está</p>
+            <p className="razones__p">en los libros, se </p>
+            <p className="razones__p">aprende en el </p>
+            <p className="razones__p">campo de trabajo. </p>
+            <p className="razones__p1">Ejecutamos, </p>
+            <p className="razones__p">no teorizamos.</p>
+         </motion.div>
          <motion.div className="razon__pie"
           initial={{opacity:0, y:100}}
           whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
