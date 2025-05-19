@@ -464,11 +464,12 @@ const ParallaxImages = () => {
         className="nosotros__segunda"
         texto1='Con HQ en Madrid y Sevilla, un equipo renovado,'
         texto2='y la misma pasión por hacer las cosas bien.'
-        texto3=''
+        texto7='Ahora más dinámicos, más creativos,'
+         texto8='más Swaggers que nunca.'
       />   
-       <ParallaxImg
+       {/* <ParallaxImg
         
-        start={300}
+        start={400}
         end={-200}
         className="nosotros__segunda"
         texto1='Ahora más dinámicos, más creativos,'
@@ -476,7 +477,7 @@ const ParallaxImages = () => {
         texto3=''
         texto4=''
 
-      />   
+      />    */}
         {/* <a className="movimiento" href='#nosotros'
       ><DotLottieReact className='abajo'
           src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
@@ -489,7 +490,7 @@ const ParallaxImages = () => {
   );
 };
 
-const ParallaxImg = ({ className,title,texto1,texto3,texto2,texto4,texto5,texto6,  start, end }) => {
+const ParallaxImg = ({ className,title,texto1,texto3,texto2,texto4,texto5,texto6,texto7,texto8,  start, end }) => {
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -521,6 +522,8 @@ const ParallaxImg = ({ className,title,texto1,texto3,texto2,texto4,texto5,texto6
         <p className="nos__p4">{texto4}</p>
         <p className="nos__p5">{texto5}</p>
         <p className="nos__p">{texto6}</p>
+        <p className="nos__p1">{texto7}</p>
+        <p className="nos__p">{texto8}</p>
 
       </motion.div>
      

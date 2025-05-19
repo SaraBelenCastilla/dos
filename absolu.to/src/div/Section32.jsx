@@ -24,13 +24,13 @@ function Section32() {
                                     <p>mundo. </p>
                      
                                  </motion.div> 
-                                 <div className="instagram__movil"
+                                 {/* <div className="instagram__movil"
        
        >
         <h3 className="insta__h3">Be a Brander</h3>
         <p className="insta__p"> Instagram</p>
         
-       </div>
+       </div> */}
       
         <motion.h1 className="tercera__h2"
         initial={{opacity:0, y:100}}
@@ -59,13 +59,13 @@ function Section32() {
 <p>
 Mi misión no  es salvar el mundo.
 </p>
-<div className="instagram"
+{/* <div className="instagram"
        
        >
         <h3 className="insta__h3">Be a Brander</h3>
         <p className="insta__p"> Instagram</p>
         
-       </div>
+       </div> */}
             </motion.div>
             
           

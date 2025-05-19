@@ -500,7 +500,7 @@ right: 0%;
   font-weight: 800;
   font-size: 4.2em;
   padding-top: 10%;
-  padding-left: 35%;
+  padding-left: 33%;
   color: black;
 }
 .tercera__h2{
@@ -590,8 +590,8 @@ right: 0%;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 4.2em;
-  padding-top: 10%;
-  padding-left: 35%;
+  
+  
 }
 .segunda__p{
   padding-top: 5%;
@@ -632,7 +632,7 @@ right: 0%;
   height: 100vh;
  padding-left: 35%;
   padding-right: 5%;
-  margin-top: 5%;
+  
  
  
   display: flex;
@@ -659,7 +659,7 @@ right: 0%;
 .cinco__p{
   font-size: 1em;
 }
-.quinta__contenido{
+.__contenido{
   width: 100%;
   height: auto;
  padding-left: 35%;
@@ -733,12 +733,13 @@ right: 0%;
   /* min-height: 50%; */
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   gap: 15%;
    font-size: 1.7em;
     font-family: "Poppins", sans-serif;
    font-weight: 400;
    padding-bottom: 10%;
+   padding-left: 10%;
  
 }
 
@@ -980,6 +981,10 @@ right: 0%;
 /* -------quinta-------- */
 .quinta{
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -1711,10 +1716,15 @@ right: 0%;
  
 }
 .porfolio{
-  background-image: url(../assets//papelitos/sin.png);
-  background-repeat: no-repeat;
- 
-  background-position: center;
+  background-color: rgb(5, 11, 21);
+  color:  rgb(238, 66, 88);
+  padding: 1%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  border-radius: 10px 10px 10px;
+  cursor: pointer;
+  border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
   padding: 1%;
   padding-left: 2%;
   padding-right: 2%;
@@ -1857,7 +1867,7 @@ right: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  color:  rgb(238, 66, 88);
   opacity: 0;
   visibility: hidden;
   text-align: center;
@@ -2076,16 +2086,8 @@ transform: scale(1.5);
   padding-top: 2%;
   padding-bottom: 5%;
 }
+
 .contacto__email{
-  background-color: rgb(238, 66, 88);
-  color: white;
-  padding: 1%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 2em;
-  border-radius: 20px 20px 20px;
-}
-.contacto__email:hover{
   background-color: rgb(5, 11, 21);
   color:  rgb(238, 66, 88);
   padding: 1%;
@@ -2095,6 +2097,15 @@ transform: scale(1.5);
   border-radius: 20px 20px 20px;
   cursor: pointer;
   border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
+}
+.contacto__email:hover{
+  background-color: rgb(238, 66, 88);
+  color: white;
+  padding: 1%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  border-radius: 20px 20px 20px
 }
 /* ------------------ */
 .nosotros{
@@ -2402,7 +2413,7 @@ background-color: rgb(5, 11, 21);
 
  }
  .fuck__h2{
-  display: block;
+  display: none;
  }
  .per__papel{
   position: relative;
@@ -2843,6 +2854,7 @@ padding-top: 10%;
 display: flex;
 justify-content: end;
 align-items: flex-end;
+padding-right: 10%;
  }
  .pie__razon{
   font-size: 2em;
@@ -2896,6 +2908,20 @@ align-items: start;
 padding-left: 15%;
 overflow: hidden;
 }
+.reactiva__unoH{
+  position: relative;
+width: 100%;
+height: 100vh;
+background-color: rgb(5, 11, 21);
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 30%;
+align-items: start;
+padding-left: 15%;
+overflow: hidden;
+}
+
 .reactiva__h2{
   font-family: "Poppins", sans-serif;
   font-weight: 900;
@@ -3100,6 +3126,72 @@ overflow: hidden;
 .gallery{
   display: none;
 }
+.reactiva__formula{
+  background-color: rgb(5, 11, 21);
+  color:  rgb(238, 66, 88);
+  padding: 1%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  border-radius: 10px 10px 10px;
+  cursor: pointer;
+  border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: 25%;
+ 
+}
+/* -----privacidad-------- */
+.privacidad{
+  width: 100%;
+  height: auto;
+  background-color: seashell;
+  padding: 5%;
+}
+.privacidad__h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: rgb(15, 15, 15);
+  padding-bottom: 50px;
+}
+.privacidad__p{
+  padding-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: rgb(15, 15, 15);
+}
+.privacidad__p1{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: rgb(15, 15, 15);
+}
+.privacidad__ul{
+  display: flex;
+  flex-direction: column;gap: 20px;
+  margin-left: 20px;
+  list-style-type:disc;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: rgb(15, 15, 15);
+}
+li{
+  list-style-type:disc;
+}
+.privacidad__email{
+  color: var(--turquesa);
+  cursor: pointer;
+  font-weight: 600;
+}
+.privacidad__email:hover{
+  color: var(--rosa);
+}
 /* --------tamano---------- */
 /* ----------responsive----------- */
 @media only screen and (max-width: 500px) {
@@ -3243,7 +3335,7 @@ overflow: hidden;
   
 }
 .fuck__h2{
- 
+ display: block;
   color:rgb(238, 66, 88);
   font-family:"Poppins", sans-serif;
   font-weight: 800;

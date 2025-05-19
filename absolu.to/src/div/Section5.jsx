@@ -93,14 +93,14 @@ function Section5() {
 
 
             </motion.div>
-            <a className="mov" href='#footer'
+            {/* <a className="mov" href='#footer'
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
                 autoplay
               />
             
-                  </a> 
+                  </a>  */}
             
             {/* <motion.button className='suscripcion'onClick={() => setModalIsOpen(true)}
             initial={{opacity:0, y:150,scale:0.5}}

@@ -288,7 +288,7 @@ function Showroom() {
 
       </a>  
                                 <div className="porfolio">
-                                  <h3 className="porfolio__h3">Ver PORFOLIO</h3>
+                                  <h3 className="porfolio__h3">Ir a PORFOLIO</h3>
                                 </div>
      </div>
     

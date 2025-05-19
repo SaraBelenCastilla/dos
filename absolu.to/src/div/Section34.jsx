@@ -66,7 +66,7 @@ function Section34() {
                 <p>20 años superando retos. </p>
                 
                             </motion.div>
-       <a className="boton__abajo" href='#section-with-carousel-2'
+       <a className="boton__drch" href='#section-with-carousel-2'
          > <IoIosArrowForward className='drch' />
            </a> 
         </div>

@@ -76,7 +76,7 @@ Cuando la &quot;Agencia&quot; se enfrenta a un brief complicado y los obstáculo
       autoplay
     /></a> */}
 
-    <a className="boton__abajo" href={"#section-with-carousel1"}
+    <a className="boton__drch" href={"#section-with-carousel1"}
    >  <IoIosArrowForward className='drch' />
      </a>
          

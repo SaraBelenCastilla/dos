@@ -3,6 +3,8 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import Lgo from '../assets/img/logo.png'
 import { FaRegCopyright } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
 
 export default function Footer() {
   return (
@@ -55,7 +57,9 @@ export default function Footer() {
       </div>
       <div className="footer__pie">
       <FaRegCopyright className='copy'/>
-      <p className="footer__p"> 2025 Absoluto | Legal |  Privacidad | We are Cookieless</p>
+      <p className="footer__p"> 2025 Absoluto </p>
+      <p className="footer__p"> <Link className="footer__link" to="/privacidad">| Privacidad</Link><br /> </p>
+      <p className="footer__p">  | We are Cookieless </p>
       </div>
     </footer>
     

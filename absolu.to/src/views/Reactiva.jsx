@@ -276,7 +276,7 @@ function Reactiva() {
               />
             </a>
           </section>
-          <section id="section6" className="reactiva__uno">
+          <section id="section6" className="reactiva__unoH">
             <motion.h2
               className="reactiva__h2"
               initial={{ opacity: 0, y: 100 }}
@@ -289,6 +289,11 @@ function Reactiva() {
             >
               SIN HISTORIAS
             </motion.h2>
+
+            <a href="#" className="reactiva__formula">
+              <p className="sinh">DESCUBRE NUESTRO MÈTODO</p>
+              <p className="sinh">¡ACTIVA TU INSPIRACIÓN!</p>
+            </a>
             <a className="movimiento" href="#footer">
               <DotLottieReact
                 className="abajo"

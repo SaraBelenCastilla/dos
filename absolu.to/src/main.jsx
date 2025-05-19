@@ -14,6 +14,7 @@ import Reactiva from './views/Reactiva'
 import Equipo from './views/Equipo'
 import Carrusell from './Components/Carrusell'
 import Otra from './views/Otra'
+import Privacidad from './views/Privacidad';
 
 
 import './css/style.css'
@@ -51,6 +52,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/razones' element={<Razones/>}/>
           <Route path='/reactiva' element={<Reactiva/>}/>
           <Route path='/equipo' element={<Equipo/>}/>
+          <Route path="/privacidad" element={<Privacidad />} />
+          
         {/* <Route path='/login' element={localStorage.getItem('Usuario') == null? <Login/>:<Inicio/>}/>
         <Route path ='/login/nuevoUsuario' element = {<NuevoUsuario/>}/>
         <Route path ='/productos' element = {localStorage.getItem('Usuario') ==null? <Login/>:<Productos/>}/>
