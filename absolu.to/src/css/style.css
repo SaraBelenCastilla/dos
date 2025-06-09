@@ -1402,7 +1402,7 @@ right: 0%;
   height: auto;
   position: absolute;
   top: 45%;
-  left: 15%;
+  left: 10%;
   color: black;
  opacity: 0;
  display: flex;
@@ -2425,6 +2425,12 @@ transform: scale(1.5);
  justify-content: center;
  align-items: center;
   
+}
+.icons{
+  color: rgb(249, 183, 48);
+   stroke-width: 4 !important;
+   width: 2em  !important;
+  height: 2em !important;
 }
 .nosotros{
  position: relative;
@@ -4601,13 +4607,7 @@ justify-content: center;
 }
 
 @media only screen and (min-width: 1600px) {
-  /* Tus estilos para pantallas grandes aquí */
-  .tu-clase {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-size: 1.2em;
-    /* ...otros estilos... */
-  }
+ 
   .cero__h1{
     font-size: 12em;
   }
@@ -4662,7 +4662,7 @@ justify-content: center;
     padding-top: 0;
   }
   .descripcionUno{
-    top: 30%;
+    top: 20%;
   }
   .descripcionCuatro{
     left: 60%;
@@ -4673,16 +4673,16 @@ justify-content: center;
   }
 .descripcionTres{
   top: 50%;
-  left: 30%;
+  left: 25%;
 }
 .descripcionSeis{
-  top: 50%;
+  top: 67%;
 }
 .descripcionSiete{
   left: 60%;
 }
 .descripcion{
-  left: 30%;
+  left: 20%;
 }
 .movil__h3{
   display: none;

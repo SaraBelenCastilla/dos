@@ -13,6 +13,7 @@ import LogoSlider1 from '../Components/LogoSlider1';
 import LogoSlider2 from '../Components/LogoSlider2';
 import LogoSlider3 from '../Components/LogoSlider3';
 import LogoSlider from '../Components/LogoSlider';
+import Foto from '../assets/img/cabezara.jpg';
 
 const icons = [
   {
@@ -461,7 +462,7 @@ useEffect(() => {
     style={{
       backgroundImage: isMobile
         ? "url('https://live.staticflickr.com/65535/54567322591_aaa41f1d62_w.jpg')"
-        : "url('https://live.staticflickr.com/65535/54566458217_cb069750b3_z.jpg')",
+        : {Foto},
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
