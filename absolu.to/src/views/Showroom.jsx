@@ -7,6 +7,7 @@ import LogoSlider1 from '../Components/LogoSlider1';
 import LogoSlider2 from '../Components/LogoSlider2';
 import LogoSlider3 from '../Components/LogoSlider3';
 import Fotos from './Fotos';
+import { Link } from 'react-router-dom';
 
 
 
@@ -287,8 +288,8 @@ function Showroom() {
   />
 
       </a>  
-                                <div className="porfolio">
-                                  <h3 className="porfolio__h3">Ir a PORFOLIO</h3>
+                                <div className="porfolio__link">
+                                  <h3 className="porfolio__h3"><Link className="footer__link" to="/porfolio">ir a PORFOLIO</Link></h3>
                                 </div>
      </div>
     

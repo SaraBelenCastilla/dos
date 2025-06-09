@@ -12,7 +12,7 @@ import {
 import { useMediaQuery } from "react-responsive";
 
 function Contacto() {
-  const isMobile = useMediaQuery({ maxWidth: 768 }); // Detecta pantallas de ancho menor o igual a 768px
+    const isMobile = useMediaQuery({ query: "(max-width: 500px)" }); // <-- usa query aquí
   return (
     <>
      <div
@@ -29,7 +29,7 @@ function Contacto() {
           >
            
             {/* Renderiza Hero o HeroMobile según el tamaño de la pantalla */}
-        {isMobile ? <HeroMobile /> : <Hero />}
+        {isMobile ? <Hero /> : <HeroMobile />}
             
            
           </ReactLenis>
@@ -188,7 +188,7 @@ const ParallaxImgMovil = ({ className,title,texto1,texto3,texto2,  start, end })
   );
 };
 
-const SECTION_HEIGHT = 700;
+const SECTION_HEIGHT = 500;
 
 const Hero = () => {
   return (
@@ -245,7 +245,7 @@ const CenterImage = () => {
       }}
     /> */}
      <div className="titulo__nosotros">
-        <motion.h1 className="nosotros__h1"
+        <motion.h1 className="nosotros__h1C"
       //  style={{opacity,
       //   fontSize,
       //  }}
@@ -274,7 +274,7 @@ const ParallaxImages = () => {
           className="dos"
         /> */}
         <ParallaxImg
-           start={100}
+           start={-200}
            end={-100}
            className="equipo__primera"
            

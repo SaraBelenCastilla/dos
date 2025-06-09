@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 function Privacidad() {
+  const navigate = useNavigate();
   return (
     <div className='privacidad'>
         <h2 className='privacidad__h2'>Política de privacidad</h2>
@@ -166,7 +168,10 @@ Cada tipo de comunicación electrónica incluye una casilla de verificación (ta
             <p className='privacidad__p'>Areté Comunicación S.L.  C/ de Manzanares nº 4. 28005 Madrid. 
 
 
-            </p>                   
+            </p>  
+             <button className="volver-footer" onClick={() => navigate(-1)}>
+        Volver 
+      </button>                 
     </div>
   )
 }

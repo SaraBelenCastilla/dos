@@ -42,7 +42,7 @@ Minuto y medio para sorprender.
             
                         </motion.div>
     </div>
-     <a className="boton__abajo" href='#section5'
+     <a className="boton__drch" href='#section5'
              ><IoIosArrowForward className='drch' />
                </a> 
     </div>

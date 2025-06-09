@@ -17,6 +17,7 @@ import { RiCloseCircleLine } from "react-icons/ri";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { GrStatusWarning } from "react-icons/gr";
 import { useMediaQuery } from "react-responsive";
+import { Link } from 'react-router-dom';
 
 
  const sections = [
@@ -251,6 +252,12 @@ function Reactiva() {
               autoplay
             />
           </a>
+          <div className="reactiva__formula">
+  <Link className="footer__link" to="/formula">
+    <p className="sinh">DESCUBRE NUESTRO MÈTODO</p>
+    <p className="sinhn">¡ACTIVA TU INSPIRACIÓN!</p>
+  </Link>
+</div>
         </section>
       ) : (
         <>
@@ -289,11 +296,14 @@ function Reactiva() {
             >
               SIN HISTORIAS
             </motion.h2>
+           
 
-            <a href="#" className="reactiva__formula">
-              <p className="sinh">DESCUBRE NUESTRO MÈTODO</p>
-              <p className="sinh">¡ACTIVA TU INSPIRACIÓN!</p>
-            </a>
+           <div className="reactiva__formula">
+  <Link className="footer__link" to="/formula">
+    <p className="sinh">DESCUBRE NUESTRO MÈTODO</p>
+    <p className="sinh">¡ACTIVA TU INSPIRACIÓN!</p>
+  </Link>
+</div>
             <a className="movimiento" href="#footer">
               <DotLottieReact
                 className="abajo"
