@@ -439,7 +439,7 @@ function Reactiva() {
   )
 }
 
-const SECTION_HEIGHT_MOVIL = 100;
+const SECTION_HEIGHT_MOVIL = 350;
 const HeroMobile = () => {
   return (
     <div

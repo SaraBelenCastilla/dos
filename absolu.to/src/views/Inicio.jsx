@@ -28,7 +28,7 @@ import Hablamos from './Contacto'
 import { useMediaQuery } from 'react-responsive';
 
 const Inicio =()=>{
-  const isMobile = useMediaQuery({ maxWidth: 768 }); // Detecta si la pantalla es menor a 7
+  const isMobile = useMediaQuery({ maxWidth: 1025 }); // Detecta si la pantalla es menor a 7
   
   return (
     <>

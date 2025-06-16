@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { ImCross } from "react-icons/im";
 import { IoClose } from "react-icons/io5";
+import { IoMdCloseCircleOutline } from "react-icons/io";
+import { CgMenuRound } from "react-icons/cg";
 import '../css/header.css'
 
 
@@ -25,8 +27,9 @@ function Header() {
     <header className="header">
       <div className="header__container">
         {/* <img className='logo' src={logo} alt="logo" /> */}
-        <button className='header__boton' onClick={toggleMenu}>
-          {menu ? <IoClose className="menu__icon" /> : <IoMenu className="menu__icon" />}
+        <button className={`header__boton ${menu ? 'isActive' : ''}`}
+  onClick={toggleMenu}> 
+          {menu ?<IoMdCloseCircleOutline  className='menu__icon'/> : <CgMenuRound className='menu__icon' />}
         </button>
       </div>
       <nav className={`header__menu ${menu ? 'isActive' : ''}`}>

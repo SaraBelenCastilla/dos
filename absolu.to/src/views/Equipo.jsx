@@ -189,7 +189,7 @@ const plegarSiete=()=>{
  )
 }
 
-const SECTION_HEIGHT_MOVIL = 100;
+const SECTION_HEIGHT_MOVIL = 200;
 const HeroMobile = () => {
   return (
     <div

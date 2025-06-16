@@ -222,7 +222,7 @@ function Nosotros() {
   </>
   )
 }
-const SECTION_HEIGHT_MOVIL = 100;
+const SECTION_HEIGHT_MOVIL = 250;
 const HeroMobile = () => {
   return (
     <div
@@ -254,7 +254,7 @@ const CenterImageMovil = ({start,end}) => {return (
       // backgroundRepeat: "no-repeat",
     }}
   /> */}
-   <div className="titulo__nosotros">
+   <div className="movil__titulos">
       <motion.h2 className="movil__h1"
     //  style={{opacity,
     //   fontSize,

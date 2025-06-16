@@ -72,11 +72,15 @@ export default function Footer() {
           <FaPhoneAlt className='fono' />
           <p className="footer__telf">+34 643 470 163</p>
           </div> */}
-          <button className='footer__botonA'>Proveedores</button>
-          <button className='footer__botonB'>Trabaja con nosotros</button>
+           <div className="contactoF__email"  onClick={(e) => {window.location.href ='mailto: becomeabrander@absolu.to';}}>
+            <span className="contactoF__default-text">BECOME A BRANDER</span>
+             <span className="contactoF__hover-text">ÙNETE AL EQUIPO</span>
+           </div>
+    </div>
+          {/* <button className='footer__botonB'>Trabaja con nosotros</button> */}
           
         </div>
-      </div>
+     
       <div className="footer__pie">
       <FaRegCopyright className='copy'/>
       <p className="footer__p"> 2025 Absoluto </p>

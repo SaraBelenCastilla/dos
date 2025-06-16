@@ -253,7 +253,7 @@ const icons = [
       'https://live.staticflickr.com/65535/54551635628_3e5e996a4a_w.jpg'
     ],
     h2:'PRODUCCIÓN',
-    h3:'ACTIVACION: CRUZCAMPO',
+    h3:'',
     p:'#ProduccionAudiovisual #Contenidos #ProduccionTecnica #SolucionesTecnicas #Interactivos #VideosCorporativos',
     
   },
