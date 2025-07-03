@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
    build: {
+     outDir: 'dist', // Asegúrate de que el directorio de salida sea 'dist'
     chunkSizeWarningLimit: 1000 // Ajusta esto si necesitas evitar la advertencia
-  }
+  },
+   base: '/' // Configura la base de las rutas (ajusta si estás desplegando en un subdirectorio)
 })
