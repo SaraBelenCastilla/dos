@@ -18,7 +18,7 @@ import Privacidad from './views/Privacidad';
 import Porfolio from './views/Porfolio'
 import Formula from './views/Formula'
 import Cockies from './views/Cockies';
-
+import { BrowserRouter } from 'react-router-dom';
 
 import './css/style.css'
 import { useEffect } from 'react'
@@ -40,7 +40,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   
   
  
-    <Router>
+    <BrowserRouter>
        <ScrollToTop />
    {/* el header que es comun para todaslas rutas */}
     <Header/>
@@ -81,7 +81,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
  
    <Footer/>
     
-    </Router>
+    </BrowserRouter>
    
   
     

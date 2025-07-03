@@ -246,21 +246,21 @@ function Showroom() {
      
      >
     <img className='img'
-      src="https://live.staticflickr.com/65535/53466299340_b761d8d5c5_n.jpg" />
+      src="https://live.staticflickr.com/65535/54601350617_ce5d66c388_n.jpg" />
     <img className='img'
-      src="https://live.staticflickr.com/65535/53465845681_588cde11c1_n.jpg" />
+      src="https://live.staticflickr.com/65535/54601353292_cfec28dd4e_n.jpg" />
     <img className='img'
-      src="https://live.staticflickr.com/65535/53466289865_4623d9c3ae_n.jpg" />
+      src="https://live.staticflickr.com/65535/54602233181_ce7481646c_n.jpg" />
     <img className='img'
-      src="https://live.staticflickr.com/65535/54435859027_f1b3f9c41f_n.jpg" />
+      src="https://live.staticflickr.com/65535/54602444818_b19b25a407_n.jpg" />
     <img className='img'
-      src="https://live.staticflickr.com/65535/53465964803_8af15f4075_n.jpg" />
+      src="https://live.staticflickr.com/65535/54602236011_e131d432a3_n.jpg" />
     <img className='img'
-      src="https://live.staticflickr.com/65535/54436909724_9164d03555_n.jpg" />
+      src="https://live.staticflickr.com/65535/54602530095_8b31a5332a_n.jpg" />
     <img className='img'
-      src="https://live.staticflickr.com/65535/53471393438_c38ce914d1_n.jpg" />
+      src="https://live.staticflickr.com/65535/54601349382_beff5537f1_n.jpg" />
     <img className='img'
-      src="https://live.staticflickr.com/65535/53471665890_9c74228aed_n.jpg" />
+      src="https://live.staticflickr.com/65535/54602233911_b51598e431_n.jpg" />
 </div>
 <Fotos/>
 {/* <div className="gallery">
@@ -289,7 +289,8 @@ function Showroom() {
 
       </a>  
                                 <div className="porfolio__link">
-                                  <h3 className="porfolio__h3"><Link className="footer__link" to="/porfolio">ir a PORFOLIO</Link></h3>
+                                  <h3 className="porfolio__h3default"><Link className="footer__link" to="/porfolio"> PORFOLIO</Link></h3>
+                                  <h3 className="porfolio__h3hover"><Link className="footer__link" to="/porfolio">ir a PORFOLIO</Link></h3>
                                 </div>
      </div>
     

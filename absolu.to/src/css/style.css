@@ -787,7 +787,7 @@ right: 0%;
   width: 5rem;
   height: 5rem;
   z-index: 4;
- 
+ cursor: pointer;
 }
  .boton__drch{
   position: absolute;
@@ -801,6 +801,7 @@ right: 0%;
   width: 5rem;
   height: 5rem;
   z-index: 4;
+  cursor: pointer;
  
 } 
 .boton__abajo{
@@ -816,6 +817,7 @@ right: 0%;
   height: 5rem;
   z-index: 4;
   transform: rotate(90deg);
+  cursor: pointer;
  
 } 
 .botonDerch{
@@ -831,6 +833,7 @@ right: 0%;
   height: 15rem;
   z-index: 4;
   transform: rotate(-90deg);
+  cursor: pointer;
 }
 .izq{
   width: 6rem;
@@ -1001,16 +1004,19 @@ right: 0%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgb(183, 207, 191);
-  color: rgb(33, 32, 32);
+  background-color:rgb(5, 11, 21);
+  color: white;
   padding: 5%;
+  
  
 
 
 }
 .quintaUno__enlaces{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10%;
+  padding-top: 10%;
   
 }
 .suscripcion{
@@ -1212,45 +1218,48 @@ right: 0%;
 }
 .quinta__card{
   position: relative;
-  width:500px;
-  height: 150px;
-  background-image: url(../assets/papelitos/blanco.png);
+  width:400px;
+  height: 120px;
+  /* background-image: url(../assets/papelitos/blanco.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  
   padding: 2%;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
   gap: 5%;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  justify-content: right;
   cursor: pointer;
 }
 .quinta__cardUno{
   position: relative;
-  width:500px;
-  height: 150px;
-  background-image: url(../assets/papelitos/blanco.png);
+  width:400px;
+  height: 120px;
+  /* background-image: url(../assets/papelitos/blanco.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  
   padding: 2%;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
   gap: 5%;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   cursor: pointer;
 }
 .absl{
   position: absolute;
-  width:500px;
-  height: 150px;
-  background-image: url(../assets/papelitos/amarillo.png);
+  width:400px;
+  height: 120px;
+  /* background-image: url(../assets/papelitos/amarillo.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: var(--turquesa);
   padding: 2%;
-  top: 0;
+  top: 100%;
   left: 0;
   bottom: 0;
   
@@ -1266,13 +1275,14 @@ right: 0%;
 }
 .abslUno{
   position: absolute;
-  width: 500px;
-  height: 150px;
-  background-image: url(../assets/papelitos/morado.png);
+  width: 400px;
+  height: 120px;
+  /* background-image: url(../assets/papelitos/morado.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+ background-color:rgb(238, 66, 88);
   padding: 2%;
-  top: 0;
+  top: 100%;
   left: 0;
   bottom: 0;
   
@@ -1291,8 +1301,41 @@ right: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 6.25rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--turquesa);
   
+}
+.quinta__iconoUno{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color:rgb(238, 66, 88);;
+  
+}
+.interior{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  
+  border: 10px solid rgb(208, 247, 251);
+  
+}
+.interiorUno{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  color:rgb(251, 215, 220);
+  font-weight: 700;
 }
 .quinta__card:hover > .absl{
   opacity: 1;
@@ -1302,7 +1345,36 @@ right: 0%;
 }
 
 
+.quinta__card:hover >.quinta__icono{
+  background-color:rgb(208, 247, 251) ;
+  box-shadow:0 2px 8px rgba(0, 0, 0, 0.4),
+   0 2px 1px rgba(0, 0, 0,0.8 ),
+  0 0 30px rgb(10, 4, 197 ),
+  0 0 5px 5px rgba(255, 255, 255, 1);
 
+  width: 6em;
+  height: 6em;
+  transition: all 0.3s ease-in-out;
+}
+.quinta__icono:hover > .interior{
+  
+  border-color: var(--turquesa);
+}
+.quinta__cardUno:hover >.quinta__iconoUno{
+  background-color:rgb(249, 145, 159) ;
+  box-shadow:0 2px 8px rgba(0, 0, 0, 0.4),
+  0 2px 1px rgba(0, 0, 0,0.8 ),
+  0 0 30px rgb(253, 26, 10 ),
+  0 0 5px 5px rgba(255, 255, 255, 1);
+
+  width: 6em;
+  height: 6em;
+  transition: all 0.3s ease-in-out;
+}
+.quinta__iconoUno:hover > .interiorUno{
+  
+  color:rgb(238, 66, 88);
+}
  
   
  
@@ -1381,8 +1453,9 @@ right: 0%;
 
  .abajo{
   color: white;
-  width: 7rem;
+  width: auto;
   height: auto;
+ 
  }
 .showroon{
   position: relative;
@@ -1743,9 +1816,32 @@ right: 0%;
  margin-top: 50%;
   
 }
-.porfolio__h3{
+.porfolio__h3default{
   font-family:"veneer", sans-serif;
   font-size: 1.5em;
+  display: inline;
+}
+.porfolio__h3hover{
+  font-family:"veneer", sans-serif;
+  font-size: 1.5em;
+  display: none;
+}
+.porfolio__link:hover{
+  background-color: rgb(238, 66, 88);
+  color: white;
+  border: none; /* Elimina el borde al hacer hover */
+}
+.porfolio__link .porfolio__h3hover {
+  display: none;
+}
+.porfolio__link:hover .porfolio__h3hover {
+  display: inline;
+}
+.porfolio__link .porfolio__h3default {
+  display: inline;
+}
+.porfolio__link:hover .porfolio__h3default {
+  display: none;
 }
 
 /* --------------slider logos----------- */
@@ -2097,6 +2193,7 @@ transform: scale(1.5);
   background-color: rgb(5, 11, 21);
   padding: 5%;
   padding-top: 5%;
+  
  }
  .contacto__h1{
   font-size: 5em;
@@ -2137,22 +2234,26 @@ transform: scale(1.5);
   background-color: rgb(5, 11, 21);
   color:  rgb(238, 66, 88);
   padding: 1%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+   border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-family:"veneer", sans-serif ;
   font-size: 2em;
-  border-radius: 20px 20px 20px;
+  border-radius: 10px 10px 10px;
   cursor: pointer;
   border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
 }
 .contactoF__email{
   background-color: white;
   color:  rgb(238, 66, 88);
+  
+  border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
   padding: 2%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1.5em;
+  padding-left: 2%;
+  padding-right: 2%;
   text-align: center;
-  border-radius: 20px 20px 20px;
+  border-radius: 10px 10px 10px;
   cursor: pointer;
   border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
 }
@@ -2160,21 +2261,23 @@ transform: scale(1.5);
   background-color: rgb(238, 66, 88);
   color: white;
   padding: 2%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+ 
   font-size: 1.5em;
-  border-radius: 20px 20px 20px
+  border-radius: 10px 10px 10px
 } 
 .contactoF__hover-text {
   display: none;
   margin-left: 10px;
- 
+  font-family:"veneer", sans-serif;
   color: white;
-  font-weight: bold;
+  font-size: 1.5em;
+ 
 }
 
 .contactoF__default-text {
   display: inline;
+   font-family:"veneer", sans-serif;
+  font-size: 2em;
 }
 
 .contactoF__email:hover .contactoF__hover-text {
@@ -2186,9 +2289,8 @@ transform: scale(1.5);
 .contacto__email:hover{
   background-color: rgb(238, 66, 88);
   color: white;
-  padding: 1%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  padding: 2%;
+  font-family:"veneer", sans-serif;
   font-size: 2em;
   border-radius: 20px 20px 20px
 }
@@ -3517,7 +3619,7 @@ overflow: hidden;
   background-color: rgb(5, 11, 21);
   color:  rgb(238, 66, 88);
   padding: 1%;
-  font-family: "Poppins", sans-serif;
+  font-family: "verneer", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   border-radius: 10px 10px 10px;
@@ -3528,6 +3630,23 @@ overflow: hidden;
   padding-right: 2%;
   margin-left: 25%;
  
+}
+.reactiva__formula:hover{
+  background-color: rgb(238, 66, 88);
+  color: white;
+}
+.sinh{
+  font-family: 'veneer', sans-serif;
+}
+.sinhn{
+  display: none;
+  font-family: 'veneer', sans-serif;
+}
+.reactiva__formula:hover .sinhn{
+  display: block;
+}
+.reactiva__formula:hover .sinh{
+  display: none;
 }
 /* -----privacidad-------- */
 .privacidad{
@@ -3688,8 +3807,17 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+max-width: 320px;
 }
- 
+ .item:hover{
+  overflow: hidden;
+}
+.contactoF__default-text{
+  font-size: 1em;
+}
+.contactoF__hover-text{
+  font-size: 1em;
+}
 }
 
 
@@ -3808,7 +3936,12 @@ justify-content: center;
   font-size: 1em;
   border-radius: 20px 20px 20px
 } 
- 
+ .contactoF__default-text{
+  font-size: 1em;
+}
+.contactoF__hover-text{
+  font-size: 1em;
+}
   /* ----------nosotros---------- */
 .nosotros{
   max-width: 100%;
@@ -4524,7 +4657,7 @@ justify-content: center;
   font-size: 1em;
 }
 .sinhn{
-  display: none;
+ font-size: 1em;
 }
 .reactiva__formula{
   margin-top: 50%;
@@ -4568,7 +4701,7 @@ justify-content: center;
   height: 175px;
 }
 .contacto{
-  gap: 20%;
+  gap: 10%;
 }
 .ojos{
   height: 200px;
@@ -4730,6 +4863,12 @@ justify-content: center;
     overflow-x: hidden !important;
     max-width: 100vw !important;
   }
+  .contactoF__default-text{
+  font-size: 1em;
+}
+.contactoF__hover-text{
+  font-size: 1em;
+}
   .nosotros,
   .nosotros__div,
   .nosotros__primera,
@@ -5409,7 +5548,7 @@ justify-content: center;
   font-size: 1em;
 }
 .sinhn{
-  display: none;
+  font-size: 1em;
 }
 .reactiva__formula{
   margin-top: 50%;
@@ -5552,7 +5691,7 @@ justify-content: center;
   font-size: 1em;
 }
 .sinhn{
-  display: none;
+ font-size: 1em;
 }
 .reactiva__formula{
   margin-top: 50%;

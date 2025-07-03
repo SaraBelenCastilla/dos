@@ -449,7 +449,7 @@ const ParallaxImages = () => {
         />
            <ParallaxImg
         
-        start={200}
+        start={0}
         end={-100}
         className="nosotros__segunda"
         texto4='¿RECIÉN ATERRIZADOS?'
@@ -459,7 +459,7 @@ const ParallaxImages = () => {
       />    
           <ParallaxImg
         
-        start={200}
+        start={0}
         end={-100}
         className="nosotros__segunda"
         texto1='Con HQ en Madrid y Sevilla, un equipo renovado,'

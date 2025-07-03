@@ -301,7 +301,7 @@ function Reactiva() {
            <div className="reactiva__formula">
   <Link className="footer__link" to="/formula">
     <p className="sinh">DESCUBRE NUESTRO MÈTODO</p>
-    <p className="sinh">¡ACTIVA TU INSPIRACIÓN!</p>
+    <p className="sinhn">¡ACTIVA TU INSPIRACIÓN!</p>
   </Link>
 </div>
             <a className="movimiento" href="#footer">

@@ -6,6 +6,7 @@ import { FaLock } from "react-icons/fa6";
 import Boton from '../assets/img/boton.png'
 import Lupa from '../assets/img/lupa.png'
 import {Link,useNavigate} from 'react-router-dom'
+import { CgClose } from "react-icons/cg";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
@@ -160,7 +161,8 @@ function Section5() {
                        
                        >
                          <div className="quinta__icono">
-                             <img src={Boton} alt="icono" className="quinta__img" />
+                             {/* <img src={Boton} alt="icono" className="quinta__img" /> */}
+                             <div className="interior"></div>
                            </div> 
                           
                            <div className="absl">
@@ -178,8 +180,9 @@ function Section5() {
                         
                         
                         >
-                           <div className="quinta__icono">
-                          <img src={Lupa} alt="icono" className="quinta__img" />
+                           <div className="quinta__iconoUno">
+                          {/* <img src={Lupa} alt="icono" className="quinta__img" /> */}
+                          <CgClose className='interiorUno'/>
                           </div>
                             <div className="abslUno">
                            

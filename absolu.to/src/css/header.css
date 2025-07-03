@@ -254,7 +254,7 @@
   }
   .menu__icon{
     font-size: 4em;
-    color:white;
+    color:rgb(238, 66, 88);
     cursor: pointer;
   }
   .menu__icon.isActive{
@@ -262,7 +262,7 @@
   }
   .menu__close{
     font-size: 2.5em;
-    color:white;
+    color:rgb(238, 66, 88);
     cursor: pointer;
     z-index: 100;
     display: none;
