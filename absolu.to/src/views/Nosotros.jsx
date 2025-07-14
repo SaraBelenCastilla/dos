@@ -73,10 +73,10 @@ function Nosotros() {
         whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
         viewport={{once: false, amount:.5}}
         >
-        <p className="nueva__p">El tiempo que tarda nuestro cerebro</p>
-        <p className="nueva__p">en activar las emociones.</p>
-        <p className="nueva__pN">Minuto y medio para sorprender.</p>
-        <p className="nueva__p">Una única oportunidad.</p>
+        <p className="nueva__p">"El lugar donde las ideas cobran vida.</p>
+        <p className="nueva__p">Llámalo como quieras,</p>
+        
+        <p className="nueva__p">TRASCENIO es el punto de partida."</p>
         </motion.div>
 
        </div>

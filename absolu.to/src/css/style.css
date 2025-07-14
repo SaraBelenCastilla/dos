@@ -953,14 +953,23 @@ right: 0%;
   font-size: 2.5em;
   text-align:right ; 
 }
+.amarilla__p1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-align:right ; 
+ 
+  color: black;
+}
 .amarilla__p{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1em;
   text-align:right ; 
-  padding-top: 5%;
+ padding-top: 5%;
   color: black;
 }
+
 .amarill__p{
   color : black;
 }

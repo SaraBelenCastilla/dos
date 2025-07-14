@@ -28,7 +28,7 @@ function Section44() {
 Minuto y medio para sorprender.
 
 </p>
-<p className='amarilla__p'>Una única oportunidad.</p>
+<p className='amarilla__p1'>Una única oportunidad.</p>
 
             </motion.div>
               <motion.div className="segunda__movil"
