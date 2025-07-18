@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: '/', // Retoque para funcione acceso directo a url routes en vercel
   plugins: [react()],
   build: {
     outDir: 'dist', // Carpeta de salida para los archivos estáticos
