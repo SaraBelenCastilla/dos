@@ -76,7 +76,7 @@ function Nosotros() {
         <p className="nueva__p">"El lugar donde las ideas cobran vida.</p>
         <p className="nueva__p">Llámalo como quieras,</p>
         
-        <p className="nueva__p">TRASCENIO es el punto de partida."https://github.com/SaraBelenCastilla/Web/invitations</p>
+        <p className="nueva__p">TRASCENIO es el punto de partida.</p>
         </motion.div>
 
        </div>
