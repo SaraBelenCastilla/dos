@@ -4051,8 +4051,8 @@ max-width: 320px;
 }
 
 .cero__h1{
-  font-size: 7em;
-  padding-left: 20%;
+  font-size: 6em;
+  padding-left: 15%;
 }
   .nosotros__h1 {
      /* Reduce aún más el tamaño del texto */
@@ -4419,42 +4419,43 @@ padding-top: 5%;
 
 /* ----------------------- */
 .quintaUno__enlaces{
-  flex-direction: column;
-  align-items: center;
-}
+ gap: 15%;
+} 
 .cinco__div{
-  width: 90%;
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2%;
-  padding-left: 12%;
+  padding-left: 15%;
   padding-right: 0;
   padding-bottom: 40%;
   font-size: 1.5em;
 }
 .quinta__card{
-  width: 300px;
+  width: 100px;
   height: 100px;
 }
 .quinta__cardUno{
-  width: 300px;
+  width: 100px;
   height: 100px;
 }
 .quinta__icono{
-  width: 4.5rem;
+  width: 6rem;
 }
 .absl{
   width: 300px;
   height: 100px;
   padding-left: 5%;
   padding-right: 5%;
+  display: none;
 }
 .abslUno{
   width: 300px;
   height: 100px;
   padding-left: 5%;
   padding-right: 5%;
+  display: none;
 }
 .quinta__h3{
   font-size: 2em;
@@ -4467,7 +4468,7 @@ padding-top: 5%;
 }
 .quinta__h1{
   font-size: 2.3em;
-  padding-left: 15%;
+  padding-left: 5%;
   padding-bottom: 5%;
   padding-top: 35%;
 }
@@ -4813,7 +4814,7 @@ justify-content: center;
    /* Estilos específicos para móviles pequeños */
   
   .enlace-bajar {
-    width: 80%; /* Ajusta el tamaño del enlace */
+    width: 60%; /* Ajusta el tamaño del enlace */
     bottom: 40px; /* Reduce la distancia desde la parte inferior */
   }
 
@@ -4830,7 +4831,7 @@ justify-content: center;
     padding: 5px; /* Ajusta el padding */
   }
   .cero__h1{
-    font-size: 7em;
+    font-size: 6em;
   }
   .segunda__h1Uno{
     font-size: 2em;
@@ -5834,7 +5835,7 @@ justify-content: center;
  /* Estilos específicos para móviles pequeños */
   
   .enlace-bajar {
-    width: 80%; /* Ajusta el tamaño del enlace */
+    width: 60%; /* Ajusta el tamaño del enlace */
     bottom: 40px; /* Reduce la distancia desde la parte inferior */
   }
 
