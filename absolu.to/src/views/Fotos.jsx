@@ -107,17 +107,17 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
      
       return (
         <>
-        <div className="servicios"  ref={serviciosRef}>
+        <div className="serviciosUno"  ref={serviciosRef}>
          
            
         <motion.ul
-        className="servicios__container"
+        className="servicios__containerUno"
         variants={container}
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
       >
         {iconos.map((index) => (
-          <motion.li key={index.index} className="item" variants={item}>
+          <motion.li key={index.index} className="itemUno" variants={item}>
             <img className='img__item' src= {index.icon} alt="" />
             <div className="servicios__descripcion"
             style={{backgroundColor:index.color}}

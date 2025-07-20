@@ -242,24 +242,24 @@ function Showroom() {
      
 
     
-     <div className="container"
+     <div className="containerUno"
      
      >
-    <img className='img'
+    <img className='imgUno'
       src="https://live.staticflickr.com/65535/54601350617_ce5d66c388_n.jpg" />
-    <img className='img'
+    <img className='imgUno'
       src="https://live.staticflickr.com/65535/54601353292_cfec28dd4e_n.jpg" />
-    <img className='img'
+    <img className='imgUno'
       src="https://live.staticflickr.com/65535/54602233181_ce7481646c_n.jpg" />
-    <img className='img'
+    <img className='imgUno'
       src="https://live.staticflickr.com/65535/54602444818_b19b25a407_n.jpg" />
-    <img className='img'
+    <img className='imgUno'
       src="https://live.staticflickr.com/65535/54602236011_e131d432a3_n.jpg" />
-    <img className='img'
+    <img className='imgUno'
       src="https://live.staticflickr.com/65535/54602530095_8b31a5332a_n.jpg" />
-    <img className='img'
+    <img className='imgUno'
       src="https://live.staticflickr.com/65535/54601349382_beff5537f1_n.jpg" />
-    <img className='img'
+    <img className='imgUno'
       src="https://live.staticflickr.com/65535/54602233911_b51598e431_n.jpg" />
 </div>
 <Fotos/>

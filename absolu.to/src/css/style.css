@@ -1450,7 +1450,8 @@ right: 0%;
  padding-bottom: 5%;
  }
  .ojos{
- height: 300px;
+  width: auto;
+ height: auto;
  }
  .boton__bajar{
   color: white;
@@ -1701,6 +1702,16 @@ right: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.containerUno {
+  --size: 100px;
+  --gap: 10px;
+  position: absolute;
+  width: calc(var(--size) * 6);
+  height: calc(var(--size) * 4);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .img {
   position: relative;
@@ -1762,6 +1773,68 @@ right: 0%;
   transition: clip-path 0.25s, filter 0.25s;
 }
 .img:nth-child(1).descripcion:hover{
+  opacity: 1;
+}
+.imgUno {
+  position: relative;
+  width: calc(var(--size) * 2);
+  height: calc(var(--size) * 2);
+
+  object-fit: cover;
+  clip-path: path("M 90 10 C 100 0 100 0 110 10 C 190 90 190 90 190 90 C 200 100 200 100 190 110 C 190 110 110 190 110 190 C 100 200 100 200 90 190 C 90 190 10 110 10 110 C 0 100 0 100 10 90 Z");
+  position: absolute;
+
+  transform: translate(0%, 0%);
+  transition: all 0.5s;
+}
+
+
+.imgUno:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.imgUno:nth-child(2) {
+  top: 0;
+  left: calc(var(--size) * 2);
+}
+
+.imgUno:nth-child(3) {
+  top: 0;
+  left: calc(var(--size) * 4);
+}
+
+.imgUno:nth-child(4) {
+  top: calc(var(--size) + var(--gap));
+  left: calc(var(--size) * 1);
+}
+
+.imgUno:nth-child(5) {
+  top: calc(var(--size) + var(--gap));
+  left: calc(var(--size) * 3);
+}
+
+.imgUno:nth-child(6) {
+  left: 0;
+  top: calc(calc(var(--size) *2) + calc(var(--gap) *2));
+}
+
+.imgUno:nth-child(7) {
+  top: calc(calc(var(--size) *2) + calc(var(--gap) *2));
+  left: calc(var(--size) * 2);
+}
+
+.imgUno:nth-child(8) {
+  top: calc(calc(var(--size) *2) + calc(var(--gap) *2));
+  left: calc(var(--size) * 4);
+}
+
+.imgUno:hover {
+  clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
+  z-index: 1;
+  transition: clip-path 0.25s, filter 0.25s;
+}
+.imgUno:nth-child(1).descripcion:hover{
   opacity: 1;
 }
 .des__h3{
@@ -3862,6 +3935,7 @@ li{
     background-color: white !important;
   }
  .servicios {
+ 
         position: relative;
         width: 100%;
         height: auto;
@@ -3869,7 +3943,8 @@ li{
         margin: 0;
         display: flex
 ;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         background-color: rgb(5, 11, 21);
@@ -3881,7 +3956,8 @@ li{
         padding: 0;
         margin: 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
@@ -3906,10 +3982,7 @@ li{
 } */
 
 .item {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+
 max-width: 320px;
 }
  .item:hover{
@@ -3950,13 +4023,16 @@ max-width: 320px;
    width: 100%; /* Asegúrate de que el video ocupe todo el ancho */
    height: 100%; /* Ajusta la altura automáticamente */
  }
+
   .servicios__container{
+    display: none;
         width: 100%;
         height: auto;
         padding: 0;
         margin: 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin-bottom: 10%;
@@ -4112,6 +4188,11 @@ max-width: 320px;
 }
 .nos__pmovil{
   text-align: center;
+   font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: justify;
+  padding-bottom: 2%;
 }
 .fuck__h2{
  display: block;
@@ -4161,7 +4242,7 @@ width: 75%;}
   padding-top: 5%;}
 /* ----------niñas---------------- */
 .show__h2{
-  font-size: 12vw;
+  font-size: 10vw;
   width: 80%;
   padding-left: 5%;
   text-align: center;
@@ -4515,6 +4596,7 @@ padding-top: 5%;
 /* --------servicios---------- */
 .servicios{
   height: auto;
+  display: none;
 }
  
 /* .img__item {
@@ -4524,12 +4606,7 @@ padding-top: 5%;
   background-color: rgb(5, 11, 21);
 } */
 
-.item {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
+
 /* --------reactiva----------- */
 .clara__p{
   font-size: 1em;
@@ -4808,14 +4885,34 @@ justify-content: center;
   gap: 10%;
 }
 .ojos{
-  height: 200px;
+  height: auto;
+  width:auto;
 }
 @media only screen and (max-width: 500px){
    /* Estilos específicos para móviles pequeños */
-  
+  .ojos{
+    width: 300px;
+    height: auto;
+  }
   .enlace-bajar {
     width: 60%; /* Ajusta el tamaño del enlace */
     bottom: 40px; /* Reduce la distancia desde la parte inferior */
+  }
+  .showroon{
+    padding: 0;
+  }
+  .containerUno{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .imgUno{
+    position: inherit;
+    width: 200px;
   }
 
   .reactiva__h2 {
@@ -4858,13 +4955,15 @@ justify-content: center;
     font-size: 0.8em;
   }
   .servicios {
+   
     position: relative;
     width: 100%;
     height: auto; /* Cambia de 100vh a auto */
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: rgb(5, 11, 21);
@@ -4957,6 +5056,58 @@ justify-content: center;
     color: white !important;
     z-index: 10 !important;
     
+  }
+  .serviciosUno{
+    width: 100%;
+  }
+  .servicios__containerUno{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 5%;
+    padding: 0;
+    margin: 0;
+  }
+  .itemUno {
+    width: 150px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(5, 11, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+   .servicios{
+    width: 100%;
+    height: auto;
+  }
+  .servicios__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 5%;
+    padding: 0;
+    margin-bottom: 10%;
+  }
+  .item {
+    width: 150px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(5, 11, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 /* -------porfolio---------- */
