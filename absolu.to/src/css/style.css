@@ -4194,6 +4194,14 @@ max-width: 320px;
   text-align: justify;
   padding-bottom: 2%;
 }
+.nos__pmovilp{
+  text-align: center;
+   font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: justify;
+  padding-bottom: 2%;
+}
 .fuck__h2{
  display: block;
   color:rgb(238, 66, 88);
@@ -4843,8 +4851,8 @@ padding-top: 5%;
 .reactiva__formula{
   margin-top: 50%;
  display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   margin-right: 20%;
  
   margin-left: 0;
@@ -4860,6 +4868,10 @@ padding-top: 5%;
   font-size: .8em;
  
   text-align: center;
+}
+.menu__icon{
+  width: 2em;
+  height: 2em;
 }
 .modal__p{
   font-size: .8em;
