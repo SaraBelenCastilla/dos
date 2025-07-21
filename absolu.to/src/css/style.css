@@ -4320,11 +4320,11 @@ width: 75%;}
   padding-left: 10%;
 }
 .boton__drch {
-  left: 35%; /* Ajusta la posición desde el borde izquierdo */
+  left: 25%; /* Ajusta la posición desde el borde izquierdo */
  
   width: 4rem; /* Ajusta el ancho del botón */
   height: 4rem; /* Ajusta la altura del botón */
-  top: 15%;
+  top: 10%;
 }
 .boton__abajo{
   left: 35%; /* Ajusta la posición desde el borde izquierdo */
@@ -4338,11 +4338,11 @@ width: 75%;}
   height: 4rem;
 }
 .boton__izq {
-  left: -50%; /* Ajusta la posición desde el borde izquierdo */
+  left: -40%; /* Ajusta la posición desde el borde izquierdo */
  
   width: 4rem; /* Ajusta el ancho del botón */
   height: 4rem; /* Ajusta la altura del botón */
-  top: 15%;
+  top: 10%;
 }
 .izq{
   width: 4rem;
@@ -4870,8 +4870,8 @@ padding-top: 5%;
   text-align: center;
 }
 .menu__icon{
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.2em;
+  height: 1.2em;
 }
 .abajo{
   display: none;
