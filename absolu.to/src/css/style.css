@@ -1036,6 +1036,7 @@ right: 0%;
   margin-top: 10%;
   cursor: pointer;
 }
+.serviciosUno{display: none;}
 /* -------pagepilling------- */
 .contenedero{
   position: relative;
@@ -4320,11 +4321,11 @@ width: 75%;}
   padding-left: 10%;
 }
 .boton__drch {
-  left: 25%; /* Ajusta la posición desde el borde izquierdo */
+  left: 35%; /* Ajusta la posición desde el borde izquierdo */
  
   width: 4rem; /* Ajusta el ancho del botón */
   height: 4rem; /* Ajusta la altura del botón */
-  top: 10%;
+  top: 15%;
 }
 .boton__abajo{
   left: 35%; /* Ajusta la posición desde el borde izquierdo */
@@ -4338,11 +4339,11 @@ width: 75%;}
   height: 4rem;
 }
 .boton__izq {
-  left: -40%; /* Ajusta la posición desde el borde izquierdo */
+  left: -50%; /* Ajusta la posición desde el borde izquierdo */
  
   width: 4rem; /* Ajusta el ancho del botón */
   height: 4rem; /* Ajusta la altura del botón */
-  top: 10%;
+  top: 15%;
 }
 .izq{
   width: 4rem;
