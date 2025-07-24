@@ -571,7 +571,7 @@ right: 0%;
 }
 .copy{
   width: 20px;
-  line-height: 2; 
+  height: 20px;
 }
 .span{
   font-weight: 600;
@@ -4024,6 +4024,12 @@ max-width: 320px;
    width: 100%; /* Asegúrate de que el video ocupe todo el ancho */
    height: 100%; /* Ajusta la altura automáticamente */
  }
+ .nueva__p{
+  font-size: 1.2em;
+ }
+ .nueva__pN{
+  font-size: 1.2em;
+ }
 
   .servicios__container{
     display: none;
@@ -5111,12 +5117,12 @@ padding-top: 5%;
     align-items: center;
     width: 100%;
     height: auto;
-    gap: 5%;
+    gap: 2%;
     padding: 0;
     margin-bottom: 10%;
   }
   .item {
-    width: 150px;
+    width: 180px;
     height: auto;
     padding: 0;
     margin: 0;

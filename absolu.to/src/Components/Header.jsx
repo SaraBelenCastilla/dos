@@ -46,14 +46,16 @@ function Header() {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
     }}>EL ORIGEN</Link></li>
+
+    <li className='enlaces3'><Link className="header__linkLista" to={'/nosotros'}  onClick={() => {
+      closeMenu(); // Cierra el menú
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
+    }}>TRASCENIO</Link></li>
                 <li className='enlaces2'><Link className="header__linkLista" to={'/showroom'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
     }}>LAS NIÑAS DE MIS OJOS</Link></li>
-                <li className='enlaces3'><Link className="header__linkLista" to={'/nosotros'}  onClick={() => {
-      closeMenu(); // Cierra el menú
-      window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>TRASCENIO</Link></li>
+                
                 <li className='enlaces4'><Link className="header__linkLista" to={'/equipo'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio

@@ -85,7 +85,7 @@ export default function Footer() {
       <FaRegCopyright className='copy'/>
       <p className="footer__p"> 2025 Absoluto </p>
       <p className="footer__p"> <Link className="footer__link" to="/privacidad">| Privacidad</Link><br /> </p>
-      <p className="footer__p"> <Link className="footer__link" to="/cockies">| We are Cookieless</Link>  </p>
+      <p className="footer__p"> <Link className="footer__link" to="/coockies">| We are Cookieless</Link>  </p>
       </div>
     </footer>
     

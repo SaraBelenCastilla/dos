@@ -17,7 +17,7 @@ import Otra from './views/Otra'
 import Privacidad from './views/Privacidad';
 import Porfolio from './views/Porfolio'
 import Formula from './views/Formula'
-import Cockies from './views/Cockies';
+import Coockies from './views/Coockies';
 
 
 import './css/style.css'
@@ -58,7 +58,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/privacidad" element={<Privacidad />} />
           <Route path="/porfolio" element={<Porfolio />} />
            <Route path="/formula" element={<Formula />} />
-            <Route path="/cockies" element={<Cockies />} />
+            <Route path="/coockies" element={<Coockies />} />
           <Route path="*" element={<h1>404 - Página no encontrada</h1>} />
         {/* <Route path='/login' element={localStorage.getItem('Usuario') == null? <Login/>:<Inicio/>}/>
         <Route path ='/login/nuevoUsuario' element = {<NuevoUsuario/>}/>
