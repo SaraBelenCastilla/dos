@@ -3604,7 +3604,7 @@ overflow: hidden;
   font-family: "veneer", sans-serif;
   
   font-size: 1.5em;
- border: 2px solid rgb(238, 66, 88);
+ border: 2px solid white;
   padding: 2%;
   border-radius: 10px 10px 10px;
   color: white;
@@ -3613,8 +3613,8 @@ overflow: hidden;
   
 }
 .boton__aviso:hover{
-  background-color: rgb(238, 66, 88);
-  color:white;
+  background-color: white;
+  color:var(--rosa);
 }
 .reactiva__primera{
   width: 100%;
@@ -4832,7 +4832,7 @@ padding-top: 5%;
     background-color: rgb(5, 11, 21);
   }
    .img__item {
-   width: 100%;
+   width: 180px;
   max-width: 350px; /* o el tamaño máximo que prefieras */
   height: auto;
   object-fit: cover;

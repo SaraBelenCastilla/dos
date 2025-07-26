@@ -53,8 +53,8 @@ function Formula() {
             <p className="aviso__p">Estás a punto de acceder a nuestro contenido más random.</p>
             <p className="aviso__p">Una fórmula que combina elementos altamente volátiles</p>
             <p className="aviso__p">y de naturaleza impredecible.</p>
-            <p className="aviso__p">Si la Química de Marcas no es lo tuyo:</p>
-            <p className="aviso__p">Aplícala bajo supervisión de nuestro personal para evitar </p>
+           
+            <p className="aviso__p1">Aplícala bajo supervisión de nuestro personal para evitar </p>
             <p className="aviso__p">eventos indeseados.</p>
             <p className="aviso__p1">¿Te va el rollo kamikaze? ¡Adelante!</p>
             <p className="aviso__p">Pero si la cosa empieza aponerse fea...</p>
@@ -85,8 +85,8 @@ function Formula() {
                           >
                             <RiCloseCircleLine className="formula__icon"  onClick={() => setModalIsOpen(false)}/> 
                           </button>
-                        <p className="formula__p">¿Listo para activar tu marca?</p>
-                        <p className="formula__p1">Danos 20 minutos, te mostramos cómo utilizarla.</p>
+                        <p className="formula__p">¿La química de Marcas no es lo tuyo?</p>
+                        <p className="formula__p1">Si tu marca destila esencia, nosotros hacemos el resto.</p>
                         <button className="formula__boton">Agendar demo</button>
                       </motion.div>
                     </motion.div>
