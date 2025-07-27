@@ -5080,6 +5080,7 @@ padding-top: 5%;
     
   }
   .serviciosUno{
+    display: block;
     width: 100%;
   }
   .servicios__containerUno{
