@@ -4,11 +4,11 @@ import {motion} from 'framer-motion'
 import useWindowWidth from '../Components/useWindowWidth';
 
 function Section1() {
-  const anchoVentana = useWindowWidth();
+   const anchoVentana = useWindowWidth();
   return (
     <>
     <div className='segunda'
-     style={{width:anchoVentana}}
+     style={{width: `${anchoVentana}px`}}
     >
         <motion.h1 className="segunda__h1Uno"
         initial={{opacity:0, y:100}}
@@ -24,7 +24,7 @@ function Section1() {
             />
         </div> */}
         <div className="segunda__contenidoUno"
-        style={{ width: anchoVentana }}
+         style={{width: `${anchoVentana}px`}}
         >
             <motion.div className="segunda__div"
             initial={{opacity:0, y:150,scale:0.5}}

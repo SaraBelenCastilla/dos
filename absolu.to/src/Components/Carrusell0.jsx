@@ -29,9 +29,19 @@ function CarrusellUno() {
         },
        
       ]
+      function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 500);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  return isMobile;
+}
     let [index, setIndex] = useState(0);
     const [activeSection, setActiveSection] = useState(null);
      // Detectar el cambio de sección
+     const isMobile = useIsMobile(); // <-- Pon esto justo después de tus useState
      useEffect(() => {
       const observerOptions = {
         root: null,
@@ -66,6 +76,7 @@ function CarrusellUno() {
 
 
   return (
+    
     <MotionConfig
       transition={{
         duration: 0.7,

@@ -374,9 +374,10 @@ right: 0%;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-
+z-index: 100;
 
 }
+
 .segundaUno{
   width: 100%;
   height: 100vh;
@@ -4832,8 +4833,8 @@ padding-top: 5%;
     background-color: rgb(5, 11, 21);
   }
    .img__item {
-   width: 180px;
-  max-width: 350px; /* o el tamaño máximo que prefieras */
+   width: auto;
+  
   height: auto;
   object-fit: cover;
   display: block;
