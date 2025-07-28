@@ -6,7 +6,7 @@ import ReactPlayer from 'react-player'
 // import HorizontalScroll1 from '../Components/HorizontalScroll/HorizontalScroll1'
 // import HorizontalScroll2 from '../Components/HorizontalScroll/HorizontalScroll2'
 // import foto from  '../div/item01.png'
-
+import CarrusellMovil from '../Components/CarrusellMovil'
 import Carrusell from '../Components/Carrusell'
 import CarrusellUno from '../Components/CarrusellUno'
 import Sectin51 from '../div/Sectin51'
@@ -99,9 +99,12 @@ const Inicio =()=>{
     
     </section>
      
-   <section id="section-with-carousel">
-    <Carrusell0/>
-    </section>
+  <section id="section-with-carousel">
+  {isMobile
+    ? <CarrusellMovil />
+    : <Carrusell0 />
+  }
+</section>
    
     {/* <div className='capa'> */}
     {/* <Carrusell01/> */}
