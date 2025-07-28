@@ -99,12 +99,9 @@ const Inicio =()=>{
     
     </section>
      
-  <section id="section-with-carousel">
-  {isMobile
-    ? <CarrusellMovil />
-    : <Carrusell0 />
-  }
-</section>
+   <section id="section-with-carousel">
+    <Carrusell0/>
+    </section>
    
     {/* <div className='capa'> */}
     {/* <Carrusell01/> */}
