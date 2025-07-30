@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { BsArrowCounterclockwise } from "react-icons/bs";
 import { FaFan } from "react-icons/fa6";
 import Farmula from '../assets/img/formula.png'
+import Lgo from '../assets/img/logo.png'
 import { IoClose } from "react-icons/io5";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
@@ -87,7 +88,11 @@ function Formula() {
                           </button>
                         <p className="formula__p">¿La química de Marcas no es lo tuyo?</p>
                         <p className="formula__p1">Si tu marca destila esencia, nosotros hacemos el resto.</p>
-                        <button className="formula__boton">Agendar demo</button>
+                        <button className="formula__boton"  onClick={(e) => {window.location.href ='mailto: hola@absolu.to';}}>¡HABLEMOS!</button>
+                        <div className="deLogo">
+                          <p className="deLogo__p">Powered by</p>
+                         <img className='logo__formula' src={Lgo} alt="logo" />
+                         </div>
                       </motion.div>
                     </motion.div>
                   )}

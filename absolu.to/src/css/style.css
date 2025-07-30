@@ -517,8 +517,11 @@ right: 0%;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 4.2em;
-  padding-top: 20%;
+  padding-top: 10%;
   padding-left: 35%;
+}
+.segunda__movil{
+  display: none;
 }
 .tres__h2{
   display: flex;flex-direction: row;
@@ -1906,6 +1909,24 @@ right: 0%;
  text-align: center;
   
 }
+.equipo__link{
+  width: 350px;
+  background-color: rgb(5, 11, 21);
+  color:  rgb(238, 66, 88);
+  padding: 1%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  border-radius: 10px 10px 10px;
+  cursor: pointer;
+  border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+ margin-top: 50%;
+ text-align: center;
+  
+}
 .porfolio__h3default{
   font-family:"veneer", sans-serif;
   font-size: 1.5em;
@@ -1931,6 +1952,23 @@ right: 0%;
   display: inline;
 }
 .porfolio__link:hover .porfolio__h3default {
+  display: none;
+}
+.equipo__link:hover{
+  background-color: rgb(238, 66, 88);
+  color: white;
+  border: none; /* Elimina el borde al hacer hover */
+}
+.equipo__link .porfolio__h3hover {
+  display: none;
+}
+.equipo__link:hover .porfolio__h3hover {
+  display: inline;
+}
+.equipo__link .porfolio__h3default {
+  display: inline;
+}
+.equipo__link:hover .porfolio__h3default {
   display: none;
 }
 
@@ -2686,6 +2724,22 @@ transform: scale(1.5);
 }
 
 /* -----------formula------------ */
+.deLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  padding-top: 10%;
+}
+.deLogo__p{
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+}
+.logo__formula{
+  width: 20%;
+}
 .formula__div{
   background-color: white;
   padding-top: 10%;

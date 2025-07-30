@@ -10,6 +10,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 import { useRef,useState,useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
+import { Link } from 'react-router-dom';
 
 
 function Equipo() {
@@ -169,7 +170,10 @@ const plegarSiete=()=>{
       <img src="https://live.staticflickr.com/65535/54356520034_b13215624f_n.jpg" alt=""  onMouseEnter={desplegarSeis}  onMouseLeave={plegarSeis}/>
       <img src="https://live.staticflickr.com/65535/54355438187_a3d5d6b821_n.jpg" alt=""  onMouseEnter={desplegarSiete}  onMouseLeave={plegarSiete}/>
      </div>
-
+ <div className="equipo__link">
+                                  <h3 className="porfolio__h3default"><Link className="footer__link" to=""> BECOME A BRANDER</Link></h3>
+                                  <h3 className="porfolio__h3hover"><Link className="footer__link" to="">UNETE A NUESTRO EQUIPO</Link></h3>
+                                </div>
      <a className="movimiento" href='#footer'
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
