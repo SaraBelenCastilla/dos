@@ -4695,6 +4695,11 @@ padding-top: 5%;
   z-index: 200;
  
 }
+.servicios__descripcion {
+    opacity: 1 !important;
+    visibility: visible !important;
+   
+  }
 
 .itemUno:hover{
   overflow: visible;
@@ -4731,6 +4736,12 @@ padding-top: 5%;
 .formula-button{
   top:15%;
   right: 2%;
+}
+.deLogo__p{
+  font-size: 1em;
+}
+.logo__formula{
+  width: 30%;
 }
 /* -----warning-------- */
 .reactiva__aviso{
@@ -6878,18 +6889,19 @@ padding-top: 5%;
     padding-top: 0;
   }
   .descripcionUno{
-    top: 20%;
+    top: 25%;
   }
   .descripcionCuatro{
     left: 60%;
+    top: 10;
   }
   .descripcionCinco{
     top: 60%;
-    left: 20%;
+    left: 25%;
   }
 .descripcionTres{
   top: 50%;
-  left: 25%;
+  left: 35%;
 }
 .descripcionSeis{
   top: 67%;
