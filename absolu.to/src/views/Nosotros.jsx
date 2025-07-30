@@ -19,6 +19,7 @@ import {Link,useNavigate} from 'react-router-dom'
 import Nop from '../assets/papelitos/nop.png'
 import Palabras from '../Components/palabras'
 import { useMediaQuery } from "react-responsive";
+import FotosUno from '../views/FotosUno'
 
 
   
@@ -225,10 +226,11 @@ function Nosotros() {
            
           {/* </div> */}
           </div>
+          
           <section id={'servicios'}>
           <Servicios/>
           </section>
-     
+         <FotosUno/>
       {/* <Schedule/>
       <Tercerita/>
       <Cuartita/> */}

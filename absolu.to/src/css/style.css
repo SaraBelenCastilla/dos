@@ -2127,6 +2127,7 @@ transform: scale(1.5);
 .item:hover >.servicios__h2{
   margin: 50%;
 }
+
 /* -----modal---------- */
 .modal-overlay {
   position: fixed;
@@ -3940,6 +3941,7 @@ li{
     background-color: white !important;
   }
  .servicios {
+  display: none;
  
         position: relative;
         width: 100%;
@@ -4207,7 +4209,7 @@ max-width: 320px;
    font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
-  text-align: justify;
+ 
   padding-bottom: 2%;
 }
 .nos__pmovilp{
@@ -4215,8 +4217,16 @@ max-width: 320px;
    font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
-  text-align: justify;
+  
   padding-bottom: 2%;
+}
+.formula__p{
+  font-size: 1em;
+}
+.formula__p1{
+  font-size: 1em;
+  width: 70%;
+  text-align: center;
 }
 .fuck__h2{
  display: block;
@@ -4619,8 +4629,25 @@ padding-top: 5%;
 }
 /* --------servicios---------- */
 .servicios{
+  display: none;
   height: auto;
   display: none;
+}
+.itemUno:hover >.servicios__descripcion{
+  opacity: 1;
+  visibility: visible;
+  align-items: center;
+  /* transform: scale(1.5); */
+  z-index: 200;
+ 
+}
+
+.itemUno:hover{
+  overflow: visible;
+}
+
+.itemUno:hover >.servicios__h2{
+  margin: 50%;
 }
  
 /* .img__item {
@@ -4986,7 +5013,7 @@ padding-top: 5%;
     font-size: 0.8em;
   }
   .servicios {
-   
+   display: none;
     position: relative;
     width: 100%;
     height: auto; /* Cambia de 100vh a auto */
@@ -5116,6 +5143,7 @@ padding-top: 5%;
    
   }
    .servicios{
+    display: none;
     width: 100%;
     height: auto;
   }
