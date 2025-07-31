@@ -170,9 +170,9 @@ const plegarSiete=()=>{
       <img src="https://live.staticflickr.com/65535/54356520034_b13215624f_n.jpg" alt=""  onMouseEnter={desplegarSeis}  onMouseLeave={plegarSeis}/>
       <img src="https://live.staticflickr.com/65535/54355438187_a3d5d6b821_n.jpg" alt=""  onMouseEnter={desplegarSiete}  onMouseLeave={plegarSiete}/>
      </div>
- <div className="equipo__link">
-                                  <h3 className="porfolio__h3default"><Link className="footer__link" to=""> BECOME A BRANDER</Link></h3>
-                                  <h3 className="porfolio__h3hover"><Link className="footer__link" to="">UNETE A NUESTRO EQUIPO</Link></h3>
+ <div className="equipo__link" onClick={(e) => {window.location.href ='mailto: becomeabrander@absolu.to';}}>
+                                  <h3 className="porfolio__h3default" > BECOME A BRANDER</h3>
+                                  <h3 className="porfolio__h3hover">UNETE A NUESTRO EQUIPO</h3>
                                 </div>
      <a className="movimiento" href='#footer'
             ><DotLottieReact className='abajo'
