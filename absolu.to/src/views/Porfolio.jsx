@@ -178,7 +178,7 @@ const icons = [
   {
     index:8,
     icon:'https://live.staticflickr.com/65535/54537799844_5f77706766_w.jpg',
-    descripcion:'API MÓVILESACTIVACION FERRY',
+    descripcion:'ACTIVACION FERRY IBIZA',
     gallery:[
       'https://live.staticflickr.com/65535/54551622569_3401968739_w.jpg',
       'https://live.staticflickr.com/65535/54550566422_799ce1f9ed_w.jpg',
