@@ -147,6 +147,7 @@ function Reactiva() {
             </a> 
       </div>
       {/* {sections.map((section, index) => ( */}
+     
           <section id='section3' className='reactiva__uno' >
             <motion.div className="experiencias"
              initial={{ opacity: 0, y: 100 }}
@@ -260,6 +261,7 @@ function Reactiva() {
   </Link>
 </div>
         </section>
+        
       ) : (
         <>
          <section id="section5" className="reactiva__uno">
@@ -322,6 +324,7 @@ function Reactiva() {
               />
             </a>
           </section>
+          
         </>
       )}
         // Renderiza las secciones por separado para pantallas más grandes

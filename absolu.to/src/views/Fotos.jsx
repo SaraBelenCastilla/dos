@@ -118,7 +118,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
       >
         {iconos.map((index) => (
           <motion.li key={index.index} className="itemUno" variants={item}>
-            <img className='img__item' src= {index.icon} alt="" />
+            <img className='img__item' src= {index.icon} alt={index.h2} />
             <div className="servicios__descripcion"
             style={{backgroundColor:index.color}}
             >

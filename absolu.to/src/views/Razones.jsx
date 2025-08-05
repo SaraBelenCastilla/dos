@@ -33,7 +33,7 @@ const Inicio =()=>{
          whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
          viewport={{once: false, amount:.5}}
         >7 RAZONES</motion.h1>
-        <motion.img src={Plus} alt="" className="plus"
+        <motion.img src={Plus} alt="plus" className="plus"
          initial={{opacity:0, y:150,scale:0.5}}
          whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.6, duration:1.2,  ease:'easyInOut',type:'spring'}}}
          viewport={{once: false, amount:.5}}

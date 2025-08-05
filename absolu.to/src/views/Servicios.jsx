@@ -209,7 +209,7 @@ function Servicios() {
   >
     {iconos.map((index) => (
       <motion.li key={index.index} className="item" variants={item}>
-        <img className='img__item' src= {index.icon} alt="icon" />
+        <img className='img__item' src= {index.icon} alt={index.h2} />
         <div className="servicios__descripcion"
         style={{backgroundColor:index.color}}
         >

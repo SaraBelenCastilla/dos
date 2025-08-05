@@ -105,23 +105,24 @@ const plegarSiete=()=>{
      <div className="container"
      
      >
+     
     <img className='img'
-      src="https://live.staticflickr.com/65535/54355434767_64d2d61b1e_n.jpg" onMouseEnter={desplegar}  onMouseLeave={plegar} />
+      src="https://live.staticflickr.com/65535/54355434767_64d2d61b1e_n.jpg" onMouseEnter={desplegar}  onMouseLeave={plegar} alt="C.E.O" />
     
     <img className='img'
-      src="https://live.staticflickr.com/65535/54356316771_92647342f8_n.jpg" onMouseEnter={desplegarUno}  onMouseLeave={plegarUno}/>
+      src="https://live.staticflickr.com/65535/54356316771_92647342f8_n.jpg" onMouseEnter={desplegarUno}  onMouseLeave={plegarUno} alt="el Capi"/>
     <img className='img'
-      src="https://live.staticflickr.com/65535/54356523339_b51fb50689_n.jpg"  onMouseEnter={desplegarDos}  onMouseLeave={plegarDos} />
+      src="https://live.staticflickr.com/65535/54356523339_b51fb50689_n.jpg"  onMouseEnter={desplegarDos}  onMouseLeave={plegarDos} alt="Miss Insight" />
     <img className='img'
-      src="https://live.staticflickr.com/65535/54356545503_575ea76c48_n.jpg" onMouseEnter={desplegarTres}  onMouseLeave={plegarTres} />
+      src="https://live.staticflickr.com/65535/54356545503_575ea76c48_n.jpg" onMouseEnter={desplegarTres}  onMouseLeave={plegarTres} alt="Tweety" />
     <img className='img'
-      src="https://live.staticflickr.com/65535/54356542093_d3c27b11d6_n.jpg" onMouseEnter={desplegarCuatro}  onMouseLeave={plegarCuatro} />
+      src="https://live.staticflickr.com/65535/54356542093_d3c27b11d6_n.jpg" onMouseEnter={desplegarCuatro}  onMouseLeave={plegarCuatro} alt="LaBanksy" />
     <img className='img'
-      src="https://live.staticflickr.com/65535/54356544113_a505342e04_n.jpg" onMouseEnter={desplegarCinco}  onMouseLeave={plegarCinco} />
+      src="https://live.staticflickr.com/65535/54356544113_a505342e04_n.jpg" onMouseEnter={desplegarCinco}  onMouseLeave={plegarCinco} alt="Tarantino" />
     <img className='img'
-      src="https://live.staticflickr.com/65535/54356520034_b13215624f_n.jpg" onMouseEnter={desplegarSeis}  onMouseLeave={plegarSeis} />
+      src="https://live.staticflickr.com/65535/54356520034_b13215624f_n.jpg" onMouseEnter={desplegarSeis}  onMouseLeave={plegarSeis} alt="Dora la Exploradora" />
     <img className='img'
-      src="https://live.staticflickr.com/65535/54355438187_a3d5d6b821_n.jpg" onMouseEnter={desplegarSiete}  onMouseLeave={plegarSiete} />
+      src="https://live.staticflickr.com/65535/54355438187_a3d5d6b821_n.jpg" onMouseEnter={desplegarSiete}  onMouseLeave={plegarSiete} alt="MacGyver"  />
 </div>
 {/* {textos.map((texto,index) => (   */}
      <div className={`descripcion ${desplegado? 'active':''}`} >
@@ -159,16 +160,16 @@ const plegarSiete=()=>{
       <h4 className="des__h4">Producción</h4>
      </div>
      <div className="gallery">
-      <img src="https://live.staticflickr.com/65535/54355434767_64d2d61b1e_n.jpg" alt=""    onMouseEnter={desplegar}  onMouseLeave={plegar}/>
-      <img src="https://live.staticflickr.com/65535/54356316771_92647342f8_n.jpg" alt="" onMouseEnter={desplegarUno}  onMouseLeave={plegarUno}/>
-      <img src="https://live.staticflickr.com/65535/54356523339_b51fb50689_n.jpg" alt=""   onMouseEnter={desplegarDos}  onMouseLeave={plegarDos}/>
-      <img src="https://live.staticflickr.com/65535/54356545503_575ea76c48_n.jpg" alt=""  onMouseEnter={desplegarTres}  onMouseLeave={plegarTres}/>
+      <img src="https://live.staticflickr.com/65535/54355434767_64d2d61b1e_n.jpg" alt="C.E.O"    onMouseEnter={desplegar}  onMouseLeave={plegar}/>
+      <img src="https://live.staticflickr.com/65535/54356316771_92647342f8_n.jpg" alt="El Capi" onMouseEnter={desplegarUno}  onMouseLeave={plegarUno}/>
+      <img src="https://live.staticflickr.com/65535/54356523339_b51fb50689_n.jpg" alt="Miss Insight"   onMouseEnter={desplegarDos}  onMouseLeave={plegarDos}/>
+      <img src="https://live.staticflickr.com/65535/54356545503_575ea76c48_n.jpg" alt="Tweety"  onMouseEnter={desplegarTres}  onMouseLeave={plegarTres}/>
      </div>
      <div className="gallery">
-      <img src="https://live.staticflickr.com/65535/54356542093_d3c27b11d6_n.jpg" alt=""  onMouseEnter={desplegarCuatro}  onMouseLeave={plegarCuatro}/>
-      <img src="https://live.staticflickr.com/65535/54356544113_a505342e04_n.jpg" alt=""  onMouseEnter={desplegarCinco}  onMouseLeave={plegarCinco}/>
-      <img src="https://live.staticflickr.com/65535/54356520034_b13215624f_n.jpg" alt=""  onMouseEnter={desplegarSeis}  onMouseLeave={plegarSeis}/>
-      <img src="https://live.staticflickr.com/65535/54355438187_a3d5d6b821_n.jpg" alt=""  onMouseEnter={desplegarSiete}  onMouseLeave={plegarSiete}/>
+      <img src="https://live.staticflickr.com/65535/54356542093_d3c27b11d6_n.jpg" alt="LaBanksy"  onMouseEnter={desplegarCuatro}  onMouseLeave={plegarCuatro}/>
+      <img src="https://live.staticflickr.com/65535/54356544113_a505342e04_n.jpg" alt="Tarantino"  onMouseEnter={desplegarCinco}  onMouseLeave={plegarCinco}/>
+      <img src="https://live.staticflickr.com/65535/54356520034_b13215624f_n.jpg" alt="Dora la Exploradora"  onMouseEnter={desplegarSeis}  onMouseLeave={plegarSeis}/>
+      <img src="https://live.staticflickr.com/65535/54355438187_a3d5d6b821_n.jpg" alt="MacGyver"  onMouseEnter={desplegarSiete}  onMouseLeave={plegarSiete}/>
      </div>
  <div className="equipo__link" onClick={(e) => {window.location.href ='mailto: becomeabrander@absolu.to';}}>
                                   <h3 className="porfolio__h3default" > BECOME A BRANDER</h3>

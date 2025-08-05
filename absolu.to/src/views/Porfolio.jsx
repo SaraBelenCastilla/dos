@@ -488,7 +488,7 @@ useEffect(() => {
     onClick={() => handleOpenModal(idx)}
     style={{ cursor: 'pointer' }}
   >
-    <img className='img__item' src={icon.icon} alt="icon" />
+    <img className='img__item' src={icon.icon} alt={icon.descripcion} />
     <div className="descripcion__item">
        
       <h2 className='item__h2'>{icon.descripcion}</h2>

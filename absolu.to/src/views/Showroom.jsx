@@ -246,21 +246,21 @@ function Showroom() {
      
      >
     <img className='imgUno'
-      src="https://live.staticflickr.com/65535/54601350617_ce5d66c388_n.jpg" />
+      src="https://live.staticflickr.com/65535/54601350617_ce5d66c388_n.jpg" alt='Inversis' />
     <img className='imgUno'
-      src="https://live.staticflickr.com/65535/54601353292_cfec28dd4e_n.jpg" />
+      src="https://live.staticflickr.com/65535/54601353292_cfec28dd4e_n.jpg" alt='Mercedes' />
     <img className='imgUno'
-      src="https://live.staticflickr.com/65535/54602233181_ce7481646c_n.jpg" />
+      src="https://live.staticflickr.com/65535/54602233181_ce7481646c_n.jpg" alt='Junta Andalucia' />
     <img className='imgUno'
-      src="https://live.staticflickr.com/65535/54602444818_b19b25a407_n.jpg" />
+      src="https://live.staticflickr.com/65535/54602444818_b19b25a407_n.jpg" alt='Mastercard' />
     <img className='imgUno'
-      src="https://live.staticflickr.com/65535/54602236011_e131d432a3_n.jpg" />
+      src="https://live.staticflickr.com/65535/54602236011_e131d432a3_n.jpg" alt='Sicad' />
     <img className='imgUno'
-      src="https://live.staticflickr.com/65535/54602530095_8b31a5332a_n.jpg" />
+      src="https://live.staticflickr.com/65535/54602530095_8b31a5332a_n.jpg" alt='Cruzcampo' />
     <img className='imgUno'
-      src="https://live.staticflickr.com/65535/54601349382_beff5537f1_n.jpg" />
+      src="https://live.staticflickr.com/65535/54601349382_beff5537f1_n.jpg" alt='Impresionistas' />
     <img className='imgUno'
-      src="https://live.staticflickr.com/65535/54602233911_b51598e431_n.jpg" />
+      src="https://live.staticflickr.com/65535/54602233911_b51598e431_n.jpg" alt='Lucky' />
 </div>
 <Fotos/>
 {/* <div className="gallery">
