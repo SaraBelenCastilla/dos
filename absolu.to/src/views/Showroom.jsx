@@ -290,7 +290,7 @@ function Showroom() {
       </a>  
                                 <div className="porfolio__link">
                                   <h3 className="porfolio__h3default"><Link className="footer__link" to="/porfolio"> PORFOLIO</Link></h3>
-                                  <h3 className="porfolio__h3hover"><Link className="footer__link" to="/porfolio">ir a PORFOLIO</Link></h3>
+                                  <h3 className="porfolio__h3hover"><Link className="footer__link" to="/porfolio">ver PORFOLIO</Link></h3>
                                 </div>
      </div>
     

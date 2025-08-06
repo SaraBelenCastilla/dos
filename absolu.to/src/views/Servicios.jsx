@@ -115,7 +115,7 @@ const iconos = [
   {
     index:17,
     icon:'https://live.staticflickr.com/65535/54435969512_41b12c3920_n.jpg',
-    h2:'LIVE SHOWS', 
+    h2:'CULTURA', 
     color:' rgba(238, 66, 88,0.8)'
 
   },
@@ -136,7 +136,7 @@ const iconos = [
   {
     index:20,
     icon:'https://live.staticflickr.com/65535/54121318681_c70ffffa80_n.jpg',
-    h2:'PRODUCCION LOGÍSTICA',
+    h2:'PRODUCCIÒN LOGÍSTICA',
     color:' rgba(238, 66, 88,0.8)'
 
   },

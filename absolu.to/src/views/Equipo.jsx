@@ -173,7 +173,7 @@ const plegarSiete=()=>{
      </div>
  <div className="equipo__link" onClick={(e) => {window.location.href ='mailto: becomeabrander@absolu.to';}}>
                                   <h3 className="porfolio__h3default" > BECOME A BRANDER</h3>
-                                  <h3 className="porfolio__h3hover">UNETE A NUESTRO EQUIPO</h3>
+                                  <h3 className="porfolio__h3hover">ÙNETE AL EQUIPO</h3>
                                 </div>
      <a className="movimiento" href='#footer'
             ><DotLottieReact className='abajo'
