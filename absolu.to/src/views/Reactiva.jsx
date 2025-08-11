@@ -18,7 +18,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { GrStatusWarning } from "react-icons/gr";
 import { useMediaQuery } from "react-responsive";
 import { Link } from 'react-router-dom';
-
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
  const sections = [
      { id: 'section1', title1: 'EXPERIENCIAS', title2: 'QUE GENERAN', title3: 'CONTENIDO' },
@@ -85,7 +85,16 @@ function Reactiva() {
   
   return (
     <>
-    
+     <Helmet>
+        <title>Método Absoluto | La fórmula secreta del engagement</title>
+        <meta name="description" content="Tras años de laboratorio, hemos creado la fórmula perfecta para generar experiencias memorables y conectar marcas con audiencias.
+
+    " />
+        <meta name="keywords" content=" método marketing experiencial, fórmula engagement, creatividad transmedia, estrategias de marca, activaciones 360.
+" />
+       
+       
+       </Helmet>
     <div
     
      className="nosotros" id="section1" >

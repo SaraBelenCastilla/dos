@@ -8,7 +8,7 @@ import LogoSlider2 from '../Components/LogoSlider2';
 import LogoSlider3 from '../Components/LogoSlider3';
 import Fotos from './Fotos';
 import { Link } from 'react-router-dom';
-
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 function Showroom() {
@@ -211,6 +211,17 @@ function Showroom() {
     
   return (
     <>
+     <Helmet>
+        <title> Showroom Absoluto | Experiencias y eventos que marcan
+</title>
+        <meta name="description" content="Explora nuestras creaciones: eventos, activaciones y contenido que se viven, se comparten y se recuerdan. Descubre el portfolio de Absoluto Experiential.
+
+    " />
+        <meta name="keywords" content=" portfolio marketing experiencial, showroom de eventos, proyectos transmedia, activaciones de marca, experiencias creativas.
+" /> 
+       
+       
+       </Helmet>
     <div className="showroon__encabezado">
       <motion.h2 className='show__h2'
        initial={{opacity:0, y:100}}

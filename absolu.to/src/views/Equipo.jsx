@@ -11,6 +11,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { useRef,useState,useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link } from 'react-router-dom';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 function Equipo() {
@@ -78,7 +79,18 @@ const plegarSiete=()=>{
   
   return (
     <>
-    
+     <Helmet>
+        <title>El equipo Absoluto | Creativos con identidades secretas
+</title>
+        <meta name="description" content=" Conoce al equipo más creativo y enigmático del marketing experiencial. Ocultamos nuestras caras, pero nunca nuestras ideas.
+
+
+    " />
+        <meta name="keywords" content="equipo creativo, agencia marketing experiencial, creativos de marca, absolu.to equipo, producción de eventos creativos.
+
+" />
+       
+       </Helmet>
     <div
     
      className="nosotros" >

@@ -20,7 +20,7 @@ import Nop from '../assets/papelitos/nop.png'
 import Palabras from '../Components/palabras'
 import { useMediaQuery } from "react-responsive";
 import FotosUno from '../views/FotosUno'
-
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
   
 
@@ -52,7 +52,16 @@ function Nosotros() {
   
   return (
     <>
-    
+     <Helmet>
+        <title>Absoluto Experiential | Taller creativo experto en cultura transmedia
+</title>
+        <meta name="description" content="Experiencias de marca que se viven: producimos eventos, arte y contenido para generar impacto real. Más de 20 años activando emociones.
+
+    " />
+        <meta name="keywords" content="experiencias de marca, marketing experiencial, producción de eventos, cultura transmedia, artesanos del engagement, activación de marca, storyliving. 
+" />
+       
+       </Helmet>
     <div
     
      className="nosotros" >

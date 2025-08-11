@@ -11,7 +11,7 @@ import Razon2 from '../div/Razon2'
 import Carro from '../Components/Carro'
 import Razon7 from '../div/Razon7';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 var anchoVentana = window.innerWidth
   window.onresize = function(){
@@ -24,7 +24,19 @@ var anchoVentana = window.innerWidth
 const Inicio =()=>{
   
     return (
+      
       <>
+       <Helmet>
+          <title> 7 razones para elegir Absoluto Experiential
+</title>
+          <meta name="description" content=" Siete motivos de peso para confiar en nosotros: experiencia, creatividad, eficiencia y una pasión inagotable por crear conexiones reales.
+
+      " />
+          <meta name="keywords" content="razones marketing experiencial, por qué elegir absoluto experiential, agencia creativa, activaciones de marca, cultura transmedia.
+" />
+         
+         
+         </Helmet>
      <div className="razones"
        style={{with:anchoVentana}}
      >

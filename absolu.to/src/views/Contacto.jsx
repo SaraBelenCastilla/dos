@@ -10,11 +10,24 @@ import {
     AnimatePresence,
 } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function Contacto() {
     const isMobile = useMediaQuery({ query: "(max-width: 500px)" }); // <-- usa query aquí
   return (
     <>
+     <Helmet>
+        <title> Contacto | Absoluto Experiential</title>
+        <meta name="description" content="¿Tienes una idea en marcha y necesitas aliados? Escríbenos y pongamos tu proyecto en marcha. Creatividad, estrategia y producción.
+
+
+    " />
+        <meta name="keywords" content="  contacto agencia marketing experiencial, hablar con absoluto experiential, presupuesto eventos creativos, contacto producción eventos.
+
+" />
+       
+       
+       </Helmet>
      <div
         
          className="nosotros" >

@@ -18,6 +18,7 @@ import Privacidad from './views/Privacidad';
 import Porfolio from './views/Porfolio'
 import Formula from './views/Formula'
 import Coockies from './views/Coockies';
+import{ Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 import './css/style.css'
@@ -38,10 +39,12 @@ function ScrollToTop() {
 ReactDOM.createRoot(document.getElementById('root')).render(
     
   
-  
+ 
+    
  
     <Router>
        <ScrollToTop />
+        <HelmetProvider>
    {/* el header que es comun para todaslas rutas */}
     <Header/>
     
@@ -77,6 +80,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path ='/Consultas/nuevaConsulta' element = {localStorage.getItem('Usuario') ==null? <Login/>:<NuevaConsulta/>}/> */} 
        
       </Routes>
+      </HelmetProvider>
    {/* el footer comun para todas las rutas */}
  
    <Footer/>

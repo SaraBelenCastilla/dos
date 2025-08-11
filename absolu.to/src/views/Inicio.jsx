@@ -27,6 +27,7 @@ import Razones from './Razones'
 import Hablamos from './Contacto'
 import { useMediaQuery } from 'react-responsive';
 import { useEffect } from 'react'
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 
@@ -35,8 +36,14 @@ const Inicio =()=>{
   const ReactPlayer = lazy(() => import('react-player'))
   return (
     <>
+   <Helmet>
+    <title>El Origen | Capitán Branding y la historia de Absoluto Experiential</title>
+    <meta name="description" content="Capitán Branding y absoluto Experiential, misión: generar engagement en 90 segundos. Una historia ilustrada de creatividad y conexión.
+Palabras clave: capitán branding, origen absoluto experiential, storyliving, superhéroe marketing, engagement.
+" />
    
    
+   </Helmet>
    
     {/* <div> */}
     {/* <Pagepilling> */}
