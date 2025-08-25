@@ -47,7 +47,7 @@ function Header() {
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
     }}>EL ORIGEN</Link></li>
 
-    <li className='enlaces3'><Link className="header__linkLista" to={'/nosotros'}  onClick={() => {
+    <li className='enlaces3'><Link className="header__linkLista" to={'/home'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
     }}>TRASCENIO</Link></li>
@@ -72,6 +72,10 @@ function Header() {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
     }}>¿HABLAMOS?</Link></li>
+     {/* <li className='enlaces7'><Link className="header__linkLista" to={'/home'}  onClick={() => {
+      closeMenu(); // Cierra el menú
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
+    }}>Home</Link></li> */}
               </>
             )}
           </ul>

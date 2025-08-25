@@ -19,6 +19,7 @@ import Porfolio from './views/Porfolio'
 import Formula from './views/Formula'
 import Coockies from './views/Coockies';
 import{ Helmet, HelmetProvider } from 'react-helmet-async';
+import Home from './views/Home';
 
 
 import './css/style.css'
@@ -51,7 +52,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
      {/* todos los archivos con sus rutas restringidas menos la pagina de inicio,con un ternario para que tengan que estar logeados para acceder */}
           <Route path='/' element={<Inicio/>}/> 
-          <Route path='/nosotros' element={<Nosotros/>}/>
+          <Route path='/home' element={<Home/>}/>
           <Route path='/showroom' element={<Showroom/>}/>
           <Route path='/servicios' element={<Servicios/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
@@ -62,6 +63,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/porfolio" element={<Porfolio />} />
            <Route path="/formula" element={<Formula />} />
             <Route path="/coockies" element={<Coockies />} />
+             <Route path="/home" element={<Home />} />
           <Route path="*" element={<h1>404 - Página no encontrada</h1>} />
         {/* <Route path='/login' element={localStorage.getItem('Usuario') == null? <Login/>:<Inicio/>}/>
         <Route path ='/login/nuevoUsuario' element = {<NuevoUsuario/>}/>

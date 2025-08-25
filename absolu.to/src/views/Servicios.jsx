@@ -25,7 +25,7 @@ const iconos = [
   {
     index:3,
     icon:'https://live.staticflickr.com/65535/54121598878_5e1224f4f0_n.jpg',
-    h2:'EXPERIENCIAS',
+    h2:'EVENTOS',
     color:' rgba(238, 66, 88,0.8)'
   },
   {
@@ -37,13 +37,13 @@ const iconos = [
   {
     index:5,
     icon:'https://live.staticflickr.com/65535/54121591838_c6641a639c_n.jpg',
-    h2:'INTEGRACIÓN DIGITAL',
+    h2:' DIGITAL EXPERIENCE',
     color:' rgba(238, 66, 88,0.8)'
   },
   {
     index:6,
     icon:'https://live.staticflickr.com/65535/54121328881_63e5a1cc8d_n.jpg',
-    h2:'EVENTOS',
+    h2:'MICE',
     color:' rgba(238, 66, 88,0.8)'
   },
   {
@@ -115,7 +115,7 @@ const iconos = [
   {
     index:17,
     icon:'https://live.staticflickr.com/65535/54435969512_41b12c3920_n.jpg',
-    h2:'CULTURA', 
+    h2:'ARTE & CULTURA', 
     color:' rgba(238, 66, 88,0.8)'
 
   },

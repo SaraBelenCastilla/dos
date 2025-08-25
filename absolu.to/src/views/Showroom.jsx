@@ -9,87 +9,106 @@ import LogoSlider3 from '../Components/LogoSlider3';
 import Fotos from './Fotos';
 import { Link } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { useInView } from "framer-motion";
 
+export function AnimatedSection({ children, className }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.3 });
+
+  return (
+    <section
+      ref={ref}
+      className={className}
+      style={{
+        transform: isInView ? "none" : "translateX(-200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+      }}
+    >
+      {children}
+    </section>
+  );
+}
 
 function Showroom() {
-  const palabras=[
-    {
-     id:1 ,pala:'CHÀCENA', tipo:'"anodyne", sans-serif',size:'12vw'
-    },
-    {
-      id:2,pala:'la cocina', tipo:'"taboo-pro", sans-serif',size:'12vw'
-    },
-    {
-      id:3, pala:'ENTRE CAJAS', tipo:'"battery-park", sans-serif',size:'10vw'
-    },
-    {
-     id:4, pala:'trastienda', tipo:'"variex", sans-serif',size:'10vw'
-    },
-    {
-      id:5, pala:'Bambalinas', tipo:'"didoni-urw", serif',size:'11vw'
-    },
-    {
-      id:6, pala:'ENTRE BASTIDORES', tipo:'"rig-solid-bold-inline", sans-serif',size:'8vw'
-    },
-    {
-      id:7, pala:'Tras la Escena', tipo:'"altesse-std-24pt", sans-serif',size:'10vw'
-    },
-    {
-      id:8, pala:'tras el telon', tipo:'"alta-california", sans-serif',size:'14vw'
+  // const palabras=[
+  //   {
+  //    id:1 ,pala:'CHÀCENA', tipo:'"anodyne", sans-serif',size:'12vw'
+  //   },
+  //   {
+  //     id:2,pala:'la cocina', tipo:'"taboo-pro", sans-serif',size:'12vw'
+  //   },
+  //   {
+  //     id:3, pala:'ENTRE CAJAS', tipo:'"battery-park", sans-serif',size:'10vw'
+  //   },
+  //   {
+  //    id:4, pala:'trastienda', tipo:'"variex", sans-serif',size:'10vw'
+  //   },
+  //   {
+  //     id:5, pala:'Bambalinas', tipo:'"didoni-urw", serif',size:'11vw'
+  //   },
+  //   {
+  //     id:6, pala:'ENTRE BASTIDORES', tipo:'"rig-solid-bold-inline", sans-serif',size:'8vw'
+  //   },
+  //   {
+  //     id:7, pala:'Tras la Escena', tipo:'"altesse-std-24pt", sans-serif',size:'10vw'
+  //   },
+  //   {
+  //     id:8, pala:'tras el telon', tipo:'"alta-california", sans-serif',size:'14vw'
 
-    },
-    {
-     id:9,  pala:'BACKSTAGE',  tipo:'"aw-conqueror-carved", sans-serif',size:'10vw'
-    },
-    {
-     id:10,  pala:'TRASCENIO', tipo:'"veneer", sans-serif',size:'16vw'
-    }
-  ]
+  //   },
+  //   {
+  //    id:9,  pala:'BACKSTAGE',  tipo:'"aw-conqueror-carved", sans-serif',size:'10vw'
+  //   },
+  //   {
+  //    id:10,  pala:'TRASCENIO', tipo:'"veneer", sans-serif',size:'16vw'
+  //   }
+  // ]
   
-   let [index, setIndex] = useState(0);
-   const [isVisible, setIsVisible] = useState(false);
-   const palabrasRef = useRef(null);
+  //  let [index, setIndex] = useState(0);
+  //  const [isVisible, setIsVisible] = useState(false);
+  //  const palabrasRef = useRef(null);
 
-   useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5
-    };
+  //  useEffect(() => {
+  //   const observerOptions = {
+  //     root: null,
+  //     rootMargin: '0px',
+  //     threshold: 0.5
+  //   };
 
-    const observerCallback = (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-        }
-      });
-    };
+  //   const observerCallback = (entries) => {
+  //     entries.forEach(entry => {
+  //       if (entry.isIntersecting) {
+  //         setIsVisible(true);
+  //       } else {
+  //         setIsVisible(false);
+  //       }
+  //     });
+  //   };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+  //   const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    if (palabrasRef.current) {
-      observer.observe(palabrasRef.current);
-    }
+  //   if (palabrasRef.current) {
+  //     observer.observe(palabrasRef.current);
+  //   }
 
-    return () => {
-      if (palabrasRef.current) {
-        observer.unobserve(palabrasRef.current);
-      }
-    };
-  }, []);
+  //   return () => {
+  //     if (palabrasRef.current) {
+  //       observer.unobserve(palabrasRef.current);
+  //     }
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    let timeout;
-    if (isVisible && index < palabras.length - 1) {
-      timeout = setTimeout(() => {
-        setIndex(prevIndex => prevIndex + 1);
-      }, 700);
-    }
+  // useEffect(() => {
+  //   let timeout;
+  //   if (isVisible && index < palabras.length - 1) {
+  //     timeout = setTimeout(() => {
+  //       setIndex(prevIndex => prevIndex + 1);
+  //     }, 700);
+  //   }
 
-    return () => clearTimeout(timeout);
-  }, [isVisible, index, palabras.length]);
+  //   return () => clearTimeout(timeout);
+  // }, [isVisible, index, palabras.length]);
 
   const [words,setWords] =useState([])
   // useEffect(() => {
@@ -207,7 +226,21 @@ function Showroom() {
   // ))}
 
  
+const palabras = ["VIVE", "|", "SIENTE", "|", "CONNECTA"];
 
+const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.4 // tiempo entre palabras
+    }
+  }
+};
+
+const palabra = {
+  hidden: { opacity: 0, x: -200},
+  visible: { opacity: 1, x: 0,  transition: { duration: 0.3, ease: "easeOut" } }
+};
     
   return (
     <>
@@ -219,6 +252,10 @@ function Showroom() {
     " />
         <meta name="keywords" content=" portfolio marketing experiencial, showroom de eventos, proyectos transmedia, activaciones de marca, experiencias creativas.
 " /> 
+<meta property='  og:title' content='Showroom Absoluto | Experiencias y eventos que marcan' />
+        <meta property='og:description' content='Explora nuestras creaciones: eventos, activaciones y contenido que se viven, se comparten y se recuerdan. Descubre el portfolio de Absoluto Experiential.' />
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://absolu.to/showroom' />
        
        
        </Helmet>
@@ -239,15 +276,36 @@ function Showroom() {
   />
 
       </motion.div>
-        <a className="movimiento" href='#show'
+        {/* <a className="movimiento" href='#show'
 ><DotLottieReact className='abajo'
     src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
     loop
     autoplay
   />
 
-      </a>  
+      </a>   */}
     </div>
+  
+  <div className='uno__section'>
+   <motion.h1
+  className='un__h1'
+  variants={container}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: false, amount: 0.5 }}
+  style={{ display: "flex", gap: "0.5em", flexWrap: "wrap" ,
+     
+   
+  }}
+>
+  {palabras.map((pal, i) => (
+    <motion.span key={i} variants={palabra}>
+      {pal}
+    </motion.span>
+  ))}
+</motion.h1>
+  </div>
+
      <div className='showroon' id='show'>
      
      
@@ -291,17 +349,17 @@ function Showroom() {
                                   loop
                                   autoplay
                                 /></a> */}
-                                  <a className="movimiento" href='#footer'
+                                  {/* <a className="movimiento" href='#footer'
 ><DotLottieReact className='abajo'
     src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
     loop
     autoplay
   />
 
-      </a>  
+      </a>   */}
                                 <div className="porfolio__link">
-                                  <h3 className="porfolio__h3default"><Link className="footer__link" to="/porfolio"> PORFOLIO</Link></h3>
-                                  <h3 className="porfolio__h3hover"><Link className="footer__link" to="/porfolio">ver PORFOLIO</Link></h3>
+                                  <h3 className="porfolio__h3default"><Link className="footer__link" to="/porfolio">ver PORFOLIO</Link></h3>
+                                  <h3 className="porfolio__h3hover"><Link className="footer__link" to="/porfolio"> PORFOLIO</Link></h3>
                                 </div>
      </div>
     

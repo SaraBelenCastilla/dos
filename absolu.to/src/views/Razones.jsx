@@ -34,6 +34,10 @@ const Inicio =()=>{
       " />
           <meta name="keywords" content="razones marketing experiencial, por qué elegir absoluto experiential, agencia creativa, activaciones de marca, cultura transmedia.
 " />
+<meta property='  og:title' content='7 razones para elegir Absoluto Experiential' />
+          <meta property='og:description' content='Siete motivos de peso para confiar en nosotros: experiencia, creatividad, eficiencia y una pasión inagotable por crear conexiones reales.' />
+          <meta property='og:type' content='website' />
+          <meta property='og:url' content='https://absolu.to/razones' />
          
          
          </Helmet>

@@ -63,6 +63,16 @@ function Carro() {
     <data.page key={data.index}/>
   ))}
       </motion.div>
+       <div className="carro__dots">
+      {datas.map((data, i) => (
+        <button
+          key={data.index}
+          className={`carro__dot${index === i ? " carro__dot--active" : ""}`}
+          onClick={() => setIndex(i)}
+          aria-label={`Ir a la página ${i + 1}`}
+        />
+      ))}
+    </div>
 
       <AnimatePresence initial={false}>
               {index > 0 && (

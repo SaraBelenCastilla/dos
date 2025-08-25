@@ -60,7 +60,10 @@ function Nosotros() {
     " />
         <meta name="keywords" content="experiencias de marca, marketing experiencial, producción de eventos, cultura transmedia, artesanos del engagement, activación de marca, storyliving. 
 " />
-       
+       <meta property='  og:title' content='Absoluto Experiential | Taller creativo experto en cultura transmedia' />
+        <meta property='og:description' content='Experiencias de marca que se viven: producimos eventos, arte y contenido para generar impacto real. Más de 20 años activando emociones.' />
+        <meta property='og:type' content='website' /> 
+        <meta property='og:url' content='https://absolu.to/nosotros' />
        </Helmet>
     <div
     
@@ -201,14 +204,14 @@ function Nosotros() {
              whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
              viewport={{once: false, amount:.5}}
             >HACE ESTA PEÑA?</motion.h2>
-             <a className="movimiento" href='#servicios'
+             {/* <a className="movimiento" href='#servicios'
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
                 autoplay
               />
             
-                  </a> 
+                  </a>  */}
           </div>
           {/* <div className="png" id="png"
           

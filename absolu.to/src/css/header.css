@@ -419,7 +419,7 @@
     list-style-type:none;
   }
   .enlaces6:hover{
-    transform:rotate(0deg);
+    transform:rotate(5deg);
   }
   .enlaces7{
     width: auto;

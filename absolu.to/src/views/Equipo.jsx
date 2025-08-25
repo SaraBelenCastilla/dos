@@ -75,7 +75,26 @@ const plegarSeis=()=>{
 const plegarSiete=()=>{
   setDesplegadoSiete(false)
 }
- 
+
+ const sentences = ["Dada la naturaleza de los proyectos  ", "en los que trabajamos, la discreción ","es fundamental."];
+  const palabras = ["Entenderás que mantener nuestros", "rostros e identidades ocultas, ","forma parte del juego."];
+
+  const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.4 // tiempo entre palabras
+    }
+  }
+};
+ const sentence = {
+  hidden: { opacity: 0, x: -200},
+  visible: { opacity: 1, x: 0,  transition: { duration: 1,  } }
+};
+const palabra = {
+  hidden: { opacity: 0, x: 700},
+  visible: { opacity: 1, x: 0,  transition: { duration: 1.5, } }
+};
   
   return (
     <>
@@ -89,27 +108,75 @@ const plegarSiete=()=>{
         <meta name="keywords" content="equipo creativo, agencia marketing experiencial, creativos de marca, absolu.to equipo, producción de eventos creativos.
 
 " />
+<meta property='  og:title' content='El equipo Absoluto | Creativos con identidades secretas' />
+        <meta property='og:description' content='Conoce al equipo más creativo y enigmático del marketing experiencial. Ocultamos nuestras caras, pero nunca nuestras ideas.' />
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://absolu.to/equipo' />
+        
        
        </Helmet>
     <div
     
-     className="nosotros" >
-        <ReactLenis
+     className="equipo" >
+        {/* <ReactLenis
         root
         options={{
-          // Learn more -> https://github.com/darkroomengineering/lenis?tab=readme-ov-file#instance-settings
+          Learn more -> https://github.com/darkroomengineering/lenis?tab=readme-ov-file#instance-settings
           lerp: 0.05,
-          //   infinite: true,
-          //   syncTouch: true,
+            infinite: true,
+            syncTouch: true,
         }}
       >
        
-        {/* Renderiza Hero o HeroMobile según el tamaño de la pantalla */}
+         Renderiza Hero o HeroMobile según el tamaño de la pantalla 
         {isMobile ? <HeroMobile /> : <Hero />}
         
        
-      </ReactLenis>
+      </ReactLenis> */}
+      <motion.h1 className="equipo__h1"
+       initial={{opacity:0, y:150,scale:0.5}}
+         whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
+         viewport={{once: false, amount:.5}}
+      >EL EQUIPO ES LO PRIMERO</motion.h1>
       </div>
+      <div className="equipo__primera">
+         <motion.div
+                className='cuatro__contenido'
+                variants={container}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                style={{ display: "flex",  flexWrap: "wrap", gap:0,  justifyContent: "center", width: "100%"  ,
+                   
+                 
+                }}
+              >
+                {sentences.map((sent, i) => (
+                  <motion.h2 key={i} variants={sentence} className='nuevap__h2'>
+                    {sent}
+                  </motion.h2>
+                ))}
+              </motion.div> 
+               </div>
+               <div className="equipo__segunda">
+               <motion.div
+                      className='cinco__contenido'
+                      variants={container}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: false, amount: 0.5 }}
+                      style={{ display: "flex",  flexWrap: "wrap", gap:0,  justifyContent: "start", width: "100%"  ,
+                         
+                       
+                      }}
+                    >
+                      {palabras.map((pal, i) => (
+                        <motion.h2 key={i} variants={palabra} className='nuevap__h2'>
+                          {pal}
+                        </motion.h2>
+                      ))}
+                    </motion.div> 
+     </div>
       <div className='showroon' id='show'>
      
 
@@ -187,14 +254,14 @@ const plegarSiete=()=>{
                                   <h3 className="porfolio__h3default" > BECOME A BRANDER</h3>
                                   <h3 className="porfolio__h3hover">ÙNETE AL EQUIPO</h3>
                                 </div>
-     <a className="movimiento" href='#footer'
+{/* <a className="movimiento" href='#footer'
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
                 autoplay
               />
             
-                  </a> 
+                  </a>  */}
      </div>
      
      {/* <Schedule/>
@@ -211,7 +278,7 @@ const HeroMobile = () => {
   return (
     <div
       style={{ height: `calc(${SECTION_HEIGHT_MOVIL}px + 200vh)` }}
-      className="cotenedor"
+      className="cotenedor"     
     >
       <CenterImageMovil />
 

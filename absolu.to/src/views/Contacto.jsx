@@ -14,6 +14,27 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function Contacto() {
     const isMobile = useMediaQuery({ query: "(max-width: 500px)" }); // <-- usa query aquí
+
+    const sentences = ["¿Estás más perdido que un GPS en el túnel de la M30?"
+  ];
+  const palabras = ["¿Tienes un briefing tan enrevesado como las ", "instrucciones de montaje de un mueble sueco?  "];
+
+  const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.4 // tiempo entre palabras
+    }
+  }
+};
+ const sentence = {
+  hidden: { opacity: 0, x:200},
+  visible: { opacity: 1, x: 0,  transition: { duration: 1,  } }
+};
+const palabra = {
+  hidden: { opacity: 0, x: -200},
+  visible: { opacity: 1, x: 0,  transition: { duration: 1.5, } }
+};
   return (
     <>
      <Helmet>
@@ -25,28 +46,76 @@ function Contacto() {
         <meta name="keywords" content="  contacto agencia marketing experiencial, hablar con absoluto experiential, presupuesto eventos creativos, contacto producción eventos.
 
 " />
+<meta property='  og:title' content='Contacto | Absoluto Experiential' />
+        <meta property='og:description' content='¿Tienes una idea en marcha y necesitas aliados? Escríbenos y pongamos tu proyecto en marcha. Creatividad, estrategia y producción.' />
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://absolu.to/contacto' />
+       
        
        
        </Helmet>
      <div
         
-         className="nosotros" >
-            <ReactLenis
+         className="equipo" >
+            {/* <ReactLenis
             root
             options={{
-              // Learn more -> https://github.com/darkroomengineering/lenis?tab=readme-ov-file#instance-settings
+             
               lerp: 0.05,
-              //   infinite: true,
-              //   syncTouch: true,
+              
             }}
           >
            
-            {/* Renderiza Hero o HeroMobile según el tamaño de la pantalla */}
+              
         {isMobile ? <Hero /> : <HeroMobile />}
             
            
-          </ReactLenis>
+          </ReactLenis> */}
+           <motion.h1 className="equipo__h1"
+       initial={{opacity:0, y:150,scale:0.5}}
+         whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
+         viewport={{once: false, amount:.5}}
+      >¿HABLAMOS?</motion.h1>
+      
           </div>
+          <div className="equipo__primera">
+         <motion.div
+                className='cuatro__contenido'
+                variants={container}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                style={{ display: "flex",  flexWrap: "wrap", gap:0,  justifyContent: "center", width: "100%"  ,
+                   
+                 
+                }}
+              >
+                {sentences.map((sent, i) => (
+                  <motion.h2 key={i} variants={sentence} className='nuevac__h2'>
+                    {sent}
+                  </motion.h2>
+                ))}
+              </motion.div> 
+               </div>
+               <div className="equipo__segunda">
+               <motion.div
+                      className='cinco__contenido'
+                      variants={container}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: false, amount: 0.5 }}
+                      style={{ display: "flex",  flexWrap: "wrap", gap:0,  justifyContent: "start", width: "100%"  ,
+                         
+                       
+                      }}
+                    >
+                      {palabras.map((pal, i) => (
+                        <motion.h2 key={i} variants={palabra} className='nuevac__h2'>
+                          {pal}
+                        </motion.h2>
+                      ))}
+                    </motion.div> 
+     </div>
     <div className='contacto'>
     <h2 className="contacto__h2">¡No te comas el coco!</h2>
      <div className="contacto__pie">

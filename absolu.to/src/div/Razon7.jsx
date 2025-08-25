@@ -58,7 +58,7 @@ function Razon7() {
            whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
            viewport={{once: false, amount:.5}}
          >
-            <p className="pie__razon">valor <span className="pie">ABSOLUTO</span></p>
+            <p className="pie__razon">VALOR <span className="pie">ABSOLUTO</span></p>
          </motion.div>
          {/* <a className='flechitas' href=''> <DotLottieReact
                src="https://lottie.host/29b477c5-4291-4dd2-bbb4-0b83d69fb3f2/UGVbrOOk7P.json"

@@ -41,6 +41,10 @@ const Inicio =()=>{
     <meta name="description" content="Capitán Branding y absoluto Experiential, misión: generar engagement en 90 segundos. Una historia ilustrada de creatividad y conexión.
 Palabras clave: capitán branding, origen absoluto experiential, storyliving, superhéroe marketing, engagement.
 " />
+<meta property='  og:title' content='El Origen | Capitán Branding y la historia de Absoluto Experiential' />
+    <meta property='og:description' content='Capitán Branding y absoluto Experiential, misión: generar engagement en 90 segundos. Una historia ilustrada de creatividad y conexión.' />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content='https://absolu.to/' />
    
    
    </Helmet>
