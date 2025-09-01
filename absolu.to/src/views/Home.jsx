@@ -104,19 +104,7 @@ const explicacion = {
   const isMobile = useMediaQuery({ maxWidth: 768 }); // Detecta pantallas de ancho menor o igual a 768px
   return (
   <>
-   <Helmet>
-        <title>Absoluto Experiential | Taller creativo experto en cultura transmedia
-</title>
-        <meta name="description" content="Experiencias de marca que se viven: producimos eventos, arte y contenido para generar impacto real. Más de 20 años activando emociones.
-
-    " />
-        <meta name="keywords" content="experiencias de marca, marketing experiencial, producción de eventos, cultura transmedia, artesanos del engagement, activación de marca, storyliving. 
-" />
-       <meta property='  og:title' content='Absoluto Experiential | Taller creativo experto en cultura transmedia' />
-        <meta property='og:description' content='Experiencias de marca que se viven: producimos eventos, arte y contenido para generar impacto real. Más de 20 años activando emociones.' />
-        <meta property='og:type' content='website' /> 
-        <meta property='og:url' content='https://absolu.to/nosotros' />
-       </Helmet>
+  
   <Palabras />
        <motion.div className="section__uno"
         initial={{opacity:0, y:150,scale:0.5}}

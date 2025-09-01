@@ -41,7 +41,7 @@ export default function Footer() {
           </div> */}
            <div className="contactoF__email"  onClick={(e) => {window.location.href ='mailto: becomeabrander@absolu.to';}}>
             <span className="contactoF__default-text">BECOME A BRANDER</span>
-             <span className="contactoF__hover-text">ÙNETE AL EQUIPO</span>
+             <span className="contactoF__hover-text">ÚNETE AL EQUIPO</span>
            </div>
 
              <div className="footer__social">

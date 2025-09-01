@@ -140,7 +140,7 @@ const palabra = {
        initial={{opacity:0, y:150,scale:0.5}}
          whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
          viewport={{once: false, amount:.5}}
-      >REACTIVA Y <span className="explosiva">EXPLOSIVA?</span></motion.h1>
+      >REACTIVA Y CLANDESTINA</motion.h1>
       </div>
       {/* </div> */}
       <div className="reactiva__primera">
@@ -223,7 +223,7 @@ const palabra = {
             </a> 
       </div>
       {/* {sections.map((section, index) => ( */}
-     
+     <div className="snap">
           <section id='section3' className='reactiva__uno' >
             <motion.div className="experiencias"
              initial={{ opacity: 0, y: 100 }}
@@ -250,14 +250,14 @@ const palabra = {
               </h2>
               </motion.div>
             {/* )} */}
-             <a className="movimiento" href='#section4'
+             {/* <a className="movimiento" href='#section4'
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
                 autoplay
               />
             
-                  </a> 
+                  </a>  */}
           </section>
           <section id='section4' className='reactiva__uno' >
             <motion.div className="contenidos"
@@ -285,14 +285,14 @@ const palabra = {
               </h2>
               </motion.div>
             {/* )} */}
-             <a className="movimiento" href={isMobile ? "#section5-6" : "#section5"}
+             {/* <a className="movimiento" href={isMobile ? "#section5-6" : "#section5"}
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
                 autoplay
               />
             
-                  </a> 
+                  </a>  */}
           </section>
           {isMobile ? (
         // Renderiza una sola sección para móviles
@@ -321,19 +321,19 @@ const palabra = {
         >
           SIN HISTORIAS
         </motion.h2>
-        <a className="movimiento" href="#footer">
+        {/* <a className="movimiento" href="#footer">
             <DotLottieReact
               className="abajo"
               src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
               loop
               autoplay
             />
-          </a>
+          </a> */}
           <div className="reactiva__formula">
   <Link className="footer__link" to="/formula">
     
      <p className="sinh">¡ACTIVA TU INSPIRACIÓN!</p>
-    <p className="sinhn">DESCUBRE NUESTRO MÈTODO</p>
+    <p className="sinhn">DESCUBRE NUESTRO MÉTODO</p>
   </Link>
 </div>
         </section>
@@ -353,14 +353,14 @@ const palabra = {
             >
               SIN CUENTOS
             </motion.h2>
-            <a className="movimiento" href="#section6">
+            {/* <a className="movimiento" href="#section6">
               <DotLottieReact
                 className="abajo"
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
                 autoplay
               />
-            </a>
+            </a> */}
           </section>
           <section id="section6" className="reactiva__unoH">
             <motion.h2
@@ -388,19 +388,19 @@ const palabra = {
            >
   <Link className="footer__link" to="/formula">
    <p className="sinh">¡ACTIVA TU INSPIRACIÓN!</p>
-    <p className="sinhn">DESCUBRE NUESTRO MÈTODO</p>
+    <p className="sinhn">DESCUBRE NUESTRO MÉTODO</p>
   </Link>
 </motion.div>
-            <a className="movimiento" href="#footer">
+            {/* <a className="movimiento" href="#footer">
               <DotLottieReact
                 className="abajo"
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
                 autoplay
               />
-            </a>
+            </a> */}
           </section>
-          
+         
         </>
       )}
         // Renderiza las secciones por separado para pantallas más grandes
@@ -522,7 +522,7 @@ const palabra = {
       <Tercerita/>
       <Cuartita/> */}
   
-  
+  </div>
   </>
   )
 }

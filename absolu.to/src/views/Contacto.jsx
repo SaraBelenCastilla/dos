@@ -78,7 +78,7 @@ const palabra = {
       >¿HABLAMOS?</motion.h1>
       
           </div>
-          <div className="equipo__primera">
+          <div className="contacto__primera">
          <motion.div
                 className='cuatro__contenido'
                 variants={container}
@@ -96,10 +96,10 @@ const palabra = {
                   </motion.h2>
                 ))}
               </motion.div> 
-               </div>
-               <div className="equipo__segunda">
+              
+              
                <motion.div
-                      className='cinco__contenido'
+                      className='cincoC__contenido'
                       variants={container}
                       initial="hidden"
                       whileInView="visible"
@@ -115,7 +115,7 @@ const palabra = {
                         </motion.h2>
                       ))}
                     </motion.div> 
-     </div>
+      </div>
     <div className='contacto'>
     <h2 className="contacto__h2">¡No te comas el coco!</h2>
      <div className="contacto__pie">
