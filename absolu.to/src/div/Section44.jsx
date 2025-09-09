@@ -11,7 +11,7 @@ function Section44() {
     <div className='cuatroC'
     style={{ width: anchoVentana }}
     >
-    <div className="cuatro__contenido"
+    <div className="cuatroI__contenido"
       style={{ width: anchoVentana }}
     >
       

@@ -330,10 +330,10 @@ const palabra = {
             />
           </a> */}
           <div className="reactiva__formula">
-  <Link className="footer__link" to="/formula">
+  <Link className="contactoF__email" to="/formula">
     
-     <p className="sinh">¡ACTIVA TU INSPIRACIÓN!</p>
-    <p className="sinhn">DESCUBRE NUESTRO MÉTODO</p>
+     <span className="contactoF__default-text">¡ACTIVA TU INSPIRACIÓN!</span>
+    <span className="contactoF__hover-text">DESCUBRE NUESTRO MÉTODO</span>
   </Link>
 </div>
         </section>

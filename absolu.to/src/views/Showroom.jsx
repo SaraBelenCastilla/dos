@@ -358,8 +358,8 @@ const palabra = {
 
       </a>   */}
                                 <div className="porfolio__link">
-                                  <h3 className="porfolio__h3default"><Link className="footer__link" to="/porfolio">ver PORFOLIO</Link></h3>
-                                  <h3 className="porfolio__h3hover"><Link className="footer__link" to="/porfolio"> PORFOLIO</Link></h3>
+                                  <span className="contactoF__default-text"><Link    to="/porfolio">ver PORFOLIO</Link></span>
+                                  <span className="contactoF__hover-text"><Link    to="/porfolio"> PORFOLIO</Link></span>
                                 </div>
      </div>
     

@@ -71,7 +71,7 @@ const palabra = {
             
            
           </ReactLenis> */}
-           <motion.h1 className="equipo__h1"
+           <motion.h1 className="contacto__h1"
        initial={{opacity:0, y:150,scale:0.5}}
          whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
          viewport={{once: false, amount:.5}}
@@ -80,7 +80,7 @@ const palabra = {
           </div>
           <div className="contacto__primera">
          <motion.div
-                className='cuatro__contenido'
+                className='cuatroI__contenido'
                 variants={container}
                 initial="hidden"
                 whileInView="visible"

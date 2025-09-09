@@ -22,7 +22,7 @@ function Section4() {
              viewport={{once: false, amount:.5}}
             />
         </div> */}
-        <div className="cuatro__contenido"
+        <div className="cuatroI__contenido"
          style={{ width: anchoVentana }}
         >
             <motion.div className="cuatrito__div"
