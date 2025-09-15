@@ -187,7 +187,10 @@ const explicacion = {
           </motion.h2>
         ))}
       </motion.div> 
-       <motion.div
+      </section>
+     <div className="nosotros__cerDos">
+
+  <motion.div
         className='cinco__contenido'
         variants={container}
         initial="hidden"
@@ -199,12 +202,12 @@ const explicacion = {
         }}
       >
         {sentences.map((sent, i) => (
-          <motion.h2 key={i} variants={sentence} className='nueva__h2'>
+          <motion.h2 key={i} variants={sentence} className='nuevaC__h2'>
             {sent}
           </motion.h2>
         ))}
       </motion.div> 
-     
+     </div>
 
      
             {/* <motion.div
@@ -280,7 +283,7 @@ const explicacion = {
       
             </a> 
           */}
-          </section>
+         
            <div className="new">
             <motion.h2 className="new__h2"
              initial={{opacity:0, }}
@@ -298,7 +301,7 @@ const explicacion = {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.5 }}
-        style={{ display: "flex",  flexWrap: "wrap", gap:0,  justifyContent: "start", width: "100%"  ,
+        style={{ display: "flex",  flexWrap: "wrap", gap:"15px",  justifyContent: "start", width: "100%"  ,
            
          
         }}
@@ -316,12 +319,12 @@ const explicacion = {
              initial={{opacity:0, }}
              whileInView={{opacity:1, transition:{delay:0.4, duration:3.5, }}}
              viewport={{once: false, amount:.5}}
-            >Somos expertos en:</motion.h2>
+            >Expertos en:</motion.h2>
              <motion.h2 className="newp__h2"
              initial={{opacity:0, }}
              whileInView={{opacity:1, transition:{delay:0.4, duration:3.5,  }}}
              viewport={{once: false, amount:.5}}
-            >EXPERIENCIAS DE MARCA 360º</motion.h2>
+            >EXPERIENCIAS DE MARCA TRANSMEDIA.</motion.h2>
              <motion.div
         className='explicacion__contenido'
         variants={container}

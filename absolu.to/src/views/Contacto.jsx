@@ -71,7 +71,7 @@ const palabra = {
             
            
           </ReactLenis> */}
-           <motion.h1 className="contacto__h1"
+           <motion.h1 className="contactoI__h1"
        initial={{opacity:0, y:150,scale:0.5}}
          whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
          viewport={{once: false, amount:.5}}
@@ -104,7 +104,7 @@ const palabra = {
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: false, amount: 0.5 }}
-                      style={{ display: "flex",  flexWrap: "wrap", gap:0,  justifyContent: "start", width: "100%"  ,
+                      style={{ display: "flex",  flexWrap: "wrap", gap:0,  justifyContent: "center", width: "100%"  ,
                          
                        
                       }}
