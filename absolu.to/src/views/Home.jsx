@@ -61,7 +61,7 @@ p1:'Creamos momentos que trascienden tiempo y espacio, dando vida a historias me
 titular:"CONTENIDO",
 h3: 'BRANDED CONTENT',
 p:'El contenido es más que vídeos o imágenes: es la materia prima de toda experiencia. ' ,
-p1:'Creamos momentos diseñados para ser vividos, compartidos y recordados.Experiencias que generan contenido auténtico, orgánico y poderoso.'
+p1:'Creamos momentos diseñados para ser vividos, compartidos y recordados. Experiencias que generan contenido auténtico, orgánico y poderoso.'
 }
      
   
@@ -171,7 +171,7 @@ const explicacion = {
           >
            
             <motion.div
-        className='cuatro__contenido'
+        className='ctro__contenido'
         variants={container}
         initial="hidden"
         whileInView="visible"
@@ -191,7 +191,7 @@ const explicacion = {
      <div className="nosotros__cerDos">
 
   <motion.div
-        className='cinco__contenido'
+        className='cnco__contenido'
         variants={container}
         initial="hidden"
         whileInView="visible"

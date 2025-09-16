@@ -1330,22 +1330,41 @@ right: 0%;
   }
  .cuatro__contenido{
    height: auto;
- padding-left: 0%;
+ padding-left: 15%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
  line-height: 0.2em;
   }
+  .ctro__contenido{
+    height: auto;
+ padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+ line-height: 0.2em; 
+  }
    .cinco__contenido{
    height: auto;
    padding-top: 15%;
- padding-left: 0%;
+ padding-left: 15%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
  line-height: 0.2em;
+  }
+  .cnco__contenido{
+   height: auto;
+   padding-top: 15%;
+ padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+ line-height: 0.2em; 
   }
 
   .cincoC__contenido{

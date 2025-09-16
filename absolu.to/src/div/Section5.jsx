@@ -175,7 +175,7 @@ function Section5() {
                        
                         
                           
-                       <Link to={'/Nosotros'}>
+                       <Link to={'/Home'}>
                        <div className="quinta__cardUno"
                         
                         
