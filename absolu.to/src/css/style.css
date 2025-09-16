@@ -490,9 +490,10 @@ right: 0%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   padding: 7%;
   padding-top: 5%;
+  padding-left: 20%;
 }
 .trestres__div{
   font-size: 4em;
@@ -922,6 +923,14 @@ right: 0%;
 } 
 .cuatroI__contenido{
   width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ctroI__contenido{
+   width: 100%;
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -1321,7 +1330,7 @@ right: 0%;
   }
  .cuatro__contenido{
    height: auto;
- padding-left: 15%;
+ padding-left: 0%;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -1331,7 +1340,7 @@ right: 0%;
    .cinco__contenido{
    height: auto;
    padding-top: 15%;
- padding-left: 15%;
+ padding-left: 0%;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -1386,7 +1395,7 @@ right: 0%;
   font-weight: 600;
   font-size: 4em;
   color: #fff;
-  padding-left: 25%;
+  padding-left: 0%;
   padding-bottom: 30%;
 }
 .nueva__h2{
@@ -1422,7 +1431,7 @@ display: flex;
   align-items: start;
  background-color: rgb(5, 11, 21);
   color: white;
-  padding-left: 25%;
+  padding-left: 20%;
 }
 .newp{
   max-width: 100vw;
@@ -1435,7 +1444,7 @@ display: flex;
   align-items: start;
  background-color: rgb(5, 11, 21);
   color: white;
-  padding-left: 25%;
+  padding-left: 20%;
 }
 .new__h2{
   font-family: "Poppins", sans-serif;
@@ -3415,7 +3424,7 @@ background-color: rgb(5, 11, 21);
   max-width: 100%;
   height: 100vh;
   padding: 5%;
-  padding-left: 25%;
+  padding-left: 20%;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -3647,7 +3656,7 @@ background-color: rgb(5, 11, 21);
   min-width: 100%;
   height: 70vh;
   padding: 5%;
-  padding-left: 15%;
+  padding-left: 20%;
   padding-top: 10%;
   display: flex;
   flex-direction: column;

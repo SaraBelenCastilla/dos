@@ -80,7 +80,7 @@ const palabra = {
           </div>
           <div className="contacto__primera">
          <motion.div
-                className='cuatroI__contenido'
+                className='ctroI__contenido'
                 variants={container}
                 initial="hidden"
                 whileInView="visible"
