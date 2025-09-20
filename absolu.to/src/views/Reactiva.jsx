@@ -386,7 +386,7 @@ const palabra = {
               }}
               viewport={{ once: false, amount: 0.5 }}
            >
-  <Link className="footer__link" to="/formula">
+  <Link className="reactiva__formula__link" to="/formula">
    <p className="sinh">¡ACTIVA TU INSPIRACIÓN!</p>
     <p className="sinhn">DESCUBRE NUESTRO MÉTODO</p>
   </Link>

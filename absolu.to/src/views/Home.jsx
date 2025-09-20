@@ -41,9 +41,9 @@ React.useEffect(() => {
   setOpenIndex(null);
 }, []);
   const palabras = ["SOMOS", "ABSOLUTO", "EXPERIENTIAL"];
-  const frases = ["NO CONTAMOS HISTORIAS.", "LAS FABRICAMOS."];
-  const sentences = ["Producimos:", "EVENTOS, ARTE Y CONTENIDO. "];
-  const titulares = ["SOMOS", "ARTESANOS ","DEL","ENGAGEMENT."];
+  const frases = ["NO CONTAMOS HISTORIAS", "LAS FABRICAMOS"];
+  const sentences = ["Producimos:", "EVENTOS, ARTE Y CONTENIDO "];
+  const titulares = ["SOMOS", "ARTESANOS ","DEL","ENGAGEMENT"];
   const explicaciones = [
    {titular:"IRL",
     h3: 'IRL - In Real Life.',
