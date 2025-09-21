@@ -8,7 +8,7 @@ function Section1() {
   return (
     <>
     <div className='cero'
-     style={{width:anchoVentana}}
+     style={{width:'100%'}}
     >
         <motion.h1 className="cero__h1"
         style={{width:anchoVentana}}

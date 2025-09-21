@@ -65,14 +65,14 @@ const Inicio =()=>{
                        loop
                        autoplay
                      /></a> */}
-         <a className="movimiento" href='#carro'
+         {/* <a className="movimiento" href='#carro'
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
                 loop
                 autoplay
               />
             
-                  </a> 
+                  </a>  */}
      </div>
      {/* <section className='razon__01'
        style={{with:anchoVentana}}
