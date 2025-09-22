@@ -78,8 +78,8 @@ function Reactiva() {
      }
     }  
   
- const sentences = ["Más de 20 años de darle al coco y al café ", "nos llevaron a crear el método infalible.",];
-  const palabras = ["La fórmula definitiva para activar", "marcas y llevarlas al next level. ",];
+ const sentences = ["Más de 20 años dándole al coco", "noches en vela y decenas de litros de café.",];
+  const palabras = [ "El resultado: La fórmula definitiva para activar marcas y llevarlas al next level. ",];
    const container = {
   hidden: {},
   visible: {
@@ -315,7 +315,7 @@ const palabra = {
           whileInView={{
             opacity: 1,
             y: 0,
-            transition: { delay: 0.6, duration: 1, ease: "easeInOut", type: "spring" },
+            transition: { delay: 0.1, duration: 1, ease: "easeInOut", type: "spring" },
           }}
           viewport={{ once: false, amount: 0.5 }}
         >
@@ -382,7 +382,7 @@ const palabra = {
               whileInView={{
                 opacity: 1,
                 y: 0,
-                transition: { delay: 0.6, duration: 1, ease: "easeInOut", type: "spring" },
+                transition: { delay: 0.1, duration: 1, ease: "easeInOut", type: "spring" },
               }}
               viewport={{ once: false, amount: 0.5 }}
            >

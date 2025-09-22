@@ -4008,6 +4008,7 @@ padding-right: 10%;
   justify-content: center;
   gap: 20%;
   padding-top: 5%;
+  overflow: hidden;
  
  
   
@@ -8661,13 +8662,13 @@ padding-top: 5%;
   padding-top: 60%;
 }
 .reactiva__formula{
-  margin-top: 50%;
+  margin-top: 0%;
  display: flex;
-  justify-content: start;
-  align-items: start;
-  margin-right: 20%;
+  justify-content:center;
+  align-items: center;
+  margin-right: 0%;
  
-  margin-left: 0;
+  margin-left: 20%;
  
 }
 .modal__h2{
@@ -8698,7 +8699,18 @@ padding-top: 5%;
   top:30%;
   right: 2%;
 }
-
+.dos__h2{
+font-size: 6em;
+}
+.porfolio__link{
+  margin-top: 80%;
+}
+.showroon{
+  height: auto;
+}
+.equipo__h1{
+  font-size:6em ;
+}
 }
 
 @media only screen and (min-width: 1600px) {
