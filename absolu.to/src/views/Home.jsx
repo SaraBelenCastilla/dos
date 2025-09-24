@@ -46,20 +46,20 @@ React.useEffect(() => {
   const titulares = ["SOMOS", "ARTESANOS ","DEL","ENGAGEMENT"];
   const explicaciones = [
    {titular:"IRL",
-    h3: 'IRL - In Real Life.',
+    h3: 'EXPERIENCIA In Real Life.',
 p: 'En un mundo totalmente digitalizado las experiencias en la vida real siguen siendo la vía más poderosa de conectar con tu audiencia a un nivel visceral. ',
 p1:'Creamos momentos que trascienden tiempo y espacio, dando vida a historias memorables.'
 },
 
 {titular:"DIGITAL ",
-   h3: 'PHYGITAL',
+   h3: 'EXPERIENCIA DIGITAL',
    p:'Convertimos lo digital en físico y lo físico en digital.',
    p1:'Integramos recursos interactivos en estructuras y entornos habitables como ingredientes esenciales de la experiencia total, impulsando el engagement y activando nuevo contenido.' 
 
 },
 {
 titular:"CONTENIDO",
-h3: 'BRANDED CONTENT',
+h3: 'CONTENIDO EXPERIENCIAL',
 p:'El contenido es más que vídeos o imágenes: es la materia prima de toda experiencia. ' ,
 p1:'Creamos momentos diseñados para ser vividos, compartidos y recordados. Experiencias que generan contenido auténtico, orgánico y poderoso.'
 }
@@ -105,7 +105,7 @@ const explicacion = {
   return (
   <>
   
-  <Palabras />
+  {/* <Palabras />
        <motion.div className="section__uno"
         initial={{opacity:0, y:150,scale:0.5}}
          whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
@@ -120,7 +120,7 @@ const explicacion = {
             
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
       {/* <AnimatedSection className="section__dos"
       
        

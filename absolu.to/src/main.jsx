@@ -51,8 +51,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     
       <Routes>
      {/* todos los archivos con sus rutas restringidas menos la pagina de inicio,con un ternario para que tengan que estar logeados para acceder */}
-          <Route path='/' element={<Inicio/>}/> 
-          <Route path='/home' element={<Home/>}/>
+          <Route path='/inicio' element={<Inicio/>}/> 
+          <Route path='/' element={<Home/>}/>
           <Route path='/showroom' element={<Showroom/>}/>
           <Route path='/servicios' element={<Servicios/>}/>
           <Route path='/contacto' element={<Contacto/>}/>

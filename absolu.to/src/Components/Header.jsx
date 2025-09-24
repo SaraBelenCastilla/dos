@@ -42,32 +42,33 @@ function Header() {
         <ul className='header__tamano'>
             {menu && ( // Solo renderiza los enlaces si el menú está activo
               <>
-                <li className='enlaces1'><Link className="header__linkLista" to={'/'}  onClick={() => {
+               
+    <li className='enlaces3'><Link className="header__linkLista" to={'/'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>EL ORIGEN</Link></li>
-
-    <li className='enlaces3'><Link className="header__linkLista" to={'/home'}  onClick={() => {
+    }}>ASÍ SOMOS</Link></li>
+                <li className='enlaces2'><Link className="header__linkLista" to={'/porfolio'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>TRASCENIO</Link></li>
-                <li className='enlaces2'><Link className="header__linkLista" to={'/showroom'}  onClick={() => {
-      closeMenu(); // Cierra el menú
-      window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>LAS NIÑAS DE MIS OJOS</Link></li>
+    }}>QUÉ HACEMOS</Link></li>
                 
                 <li className='enlaces4'><Link className="header__linkLista" to={'/equipo'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>EL EQUIPO ES LO PRIMERO</Link></li>
+    }}>EL EQUIPO </Link></li>
                  <li className='enlaces5'><Link className="header__linkLista" to={'/reactiva'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>REACTIVA Y CLANDESTINA</Link></li>
+    }}>NUESTRO MÉTODO</Link></li>
+
+     <li className='enlaces1'><Link className="header__linkLista" to={'/inicio'}  onClick={() => {
+      closeMenu(); // Cierra el menú
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
+    }}>EL ORIGEN</Link></li>
                 <li className='enlaces6'><Link className="header__linkLista" to={'/razones'} onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>7 RAZONES MÁS PARA CREER</Link></li>
+    }}>INSIGHTS</Link></li>
                 <li className='enlaces7'><Link className="header__linkLista" to={'/contacto'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
