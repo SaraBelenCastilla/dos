@@ -56,16 +56,16 @@ function Header() {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
     }}>EL EQUIPO </Link></li>
-                 <li className='enlaces5'><Link className="header__linkLista" to={'/reactiva'}  onClick={() => {
+                 <li className='enlaces5'><Link className="header__linkLista" to={'/metodo'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
     }}>NUESTRO MÉTODO</Link></li>
 
-     <li className='enlaces1'><Link className="header__linkLista" to={'/inicio'}  onClick={() => {
+     <li className='enlaces1'><Link className="header__linkLista" to={'/origen'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
     }}>EL ORIGEN</Link></li>
-                <li className='enlaces6'><Link className="header__linkLista" to={'/razones'} onClick={() => {
+                <li className='enlaces6'><Link className="header__linkLista" to={'/insights'} onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
     }}>INSIGHTS</Link></li>
