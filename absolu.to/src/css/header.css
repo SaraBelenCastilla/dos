@@ -329,12 +329,12 @@
     font-weight: 200;
     font-size: 2.5em;
     color:black;
-    padding: 0.2%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right:5%;
     background-image: url(../assets/papelitos/nina.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
     background-position: center;
     transform: rotate(-5deg);
     list-style-type:none;
@@ -369,13 +369,14 @@
     font-weight: 200;
     font-size: 2.5em;
     color:black;
-    padding: 0.2%;
-    padding-left: 3%;
-    padding-right: 3%;
-    background-image: url(../assets/papelitos/equipo.png);
+    
+    padding: 0.8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url(../assets/papelitos/origen.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position-x: center;
     
     transform: rotate(5deg);
     list-style-type:none;
@@ -390,12 +391,12 @@
     font-weight: 200;
     font-size: 2.5em;
     color:black;
-    padding: 0.2%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: 0.9%;
+    padding-left: 8%;
+    padding-right: 8%;
     background-image: url(../assets/papelitos/clandestina.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     transform: rotate(-2deg);
     list-style-type:none;
   }
@@ -409,12 +410,12 @@
     font-weight: 200;
     font-size: 2.5em;
     color:black;
-    padding: 0.2%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 0.9%;
+    padding-left: 10%;
+    padding-right: 10%;
     background-image: url(../assets/papelitos/razones.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     list-style-type:none;
   }
