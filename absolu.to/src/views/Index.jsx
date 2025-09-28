@@ -1,18 +1,26 @@
 import React from 'react'
 import AutoImageSlider from '../Components/AutoImageSlider';
 import Foto1 from '../assets/img/foto1.jpg'
+import Foto2 from '../assets/img/foto2.jpg'
+import Foto3 from '../assets/img/foto3.jpg'
+import Foto4 from '../assets/img/foto4.jpg'
+import Foto5 from '../assets/img/foto5.jpg'
+import Foto6 from '../assets/img/foto6.jpg'
+import Foto7 from '../assets/img/foto7.jpg'
+import Foto8 from '../assets/img/foto8.jpg'
+
 
 function Index() {
 
      const images = [
     Foto1   ,
-    "https://live.staticflickr.com/65535/54814411347_93ce402500_z.jpg",
-    "https://live.staticflickr.com/65535/54815262581_db7e449f46_z.jpg",
-    "https://live.staticflickr.com/65535/54814415572_99e3037256_z.jpg",
-    'https://live.staticflickr.com/65535/54815606905_22448eed46_z.jpg',
-    'https://live.staticflickr.com/65535/54815264696_52738fd414_z.jpg',
-    'https://live.staticflickr.com/65535/54815608680_e1547c9498_z.jpg',
-    'https://live.staticflickr.com/65535/54815609800_7fda6f076d_z.jpg'
+   Foto2,
+   Foto3,
+   Foto4 ,
+    Foto5,
+    Foto6,
+    Foto7,
+    Foto8
   ];
 
   return (
