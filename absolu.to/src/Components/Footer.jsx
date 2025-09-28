@@ -18,7 +18,7 @@ export default function Footer() {
       autoplay
     /></div>
       </div> */}
-       
+     <img className='logo__footer' src={Lgo} alt="logo" />  
       <div className="footer__cuerpo">
         <div className="footer__drc">
          
@@ -93,7 +93,7 @@ export default function Footer() {
           {/* <button className='footer__botonB'>Trabaja con nosotros</button> */}
           
         </div>
-     <img className='logo__footer' src={Lgo} alt="logo" />
+     
       <div className="footer__pie">
       <FaRegCopyright className='copy'/>
       <p className="footer__p"> 2025 Absoluto </p>

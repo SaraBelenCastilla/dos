@@ -1156,8 +1156,9 @@ right: 0%;
 }
 .logo__footer{
   width: 350px;
-  margin-left: 40%;
-  padding-bottom: 10%;
+  margin-left: 5%;
+  padding-top: 10%;
+ 
 }
 .footer__izq{
   display: flex;
