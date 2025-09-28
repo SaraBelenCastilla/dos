@@ -1,10 +1,11 @@
 import React from 'react'
 import AutoImageSlider from '../Components/AutoImageSlider';
+import Foto1 from '../assets/img/foto1.jpg'
 
 function Index() {
 
      const images = [
-    "https://live.staticflickr.com/65535/54815516323_a1c8cdf775_z.jpg",
+    Foto1   ,
     "https://live.staticflickr.com/65535/54814411347_93ce402500_z.jpg",
     "https://live.staticflickr.com/65535/54815262581_db7e449f46_z.jpg",
     "https://live.staticflickr.com/65535/54814415572_99e3037256_z.jpg",
