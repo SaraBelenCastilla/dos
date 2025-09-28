@@ -76,6 +76,13 @@
    z-index: 50;
    
   } 
+  .logo__fijo{
+    position: fixed;
+    top: 1.5625rem;
+    left: 2%;
+    width: 70px;
+    z-index: 100;
+  }
   .logo{
     padding-top: 0;
     width: 9rem;
@@ -101,7 +108,7 @@
   } 
   .header__menu.isActive{
    opacity: 1;
-   width: 95%;
+   width: 85%;
   
   
     

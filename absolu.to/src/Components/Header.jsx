@@ -7,6 +7,7 @@ import { ImCross } from "react-icons/im";
 import { IoClose } from "react-icons/io5";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { CgMenuRound } from "react-icons/cg";
+import logoFijo from '../assets/img/logoFijo.png'
 import '../css/header.css'
 
 
@@ -25,6 +26,7 @@ function Header() {
   return (
     <>
     <header className="header">
+      <img src={logoFijo} alt="logo" className="logo__fijo" />
       <div className="header__container">
         {/* <img className='logo' src={logo} alt="logo" /> */}
         <button className={`header__boton ${menu ? 'isActive' : ''}`}
@@ -42,6 +44,11 @@ function Header() {
         <ul className='header__tamano'>
             {menu && ( // Solo renderiza los enlaces si el menú está activo
               <>
+
+               {/* <li className='enlaces3'><Link className="header__linkLista" to={'/'}  onClick={() => {
+      closeMenu(); // Cierra el menú
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
+    }}>Index</Link></li> */}
                
     <li className='enlaces3'><Link className="header__linkLista" to={'/'}  onClick={() => {
       closeMenu(); // Cierra el menú

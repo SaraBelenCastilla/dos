@@ -18,6 +18,7 @@ import Privacidad from './views/Privacidad';
 import Porfolio from './views/Porfolio'
 import Formula from './views/Formula'
 import Coockies from './views/Coockies';
+import Index from './views/Index';
 import{ Helmet, HelmetProvider } from 'react-helmet-async';
 import Home from './views/Home';
 
@@ -52,6 +53,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
      {/* todos los archivos con sus rutas restringidas menos la pagina de inicio,con un ternario para que tengan que estar logeados para acceder */}
           <Route path='/origen' element={<Inicio/>}/> 
+           {/* <Route path='/' element={<Index/>}/> */}
           <Route path='/' element={<Home/>}/>
           <Route path='/showroom' element={<Showroom/>}/>
           <Route path='/servicios' element={<Servicios/>}/>

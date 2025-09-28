@@ -11,6 +11,7 @@ import {
   AnimatePresence
   
 } from "framer-motion";
+import Index from './Index';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import Papel from '../assets/papelitos/fuck.png'
 import Servicios from'../views/Servicios'
@@ -132,6 +133,7 @@ const explicacion = {
           <h2 className="dos__h2">EXPERIENTIAL</h2>
         </div>
       </AnimatedSection> */}
+      <Index/>
        <motion.div
         className='dos__contenido'
         variants={container}
