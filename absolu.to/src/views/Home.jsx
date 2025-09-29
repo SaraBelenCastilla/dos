@@ -105,7 +105,23 @@ const explicacion = {
   const isMobile = useMediaQuery({ maxWidth: 768 }); // Detecta pantallas de ancho menor o igual a 768px
   return (
   <>
+   <Helmet>
+          <title> Absoluto Experiential | Agencia de eventos y comunicación. </title>
+          <meta name="description" content="Agencia creativa especializada en marketing experiencial. Taller de cultura transmedia, 360 brand experience, eventos y activación de marca.
   
+  
+      " />
+          <meta name="keywords" content="  contacto agencia marketing experiencial, hablar con absoluto experiential, presupuesto eventos creativos, contacto producción eventos.
+  
+  " />
+  <meta property='  og:title' content='Absoluto Experiencial | Absoluto Experiential' />
+          <meta property='og:description' content='¿Tienes una idea en marcha y necesitas aliados? Escríbenos y pongamos tu proyecto en marcha. Creatividad, estrategia y producción.' />
+          <meta property='og:type' content='website' />
+          <meta property='og:url' content='https://absolu.to/contacto' />
+         
+         
+         
+         </Helmet>
   {/* <Palabras />
        <motion.div className="section__uno"
         initial={{opacity:0, y:150,scale:0.5}}
