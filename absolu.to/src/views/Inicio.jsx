@@ -31,6 +31,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 
+
 const Inicio =()=>{
   const isMobile = useMediaQuery({ maxWidth: 1025 }); // Detecta si la pantalla es menor a 7
   const ReactPlayer = lazy(() => import('react-player'))
@@ -126,9 +127,9 @@ Palabras clave: capitán branding, origen absoluto experiential, storyliving, su
    <CarrusellUno />
    </section>
    
-    <section id={'section5'}>
+    {/* <section id={'section5'}>
   < Section5/>
-  </section  >
+  </section  > */}
   {/* <section id={'ninas'}>
   <Showroom/>
   </section>

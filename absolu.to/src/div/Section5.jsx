@@ -156,9 +156,9 @@ function Section5() {
       {/* </AnimatePresence> */}
       </div>
       <div className="quintaUno__enlaces">
-                      <Link to={'/Contacto'}>
+                      {/* <Link to={'/Contacto'}> */}
                       <div className="quinta__card"
-                       
+                        onClick={(e) => {window.location.href ='mailto: hola@absolu.to';}}
                        >
                          <div className="quinta__icono">
                              {/* <img src={Boton} alt="icono" className="quinta__img" /> */}
@@ -167,15 +167,15 @@ function Section5() {
                           
                            <div className="absl">
                            <h3 className="quinta__h3">SÍ.</h3>
-                           <p className="quinta__p">Tengo una misión para el <span className='quinta__span'>Capitán Branding</span> .</p>
+                           <p className="quinta__p">¿HABLAMOS?</p>
                           
                            </div>
                        </div>
-                      </Link>
+                      {/* </Link> */}
                        
                         
                           
-                       <Link to={'/Home'}>
+                       <Link to={'/porfolio'}>
                        <div className="quinta__cardUno"
                         
                         
@@ -187,7 +187,7 @@ function Section5() {
                             <div className="abslUno">
                            
                             <h3 className="quinta__h3">NO.</h3>
-                            <p className="quinta__p">Quiero saber más sobre el  <span className='quinta__span'>Capitán Branding</span> & Absoluto.</p>
+                            <p className="quinta__p">Ver porfolio  </p>
                             </div> 
                            
                         </div>

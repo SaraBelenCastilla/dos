@@ -40,8 +40,12 @@ export default function Footer() {
           <p className="footer__telf">+34 643 470 163</p>
           </div> */}
            <div className="contactoF__email"  onClick={(e) => {window.location.href ='mailto: becomeabrander@absolu.to';}}>
-            <span className="contactoF__default-text">BECOME A BRANDER</span>
-             <span className="contactoF__hover-text">ÚNETE AL EQUIPO</span>
+            <span className="contactoF__default-text">ÚNETE AL EQUIPO</span>
+             <span className="contactoF__hover-text">BECOME A BRANDER</span>
+           </div>
+            <div className="contactoF__email"  onClick={(e) => {window.location.href ='mailto: becomeabrander@absolu.to';}}>
+            <span className="contactoF__default-text">PROVEDORES</span>
+             <span className="contactoF__hover-text">PROVEDORES</span>
            </div>
 
              <div className="footer__social">
@@ -96,7 +100,7 @@ export default function Footer() {
      
       <div className="footer__pie">
       <FaRegCopyright className='copy'/>
-      <p className="footer__p"> 2025 Absoluto </p>
+      <p className="footer__p"> 2025 Absoluto Experiential </p>
       <p className="footer__p"> <Link className="footer__link" to="/privacidad">| Privacidad</Link><br /> </p>
       <p className="footer__p"> <Link className="footer__link" to="/coockies">| We are Cookieless</Link>  </p>
       </div>
