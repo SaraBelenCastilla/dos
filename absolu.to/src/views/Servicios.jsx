@@ -31,7 +31,7 @@ const iconos = [
   {
     index:4,
     icon:'https://live.staticflickr.com/65535/54436995649_97b2f13ff4_n.jpg',
-    h2:' BRANDED CONTENT',
+    h2:' EXPERIENTIAL CONTENT',
     color:' rgb(238, 66, 88)'
   },
   {

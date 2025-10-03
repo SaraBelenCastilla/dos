@@ -44,7 +44,7 @@ React.useEffect(() => {
 }, []);
   const palabras = ["SOMOS", "ABSOLUTO", "EXPERIENTIAL"];
   const frases = ["NO CONTAMOS HISTORIAS", "LAS FABRICAMOS"];
-  const sentences = ["Producimos:", "EVENTOS, ARTE Y CONTENIDO "];
+  const sentences = ["Producimos:", "EVENTOS, ACTIVACIONES Y CONTENIDO "];
   const titulares = ["SOMOS", "ARTESANOS ","DEL","ENGAGEMENT"];
   const explicaciones = [
    {titular:"IRL",
@@ -308,12 +308,12 @@ const explicacion = {
              initial={{opacity:0, }}
              whileInView={{opacity:1, transition:{delay:0.4, duration:3.5,  }}}
              viewport={{once: false, amount:.5}}
-            >Llevamos más de 20 años creando </motion.h2>
+            >Llevamos más de 20 años conectando </motion.h2>
             <motion.h2 className="new__h2"
              initial={{opacity:0,}}
              whileInView={{opacity:1, transition:{delay:0.4, duration:3.5, }}}
              viewport={{once: false, amount:.5}}
-            >momentos que conectan.</motion.h2>
+            >marcas y personas.</motion.h2>
              <motion.div
         className='new__contenido'
         variants={container}

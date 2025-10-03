@@ -1843,9 +1843,9 @@ display: flex;
   font-size: 4.5em;
 }
 .quinta__p{
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
-  font-weight: 400;
+  font-family: "veneer", sans-serif;
+  font-size: 4em;
+  
   
   width: 300px;
  
@@ -2943,7 +2943,7 @@ transform: scale(1.5);
   z-index: 10;
  
   visibility: hidden;
-  background-color: rgb(252,66, 88); /* Fondo semitransparente */
+  background-color: rgba(252,66, 88,0.9); /* Fondo semitransparente */
   text-align: center;
 }
 .click{

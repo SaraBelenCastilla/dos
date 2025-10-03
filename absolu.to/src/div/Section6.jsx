@@ -166,8 +166,8 @@ function Section6() {
                            </div> 
                           
                            <div className="abslS">
-                           <h3 className="quinta__h3">SÍ.</h3>
-                           {/* <p className="quinta__p">Tengo una misión para el <span className='quinta__span'>Capitán Branding</span> .</p> */}
+                           <h3 className="quinta__h3">SÍ,</h3>
+                            <p className="quinta__p">HABLEMOS.</p> 
                           
                            </div>
                        </div>
@@ -186,8 +186,8 @@ function Section6() {
                           </div>
                             <div className="abslUnoS">
                            
-                            <h3 className="quinta__h3">NO.</h3>
-                            {/* <p className="quinta__p">Quiero saber más sobre el  <span className='quinta__span'>Capitán Branding</span> & Absoluto.</p> */}
+                            <h3 className="quinta__h3">NO,</h3>
+                             <p className="quinta__p">CONTINUAR.</p> 
                             </div> 
                            
                         </div>
