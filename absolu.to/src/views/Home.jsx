@@ -44,7 +44,7 @@ React.useEffect(() => {
 }, []);
   const palabras = ["SOMOS", "ABSOLUTO", "EXPERIENTIAL"];
   const frases = ["NO CONTAMOS HISTORIAS", "LAS FABRICAMOS"];
-  const sentences = ["Producimos:", "EVENTOS, ACTIVACIONES Y CONTENIDO "];
+  const sentences = ["Producimos:", "EVENTOS, ARTE Y CONTENIDO "];
   const titulares = ["SOMOS", "ARTESANOS ","DEL","ENGAGEMENT"];
   const explicaciones = [
    {titular:"IRL",

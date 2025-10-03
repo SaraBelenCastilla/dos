@@ -166,8 +166,8 @@ function Section6() {
                            </div> 
                           
                            <div className="abslS">
-                           <h3 className="quinta__h3">SÍ,</h3>
-                            <p className="quinta__p">HABLEMOS.</p> 
+                           <h3 className="quinta__h3S">SÍ,</h3>
+                            <p className="quinta__pS">HABLEMOS.</p> 
                           
                            </div>
                        </div>
@@ -186,8 +186,8 @@ function Section6() {
                           </div>
                             <div className="abslUnoS">
                            
-                            <h3 className="quinta__h3">NO,</h3>
-                             <p className="quinta__p">CONTINUAR.</p> 
+                            <h3 className="quinta__h3S">NO,</h3>
+                             <p className="quinta__pS">CONTINUAR.</p> 
                             </div> 
                            
                         </div>

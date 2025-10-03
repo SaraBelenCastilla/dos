@@ -1842,13 +1842,26 @@ display: flex;
   font-weight: 400;
   font-size: 4.5em;
 }
-.quinta__p{
+.quinta__h3S{
+  font-family: var(--tipo-principal);
+  font-weight: 400;
+  font-size: 4.5em;
+  text-align: center;
+}
+.quinta__pS{
   font-family: "veneer", sans-serif;
-  font-size: 4em;
+  font-size: 4.5em;
   
-  
+  text-align: center;
   width: 300px;
  
+}
+.quinta__p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-align: center;
+  width: 300px;
 }
 .quinta__span{
   font-weight: 500;
