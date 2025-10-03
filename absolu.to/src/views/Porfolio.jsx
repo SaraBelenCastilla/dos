@@ -551,6 +551,9 @@ useEffect(() => {
     
      
      </div> 
+     <div className="terminacion__porfolio">
+       <div className="contacto__email"  onClick={(e) => {window.location.href ='mailto: hola@absolu.to';}}> ¡HABLEMOS! </div>
+     </div>
     </>
   )
 }

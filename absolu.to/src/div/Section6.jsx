@@ -10,7 +10,7 @@ import { CgClose } from "react-icons/cg";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
-function Section5() {
+function Section6() {
   // var anchoVentana = window.innerWidth
   // window.onresize = function(){
 
@@ -67,7 +67,7 @@ function Section5() {
   };
   return (
     <>
-    <div className='quinta'
+    <div className='quintaS'
      style={{with:'100%'}} ref={sectionRef}
     >
         <motion.h1 className="quinta__h1"
@@ -83,8 +83,8 @@ function Section5() {
              viewport={{once: false, amount:.5}}
             />
         </div> */}
-        <div className="quinta__contenido">
-            <motion.div className="cinco__div"
+        {/* <div className="quinta__contenido"> */}
+            {/* <motion.div className="cinco__div"
             initial={{opacity:0, y:150,scale:0.5}}
             whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
             viewport={{once: false, amount:.5}}
@@ -93,7 +93,7 @@ function Section5() {
 </p>
 
 
-            </motion.div>
+            </motion.div> */}
             {/* <a className="mov" href='#footer'
             ><DotLottieReact className='abajo'
                 src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
@@ -154,28 +154,28 @@ function Section5() {
           </motion.div>
         )} */}
       {/* </AnimatePresence> */}
-      </div>
+      {/* </div> */}
       <div className="quintaUno__enlaces">
-                      <Link to={'/Contacto'}>
+                      {/* <Link to={'/Contacto'}> */}
                       <div className="quinta__card"
-                       
+                        onClick={(e) => {window.location.href ='mailto: hola@absolu.to';}}
                        >
                          <div className="quinta__icono">
                              {/* <img src={Boton} alt="icono" className="quinta__img" /> */}
                              <div className="interior"></div>
                            </div> 
                           
-                           <div className="absl">
+                           <div className="abslS">
                            <h3 className="quinta__h3">SÍ.</h3>
-                           <p className="quinta__p">Tengo una misión para el <span className='quinta__span'>Capitán Branding</span> .</p>
+                           {/* <p className="quinta__p">Tengo una misión para el <span className='quinta__span'>Capitán Branding</span> .</p> */}
                           
                            </div>
                        </div>
-                      </Link>
+                      {/* </Link> */}
                        
                         
                           
-                       <Link to={'/Home'}>
+                       <Link to={'/porfolio'}>
                        <div className="quinta__cardUno"
                         
                         
@@ -184,10 +184,10 @@ function Section5() {
                           {/* <img src={Lupa} alt="icono" className="quinta__img" /> */}
                           <CgClose className='interiorUno'/>
                           </div>
-                            <div className="abslUno">
+                            <div className="abslUnoS">
                            
                             <h3 className="quinta__h3">NO.</h3>
-                            <p className="quinta__p">Quiero saber más sobre el  <span className='quinta__span'>Capitán Branding</span> & Absoluto.</p>
+                            {/* <p className="quinta__p">Quiero saber más sobre el  <span className='quinta__span'>Capitán Branding</span> & Absoluto.</p> */}
                             </div> 
                            
                         </div>
@@ -226,4 +226,4 @@ function Section5() {
   )
 }
 
-export default Section5
+export default Section6

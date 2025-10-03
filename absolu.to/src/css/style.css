@@ -1024,14 +1024,30 @@ right: 0%;
   align-items: center;
   width: 100%;
   height: 100vh;
+  
   display: flex;
   flex-direction: column;
   background-color:rgb(5, 11, 21);
   color: white;
   padding: 5%;
   
- 
 
+}
+.quintaS{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  gap: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(5, 11, 21);
+  color: white;
+  padding: 5%;
+  
 
 }
 .quintaUno__enlaces{
@@ -1106,6 +1122,11 @@ right: 0%;
  
   
 }
+.cabeza__footer{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
 .footer__cabecera{
   width: 100%;
   height: 30%;
@@ -1158,7 +1179,7 @@ right: 0%;
 }
 .logo__footer{
   width: 350px;
-  margin-left: 5%;
+  margin-left: 4%;
   padding-top: 10%;
  
 }
@@ -1176,6 +1197,7 @@ right: 0%;
   font-weight: 400;
   font-size: 1.5em;
   text-align: left;
+  padding-right: 0.2em;
 }
 .footer__email{
   font-family: "Poppins", sans-serif;
@@ -1637,6 +1659,29 @@ display: flex;
 }
 .absl{
   position: absolute;
+  width:400px;
+  height: 120px;
+  /* background-image: url(../assets/papelitos/amarillo.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: var(--turquesa);
+  padding: 2%;
+  top: 0%;
+  right:35% ;
+  bottom: 0;
+  
+  border-radius: 20px;
+ 
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0; 
+}
+.abslS{
+  position: absolute;
   width:350px;
   height: 120px;
   /* background-image: url(../assets/papelitos/amarillo.png);
@@ -1659,6 +1704,29 @@ display: flex;
   opacity: 0; 
 }
 .abslUno{
+  position: absolute;
+  width: 400px;
+  height: 120px;
+  /* background-image: url(../assets/papelitos/morado.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
+ background-color:rgb(238, 66, 88);
+  padding: 2%;
+  top: 0%;
+  left: 35%;
+  bottom: 0;
+  
+  border-radius: 20px;
+ 
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0; 
+}
+.abslUnoS{
   position: absolute;
   width: 350px;
   height: 120px;
@@ -1728,6 +1796,12 @@ display: flex;
 .quinta__cardUno:hover > .abslUno{
   opacity: 1;
 }
+.quinta__card:hover > .abslS{
+  opacity: 1;
+}
+.quinta__cardUno:hover > .abslUnoS{
+  opacity: 1;
+}
 
 
 .quinta__card:hover >.quinta__icono{
@@ -1770,9 +1844,9 @@ display: flex;
 }
 .quinta__p{
   font-family: "Poppins", sans-serif;
-  font-size: 2em;
-  font-weight: 700;
-  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+  
   width: 300px;
  
 }
@@ -2350,14 +2424,17 @@ margin-bottom: 10%;
 .show__logo{
   position: relative;
   max-width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: rgb(245, 243, 236);
   display: flex;
   flex-direction: column;
-  gap: 5%;
+  gap: 4em;
   justify-content: center;
   align-items: center;
   z-index: 2;
+  padding-bottom: 5%;
+  padding-top: 5%;
+    
 }
 
 .slider {
@@ -2411,6 +2488,14 @@ margin-bottom: 10%;
   100% {
     transform: translateX(0);
   }
+}
+.terminacion__porfolio{
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(5, 11, 21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* --------servicios------- */
 .servicios{
@@ -2858,7 +2943,7 @@ transform: scale(1.5);
   z-index: 10;
  
   visibility: hidden;
-  background-color: rgba(252,66, 88, 0.8); /* Fondo semitransparente */
+  background-color: rgb(252,66, 88); /* Fondo semitransparente */
   text-align: center;
 }
 .click{
@@ -2925,8 +3010,8 @@ transform: scale(1.5);
 .item__h2{
   color: white;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1.3em;
+  font-weight: 800;
+  font-size: 1.5em;
   text-align: center;
 }
 .modal__p{
@@ -8883,6 +8968,18 @@ font-size: 6em;
 }
 
 @media only screen and (min-width: 1600px) {
+  .containerS{
+    height: 100vh;
+   }
+   .wrapper{
+    height: 100vh;
+   }
+   .sliderWrapper{
+    height: 100vh;
+   }
+   .sliderS{
+    height: 100vh;
+   }
  
   .cero__h1{
     font-size: 12em;

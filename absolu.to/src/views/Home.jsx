@@ -17,7 +17,7 @@ import Papel from '../assets/papelitos/fuck.png'
 import Servicios from'../views/Servicios'
 import FotosUno from '../views/FotosUno'
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import Section5 from '../div/Section5'
+import Section6 from '../div/Section6'
 
 export function AnimatedSection({ children, className }) {
   const ref = useRef(null);
@@ -436,7 +436,7 @@ const explicacion = {
           <Servicios/>
           </section>
          <FotosUno/>
-         <Section5/>
+        <Section6/>
     </>
   )
 }

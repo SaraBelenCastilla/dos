@@ -1,6 +1,6 @@
 import React from 'react'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import Lgo from '../assets/img/logo.png'
+import Lgo from '../assets/img/logoFoter.png'
 import { FaRegCopyright } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
@@ -18,7 +18,10 @@ export default function Footer() {
       autoplay
     /></div>
       </div> */}
+     
      <img className='logo__footer' src={Lgo} alt="logo" />  
+      
+         
       <div className="footer__cuerpo">
         <div className="footer__drc">
          
@@ -43,12 +46,11 @@ export default function Footer() {
             <span className="contactoF__default-text">ÚNETE AL EQUIPO</span>
              <span className="contactoF__hover-text">BECOME A BRANDER</span>
            </div>
-            <div className="contactoF__email"  onClick={(e) => {window.location.href ='mailto: becomeabrander@absolu.to';}}>
+            {/* <div className="contactoF__email"  onClick={(e) => {window.location.href ='mailto: becomeabrander@absolu.to';}}>
             <span className="contactoF__default-text">PROVEDORES</span>
              <span className="contactoF__hover-text">PROVEDORES</span>
-           </div>
-
-             <div className="footer__social">
+           </div> */}
+ <div className="footer__social">
              <a
     href="https://www.facebook.com/absolutoexperiential/
 "
@@ -93,15 +95,16 @@ export default function Footer() {
 </svg>
 </a>
           </div>
+           
     </div>
-          {/* <button className='footer__botonB'>Trabaja con nosotros</button> */}
+         
           
         </div>
      
       <div className="footer__pie">
       <FaRegCopyright className='copy'/>
-      <p className="footer__p"> 2025 Absoluto Experiential </p>
-      <p className="footer__p"> <Link className="footer__link" to="/privacidad">| Privacidad</Link><br /> </p>
+      <p className="footer__p"> 2025 Absoluto Experiential  </p>
+      <p className="footer__p"> <Link className="footer__link" to="/privacidad"> | Privacidad</Link><br /> </p>
       <p className="footer__p"> <Link className="footer__link" to="/coockies">| We are Cookieless</Link>  </p>
       </div>
     </footer>
