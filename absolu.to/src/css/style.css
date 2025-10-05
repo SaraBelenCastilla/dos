@@ -1694,7 +1694,7 @@ display: flex;
   bottom: 0;
   
   border-radius: 20px;
- 
+ text-align: center;
   display: flex;
   flex-direction: row;
   gap: 2%;
@@ -1845,12 +1845,12 @@ display: flex;
 .quinta__h3S{
   font-family: var(--tipo-principal);
   font-weight: 400;
-  font-size: 4.5em;
+  font-size: 4em;
   text-align: center;
 }
 .quinta__pS{
   font-family: "veneer", sans-serif;
-  font-size: 4.5em;
+  font-size: 4em;
   
   text-align: center;
   width: 300px;
@@ -4548,6 +4548,8 @@ width: auto;
   height: auto;
   background-color:rgb(245, 243, 236);;
   padding: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 .privacidad__h2{
   font-family: "Poppins", sans-serif;
@@ -4667,7 +4669,8 @@ li{
 }
 
 .containerS {
-  height: 100vh;
+  width: 100%;
+  height: auto;
   background-color: black;
 }
 
@@ -8418,7 +8421,7 @@ justify-content: center;
 
 
 }
-@media only screen and (min-width:820px)  and (max-width: 1300px) {
+@media only screen and (min-width:820px)  and (max-width: 1400px) {
   html, body {
     overflow-x: hidden !important;
     max-width: 100vw !important;
@@ -8980,7 +8983,61 @@ font-size: 6em;
 }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1500px)and (max-width: 1650px) {
+
+  .porfolio {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .porfolio__div{
+    max-width: 100vw;
+  }
+  .porfolio__h2 {
+    font-size: 2em;
+    padding-top: 5%;
+  }
+  .porfolio__p {
+    font-size: 1.2em;
+    padding-top: 2%;
+    text-align: center;
+  }
+ 
+  .ite{
+     width: 100vw;
+    max-width: 100vw;
+    height: auto;      /* Ajusta la altura para que sea proporcional al ancho */
+    min-height: unset; /* Elimina la min-height si no la necesitas */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(5, 11, 21);
+  }
+   .img__item {
+   width: 100%;
+  max-width: 850px; /* o el tamaño máximo que prefieras */
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  }
+  .porfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Dos columnas */
+    grid-template-rows: repeat(3, 1fr); /* Tres filas */
+    gap: 20px; /* Espacio entre los elementos */
+    width: auto;
+    padding: 0;
+    margin-top: 2%;
+  }
+ .cotenedor{
+  padding-top: 40%;
+ }
   .containerS{
     height: 100vh;
    }
@@ -9005,7 +9062,7 @@ font-size: 6em;
     height: 400px;
   }
   .ite{
-    width: 600px;
+    width: 450px;
     height: auto;
   }
   .item{
