@@ -14,6 +14,7 @@ import LogoSlider2 from '../Components/LogoSlider2';
 import LogoSlider3 from '../Components/LogoSlider3';
 import LogoSlider from '../Components/LogoSlider';
 import Foto from '../assets/img/cabezara.jpg';
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const icons = [
   {
@@ -492,6 +493,7 @@ useEffect(() => {
     <div className="descripcion__item">
        
       <h2 className='item__h2'>{icon.descripcion}</h2>
+      <FaArrowUpRightFromSquare className='item__icon' />
     </div>
    
     {/* ... */}
