@@ -332,31 +332,7 @@ const palabra = {
       src="https://live.staticflickr.com/65535/54602233911_b51598e431_n.jpg" alt='Lucky' />
 </div>
 <Fotos/>
-{/* <div className="gallery">
-      <img src="https://live.staticflickr.com/65535/53466299340_b761d8d5c5_n.jpg" alt=""   />
-      <img src="https://live.staticflickr.com/65535/53465845681_588cde11c1_n.jpg" alt="" />
-      <img src="https://live.staticflickr.com/65535/53466289865_4623d9c3ae_n.jpg" alt=""   />
-      <img src="https://live.staticflickr.com/65535/54435859027_f1b3f9c41f_n.jpg" alt=""  />
-     </div>
-     <div className="gallery">
-      <img src="https://live.staticflickr.com/65535/53465964803_8af15f4075_n.jpg" alt="" />
-      <img src="https://live.staticflickr.com/65535/54436909724_9164d03555_n.jpg" alt="" />
-      <img src="https://live.staticflickr.com/65535/53471393438_c38ce914d1_n.jpg" alt=""  />
-      <img src="https://live.staticflickr.com/65535/53471665890_9c74228aed_n.jpg" alt=""  />
-     </div> */}
- {/* <a className='flechi' href={"#palabras"}> <DotLottieReact
-                                  src="https://lottie.host/54e68d0e-fe08-4044-acd0-ea9942e856fb/UmjcekdDNO.lottie"
-                                  loop
-                                  autoplay
-                                /></a> */}
-                                  {/* <a className="movimiento" href='#footer'
-><DotLottieReact className='abajo'
-    src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-    loop
-    autoplay
-  />
 
-      </a>   */}
                                 <div className="porfolio__link">
                                   <span className="contactoF__default-text"><Link    to="/porfolio">ver PORFOLIO</Link></span>
                                   <span className="contactoF__hover-text"><Link    to="/porfolio"> PORFOLIO</Link></span>

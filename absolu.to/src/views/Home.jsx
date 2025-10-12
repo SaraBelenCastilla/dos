@@ -18,6 +18,10 @@ import Servicios from'../views/Servicios'
 import FotosUno from '../views/FotosUno'
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Section6 from '../div/Section6'
+import { RxPlusCircled } from "react-icons/rx";
+import Fotos from './Fotos';
+import { Link } from 'react-router-dom';
+
 
 export function AnimatedSection({ children, className }) {
   const ref = useRef(null);
@@ -367,8 +371,9 @@ const explicacion = {
         style={{ cursor: "pointer" }}
         onClick={() => setOpenIndex(openIndex === i ? null : i)}
       >
-        {expli.titular}
+        {expli.titular}<span><RxPlusCircled className='explicacion__icon' /></span> 
       </h2>
+     
       <AnimatePresence initial={false}>
         {openIndex === i && (
           <motion.div
@@ -436,6 +441,64 @@ const explicacion = {
           <Servicios/>
           </section>
          <FotosUno/>
+          <div className="showroon__encabezado">
+               <motion.h2 className='show__h2'
+                initial={{opacity:0, y:100}}
+                whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
+                viewport={{once: false, amount:.5}}
+               >LAS NIÑAS DE MIS OJOS</motion.h2>
+               <motion.div className="ojos"
+                initial={{opacity:0, y:100}}
+                whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
+                viewport={{once: false, amount:.5}}
+               ><DotLottieReact
+             src="https://lottie.host/7b0a117c-5505-439e-bd18-5e7558833e90/bUh6vjihUE.lottie"
+             loop
+             autoplay
+           />
+         
+               </motion.div>
+                 {/* <a className="movimiento" href='#show'
+         ><DotLottieReact className='abajo'
+             src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
+             loop
+             autoplay
+           />
+         
+               </a>   */}
+             </div>
+               <div className='showroon' id='show'>
+     
+     
+
+    
+     <div className="containerUno"
+     
+     >
+    <img className='imgUno'
+      src="https://live.staticflickr.com/65535/54601350617_ce5d66c388_n.jpg" alt='Inversis' />
+    <img className='imgUno'
+      src="https://live.staticflickr.com/65535/54601353292_cfec28dd4e_n.jpg" alt='Mercedes' />
+    <img className='imgUno'
+      src="https://live.staticflickr.com/65535/54602233181_ce7481646c_n.jpg" alt='Junta Andalucia' />
+    <img className='imgUno'
+      src="https://live.staticflickr.com/65535/54602444818_b19b25a407_n.jpg" alt='Mastercard' />
+    <img className='imgUno'
+      src="https://live.staticflickr.com/65535/54602236011_e131d432a3_n.jpg" alt='Sicad' />
+    <img className='imgUno'
+      src="https://live.staticflickr.com/65535/54602530095_8b31a5332a_n.jpg" alt='Cruzcampo' />
+    <img className='imgUno'
+      src="https://live.staticflickr.com/65535/54601349382_beff5537f1_n.jpg" alt='Impresionistas' />
+    <img className='imgUno'
+      src="https://live.staticflickr.com/65535/54602233911_b51598e431_n.jpg" alt='Lucky' />
+</div>
+<Fotos/>
+
+                                 <div className="porfolio__link">
+                                  <span className="contactoF__default-text"><Link    to="/porfolio">ver PORFOLIO</Link></span>
+                                  <span className="contactoF__hover-text"><Link    to="/porfolio"> CASOS</Link></span>
+                                </div> 
+     </div>
         <Section6/>
     </>
   )

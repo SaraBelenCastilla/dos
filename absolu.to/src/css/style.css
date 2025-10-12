@@ -1537,6 +1537,9 @@ display: flex;
   padding-top: 0;
  
 }
+.explicacion__icon{
+  font-size: 1.4em;
+}
 .explicacion__div{
   width: 450px;
   height: auto;
@@ -1565,9 +1568,11 @@ display: flex;
   text-align: start;
   height: auto;
   color:white;
-  text-decoration:underline   rgb(238, 66, 88);
+  /* text-decoration:underline   rgb(238, 66, 88); */
   cursor: pointer;
   text-decoration-color: rgb(238, 66, 88);
+  display: flex;
+  gap: 15px;
 }
 .explicacion__h2:hover{
   color: rgb(238, 66, 88);
@@ -4845,8 +4850,24 @@ width: 100%;
         align-items: center;
     }
    
-
-
+.abslS{
+  width: 100px;
+  height: auto;
+  top: -100%;
+  margin-bottom: 120%;
+}
+.quinta__h3S{
+  font-size: 1em;
+}
+.quinta__pS{
+  font-size: 1em;
+}
+.abslUnoS{
+  width: 100px;
+  height: auto;
+  top: -100%;
+  margin-bottom: 120%;
+}
 /* .img__item {
   width: 100%;
   height: 100%;
@@ -4982,7 +5003,7 @@ max-width: 320px;
     background-position: 0%;
   }
   .footer__pie{
-    width: 80vw;
+    width: 95vw;
   }
    .boton__drch--section22 {
     display: none !important;
@@ -6159,7 +6180,7 @@ padding-top: 5%;
     background-position: 0%;
   }
   .footer__pie{
-    width: 80vw;
+    width: 95vw;
   }
  .contactoF__email{
   max-width: 200px;
@@ -6188,6 +6209,24 @@ padding-top: 5%;
 }
 .contactoF__hover-text{
   font-size: 1em;
+}
+.abslS{
+  width: 100px;
+  height: auto;
+  top: -100%;
+  margin-bottom: 120%;
+}
+.quinta__h3S{
+  font-size: 1em;
+}
+.quinta__pS{
+  font-size: 1em;
+}
+.abslUnoS{
+  width: 100px;
+  height: auto;
+  top: -100%;
+  margin-bottom: 120%;
 }
   /* ----------nosotros---------- */
 .nosotros{
@@ -7735,7 +7774,7 @@ padding-top: 5%;
 
 /* ----------------------- */
 .quintaUno__enlaces{
-  flex-direction: column;
+ 
   align-items: center;
 }
 .cinco__div{
@@ -7757,14 +7796,32 @@ padding-top: 5%;
   width: 300px;
   height: 100px;
 }
-.quinta__icono{
+/* .quinta__icono{
   width: 4.5rem;
-}
+} */
 .absl{
   width: 300px;
   height: 100px;
   padding-left: 5%;
   padding-right: 5%;
+}
+.abslS{
+  width: 100px;
+  height: auto;
+  top: -50%;
+  margin-bottom: 40%;
+}
+.quinta__h3S{
+  font-size: 1em;
+}
+.quinta__pS{
+  font-size: 1em;
+}
+.abslUnoS{
+  width: 100px;
+  height: auto;
+  top: -50%;
+  margin-bottom: 40%;
 }
 .abslUno{
   width: 300px;
@@ -7775,7 +7832,13 @@ padding-top: 5%;
 .quinta__h3{
   font-size: 2em;
 }
+.quinta__h3S{
+  font-size: 2em;
+}
 .quinta__p{
+  font-size: 1em;
+}
+.quinta__pS{
   font-size: 1em;
 }
 .quinta__contenido{
@@ -8720,7 +8783,7 @@ padding-top: 5%;
 
 /* ----------------------- */
 .quintaUno__enlaces{
-  flex-direction: column;
+ 
   align-items: center;
 }
 .cinco__div{
@@ -8762,6 +8825,24 @@ padding-top: 5%;
 }
 .quinta__p{
   font-size: 1em;
+}
+.abslS{
+  width: 100px;
+  height: auto;
+  top: -50%;
+  margin-bottom: 40%;
+}
+.quinta__h3S{
+  font-size: 1em;
+}
+.quinta__pS{
+  font-size: 1em;
+}
+.abslUnoS{
+  width: 100px;
+  height: auto;
+  top: -50%;
+  margin-bottom: 40%;
 }
 .quinta__contenido{
   padding: 2%;
@@ -8821,13 +8902,14 @@ padding-top: 5%;
   }
  
   .ite{
-     width: 100vw;
+     width: 95%;
     max-width: 100vw;
-    height: 60vw;      /* Ajusta la altura para que sea proporcional al ancho */
+    height: auto;      /* Ajusta la altura para que sea proporcional al ancho */
     min-height: unset; /* Elimina la min-height si no la necesitas */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    margin-left: 2%;
     background-color: rgb(5, 11, 21);
   }
    .img__item {
