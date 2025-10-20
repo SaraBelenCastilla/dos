@@ -357,7 +357,7 @@ function Hacemos() {
     </div>
     <div className='container__box'>
     <figure className='container__figure'>
-   <img className='container__img' src='https://live.staticflickr.com/65535/54864539776_29299781aa_z.jpg' alt="arboles" />
+   <img className='container__img' src='https://live.staticflickr.com/65535/54864793638_a31a1ebba7_w.jpg' alt="arboles" />
    </figure>
    <div className="containero__descipcion">
      <h2 className="containero__h2">CONTENIDO</h2>
