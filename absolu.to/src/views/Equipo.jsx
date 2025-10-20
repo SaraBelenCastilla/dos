@@ -203,7 +203,7 @@ const palabra = {
     <img className='img'
       src="https://live.staticflickr.com/65535/54355438187_a3d5d6b821_n.jpg" onMouseEnter={desplegarSiete}  onMouseLeave={plegarSiete} alt="MacGyver"  />
 </div>
-{/* {textos.map((texto,index) => (   */}
+
      <div className={`descripcion ${desplegado? 'active':''}`} >
       <h3 className="des__h3">C.E.O.</h3>
       <h4 className="des__h4">Couch Executive Officer</h4>
@@ -254,14 +254,7 @@ const palabra = {
                                   <h3 className="porfolio__h3default" > ÚNETE AL EQUIPO</h3>
                                   <h3 className="porfolio__h3hover">BECOME A BRANDER</h3>
                                 </div>
-{/* <a className="movimiento" href='#footer'
-            ><DotLottieReact className='abajo'
-                src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-                loop
-                autoplay
-              />
-            
-                  </a>  */}
+
      </div>
      
      {/* <Schedule/>

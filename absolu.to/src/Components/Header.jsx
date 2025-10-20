@@ -53,29 +53,33 @@ function Header() {
     <li className='enlaces3'><Link className="header__linkLista" to={'/'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>ASÍ SOMOS</Link></li>
-                <li className='enlaces2'><Link className="header__linkLista" to={'/porfolio'}  onClick={() => {
+    }}>ABSOLUTO</Link></li>
+     <li className='enlaces4'><Link className="header__linkLista" to={'/somos'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>QUÉ HACEMOS</Link></li>
+    }}>SOMOS </Link></li>
+                <li className='enlaces5'><Link className="header__linkLista" to={'/hacemos'}  onClick={() => {
+      closeMenu(); // Cierra el menú
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
+    }}>HACEMOS</Link></li>
                 
-                <li className='enlaces4'><Link className="header__linkLista" to={'/equipo'}  onClick={() => {
+                <li className='enlaces1'><Link className="header__linkLista" to={'/porfolio'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>EL EQUIPO </Link></li>
-                 <li className='enlaces5'><Link className="header__linkLista" to={'/metodo'}  onClick={() => {
+    }}>CASOS </Link></li>
+                 <li className='enlaces6'><Link className="header__linkLista" to={'/Insights'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>NUESTRO MÉTODO</Link></li>
+    }}>INSIGHTS</Link></li>
 
-     <li className='enlaces1'><Link className="header__linkLista" to={'/origen'}  onClick={() => {
+     {/* <li className='enlaces1'><Link className="header__linkLista" to={'/origen'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
     }}>EL ORIGEN</Link></li>
                 <li className='enlaces6'><Link className="header__linkLista" to={'/insights'} onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio
-    }}>INSIGHTS</Link></li>
+    }}>INSIGHTS</Link></li> */}
                 <li className='enlaces7'><Link className="header__linkLista" to={'/contacto'}  onClick={() => {
       closeMenu(); // Cierra el menú
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza al inicio

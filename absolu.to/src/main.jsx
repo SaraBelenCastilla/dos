@@ -19,12 +19,17 @@ import Porfolio from './views/Porfolio'
 import Formula from './views/Formula'
 import Coockies from './views/Coockies';
 import Index from './views/Index';
+import Somos from './views/Somos';
 import{ Helmet, HelmetProvider } from 'react-helmet-async';
 import Home from './views/Home';
+import Hacemos from './views/Hacemos';
+import Insights from './views/Insight';
+
 
 
 import './css/style.css'
 import { useEffect } from 'react'
+import Sostenibilidad from './views/Sostenibilidad';
 
 // Componente para manejar el scroll al inicio
 function ScrollToTop() {
@@ -58,11 +63,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/showroom' element={<Showroom/>}/>
           <Route path='/servicios' element={<Servicios/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
-          <Route path='/insights' element={<Razones/>}/>
+          <Route path='/insights' element={<Insights/>}/>
           <Route path='/metodo' element={<Reactiva/>}/>
           <Route path='/equipo' element={<Equipo/>}/>
           <Route path="/privacidad" element={<Privacidad />} />
           <Route path="/porfolio" element={<Porfolio />} />
+          <Route path="/somos" element={<Somos />} />
+          <Route path="/hacemos" element={<Hacemos />} />
+           <Route path='/sostenibilidad' element={<Sostenibilidad/>}/>
            <Route path="/formula" element={<Formula />} />
             <Route path="/coockies" element={<Coockies />} />
              <Route path="/home" element={<Home />} />

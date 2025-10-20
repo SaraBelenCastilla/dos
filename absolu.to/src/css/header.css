@@ -317,9 +317,9 @@
     font-size: 2.5em;
     color:black;
     padding: 0.2%;
-    padding-left: 2%;
-    padding-right: 2%;
-    background-image: url(../assets/papelitos/origen.png);
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: url(../assets/papelitos/casos.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -356,10 +356,10 @@
     font-weight: 200;
     font-size: 2.5em;
     color:black;
-    padding: 0.2%;
-    padding-left: 2%;
-    padding-right: 2%;
-    background-image: url(../assets/papelitos/trascenio.png);
+    padding: 0.8%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: url(../assets/papelitos/absoluto.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -380,7 +380,7 @@
     padding: 0.8%;
     padding-left: 5%;
     padding-right: 5%;
-    background-image: url(../assets/papelitos/equipo1.png);
+    background-image: url(../assets/papelitos/somos.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -401,7 +401,7 @@
     padding: 0.8%;
     padding-left: 5%;
     padding-right: 5%;
-    background-image: url(../assets/papelitos/metodo.png);
+    background-image: url(../assets/papelitos/hacemos.png);
     background-repeat: no-repeat;
     background-size: cover;
     transform: rotate(-2deg);
