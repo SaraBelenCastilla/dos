@@ -10,7 +10,7 @@ import { CgClose } from "react-icons/cg";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
-function Section5() {
+function Section5({id}) {
   // var anchoVentana = window.innerWidth
   // window.onresize = function(){
 
@@ -67,7 +67,7 @@ function Section5() {
   };
   return (
     <>
-    <div className='quinta'
+    <div className='quinta'id={id}
      style={{with:'100%'}} ref={sectionRef}
     >
         <motion.h1 className="quinta__h1"

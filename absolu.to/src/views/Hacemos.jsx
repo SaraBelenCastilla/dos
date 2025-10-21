@@ -230,7 +230,7 @@ function Hacemos() {
      <div className='containero'>
    <><div className='container__box'>
     <figure className='container__figure'>
-   <img  className='container__img' src='https://live.staticflickr.com/65535/54815609800_7fda6f076d.jpg' alt="arboles imagen" />
+   <img  className='container__img' src='https://live.staticflickr.com/65535/54870286231_0b88abb74c_w.jpg' alt="corporativo" />
    </figure  >
    <div className="containero__descipcion">
        <h2 className="containero__h2">CORPORATIVO</h2>
@@ -254,7 +254,7 @@ function Hacemos() {
     </div>
     <div className='container__box'>
     <figure className='container__figure'>
-   <img  className='container__img' src='https://live.staticflickr.com/65535/54815608680_e1547c9498.jpg' alt="arboles imagen" />
+   <img  className='container__img' src='https://live.staticflickr.com/65535/54870298836_fb63c05669_w.jpg' alt="marca" />
    </figure>
    <div className="containero__descipcion">
      <h2 className="containero__h2">MARCA</h2>
@@ -274,7 +274,7 @@ function Hacemos() {
     </div>
     <div className='container__box'>
     <figure className='container__figure'>
-   <img  className='container__img' src='https://live.staticflickr.com/65535/54815264696_52738fd414_z.jpg' alt="arboles imagen" />
+   <img  className='container__img' src='https://live.staticflickr.com/65535/54870597115_8966b4a530_w.jpg' alt="retail" />
    </figure>
     <div className="containero__descipcion">
         <h2 className="containero__h2">RETAIL</h2>
@@ -295,7 +295,7 @@ function Hacemos() {
     </div>
     <div className='container__box'>
     <figure className='container__figure'>
-   <img className='container__img'  src='https://live.staticflickr.com/65535/54815606905_22448eed46_z.jpg' alt="arboles imagen" />
+   <img className='container__img'  src='https://live.staticflickr.com/65535/54870588515_c3ca32266e_w.jpg' alt=" digital" />
    </figure>
     <div className="containero__descipcion">
      <h2 className="containero__h2">DIGITAL</h2>
@@ -318,7 +318,7 @@ function Hacemos() {
     </div>
     <div className='container__box'>
     <figure className='container__figure'>
-   <img className='container__img'  src='https://live.staticflickr.com/65535/54864539776_29299781aa_z.jpg' alt="arboles imagen" />
+   <img className='container__img'  src='https://live.staticflickr.com/65535/54870529653_f7da387f73_w.jpg' alt="espacios" />
    </figure>
    <div className="containero__descipcion">
      <h2 className="containero__h2">ESPACIOS</h2>
@@ -337,7 +337,7 @@ function Hacemos() {
     </div>
     <div className='container__box'>
     <figure className='container__figure'>
-   <img className='container__img' src='https://live.staticflickr.com/65535/54550840347_ecaaa50f6b_w.jpg' alt="arboles" />
+   <img className='container__img' src='https://live.staticflickr.com/65535/54870286231_0b88abb74c_w.jpg' alt="cultura" />
    </figure>
    <div className="containero__descipcion">
      <h2 className="containero__h2">CULTURA</h2>
@@ -357,7 +357,7 @@ function Hacemos() {
     </div>
     <div className='container__box'>
     <figure className='container__figure'>
-   <img className='container__img' src='https://live.staticflickr.com/65535/54864793638_a31a1ebba7_w.jpg' alt="arboles" />
+   <img className='container__img' src='https://live.staticflickr.com/65535/54870515963_8e72deb283_z.jpg' alt="contenido" />
    </figure>
    <div className="containero__descipcion">
      <h2 className="containero__h2">CONTENIDO</h2>

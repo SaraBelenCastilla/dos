@@ -29,7 +29,8 @@ const imagenes = [
     index:4,
     imagen:'https://live.staticflickr.com/65535/54854818884_fcf75c2685_n.jpg',
     h2:'INTEGRALES',
-    p:'Producción 360º.Cobertura integral.', 
+    p:'Producción 360℃. Cobertura integral.', 
+    
    
   },
   {

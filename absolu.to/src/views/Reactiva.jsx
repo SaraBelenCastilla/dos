@@ -222,8 +222,8 @@ const palabra = {
       
             </a> 
       </div>
-      {/* {sections.map((section, index) => ( */}
-     <div className="snap">
+     
+     {/* <div className="snap">
           <section id='section3' className='reactiva__uno' >
             <motion.div className="experiencias"
              initial={{ opacity: 0, y: 100 }}
@@ -235,29 +235,21 @@ const palabra = {
             >
               EXPERIENCIAS
             </h2>
-            {/* {section.title2 && ( */}
+           
               <h2 className="reactiva__h2"
                
               >
                QUE GENERAN
               </h2>
             
-            {/* {section.title3 && ( */}
+           
               <h2 className="reactiva__h2"
                
               >
                 CONTENIDO
               </h2>
               </motion.div>
-            {/* )} */}
-             {/* <a className="movimiento" href='#section4'
-            ><DotLottieReact className='abajo'
-                src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-                loop
-                autoplay
-              />
-            
-                  </a>  */}
+           
           </section>
           <section id='section4' className='reactiva__uno' >
             <motion.div className="contenidos"
@@ -270,32 +262,24 @@ const palabra = {
             >
               CONTENIDOS
             </h2>
-            {/* {section.title2 && ( */}
+           
               <h2 className="reactiva__h2"
                
               >
                QUE ACTIVAN
               </h2>
             
-            {/* {section.title3 && ( */}
+          
               <h2 className="reactiva__h2"
                 
               >
                 EXPERIENCIAS
               </h2>
               </motion.div>
-            {/* )} */}
-             {/* <a className="movimiento" href={isMobile ? "#section5-6" : "#section5"}
-            ><DotLottieReact className='abajo'
-                src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-                loop
-                autoplay
-              />
-            
-                  </a>  */}
+          
           </section>
           {isMobile ? (
-        // Renderiza una sola sección para móviles
+       
         <section id="section5-6" className="reactiva__uno">
         <motion.h2
           className="reactiva__h2"
@@ -321,14 +305,7 @@ const palabra = {
         >
           SIN HISTORIAS
         </motion.h2>
-        {/* <a className="movimiento" href="#footer">
-            <DotLottieReact
-              className="abajo"
-              src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-              loop
-              autoplay
-            />
-          </a> */}
+       
           <div className="reactiva__formula">
   <Link className="contactoF__email" to="/formula">
     
@@ -353,14 +330,7 @@ const palabra = {
             >
               SIN CUENTOS
             </motion.h2>
-            {/* <a className="movimiento" href="#section6">
-              <DotLottieReact
-                className="abajo"
-                src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-                loop
-                autoplay
-              />
-            </a> */}
+          
           </section>
           <section id="section6" className="reactiva__unoH">
             <motion.h2
@@ -391,138 +361,17 @@ const palabra = {
     <p className="sinhn">DESCUBRE NUESTRO MÉTODO</p>
   </Link>
 </motion.div>
-            {/* <a className="movimiento" href="#footer">
-              <DotLottieReact
-                className="abajo"
-                src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-                loop
-                autoplay
-              />
-            </a> */}
+          
           </section>
          
         </>
       )}
-        // Renderiza las secciones por separado para pantallas más grandes
+       
           
         
 
-        {/* ))}  */}
-       {/* <div className="reactiva__uno"
-      
-      >
-        <motion.h2 className="reactiva__h2"
-         initial={{opacity:0, y:100}}
-         whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
-         viewport={{once: false, amount:.5}}
-        >EXPERIENCIAS</motion.h2>
-        <motion.h2 className="reactiva__h2"
-         initial={{opacity:0, y:100}}
-         whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
-         viewport={{once: false, amount:.5}}
-        >QUE GENERAN</motion.h2>
-        <motion.h2 className="reactiva__h2"
-         initial={{opacity:0, y:100}}
-         whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
-         viewport={{once: false, amount:.5}}
-        >CONTENIDO</motion.h2>
-      </div>
-      <div className="reactiva__uno"
-      
-      >
-        <motion.h2 className="reactiva__h2"
-         initial={{opacity:0, y:100}}
-         whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
-         viewport={{once: false, amount:.5}}
-        >CONTENIDOS</motion.h2>
-        <motion.h2 className="reactiva__h2"
-         initial={{opacity:0, y:100}}
-         whileInView={{opacity:1, y:0, transition:{delay:0.6, duration:1,  ease:'easyInOut',type:'spring'}}}
-         viewport={{once: false, amount:.5}}
-        >QUE ACTIVAN</motion.h2>
-        <motion.h2 className="reactiva__h2"
-         initial={{opacity:0, y:100}}
-         whileInView={{opacity:1, y:0, transition:{delay:0.8, duration:1,  ease:'easyInOut',type:'spring'}}}
-         viewport={{once: false, amount:.5}}
-        >EXPERIENCIAS</motion.h2>
-      </div>
-      <motion.div className="reactiva__uno"
-       initial={{opacity:0, y:100}}
-       whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
-       viewport={{once: false, amount:.5}}
-      >
-        <h2 className="reactiva__h2">SIN CUENTOS</h2>
        
-      </motion.div>
-      <div className="reactiva__uno">
-        <motion.h2 className="reactiva__h2"
-         initial={{opacity:0, y:100}}
-         whileInView={{opacity:1, y:0, transition:{delay:0.6, duration:1,  ease:'easyInOut',type:'spring'}}}
-         viewport={{once: false, amount:.5}}
-        
-        >SIN HISTORIAS</motion.h2>
-       
-      </div>  */}
-      {/* <div className="reactiva__dos" id="warning">
-        <motion.div className="reactiva__aviso"
-         initial={{ scale: 0 }}
-         whileInView={{ scale: 1 }}
-         transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <div className="titulo__warning">
-          <GrStatusWarning  className="icons"/>
-            <h2 className="aviso">WARNING </h2>
-             </div> 
-            <p className="aviso__p">Estás a punto de acceder a nuestro contenido más random.</p>
-            <p className="aviso__p">Una fórmula que combina elementos altamente volátiles</p>
-            <p className="aviso__p">y de naturaleza impredecible.</p>
-            <p className="aviso__p">Si la Química de Marcas no es lo tuyo:</p>
-            <p className="aviso__p">Aplícala bajo supervisión de nuestro personal para evitar </p>
-            <p className="aviso__p">eventos indeseados.</p>
-            <p className="aviso__p">¿Te va el rollo kamikaze? ¡Adelante!</p>
-            <p className="aviso__p">Pero si la cosa empieza aponerse fea...</p>
-            <p className="aviso__p">¡llámanos de inmediato!</p>
-          <button className="boton__aviso" onClick={() => setModalIsOpen(true)}>ENTENDIDO</button>
-           <AnimatePresence>
-                  {modalIsOpen && (
-                    <motion.div
-                      initial="hidden"
-                      animate="visible"
-                      exit="hidden"
-                      variants={overlayVariants}
-                      className="formula-overlay"
-                    >
-                      <motion.div
-                        className="formula"
-                        initial={{ y: "100vh" }}
-                        animate={{ y: 0 }}
-                        exit={{ y: "100vh" }}
-                        transition={{ duration: 0.5 }}
-                      >
-                        <h2 className="formula__h2">FÓRMULA by ABSOLUTO</h2>
-                       <img src={Formula} alt="formula" className="formula__img" />
-                       
-                          <button
-                            className="formula-button"
-                            onClick={() => setModalIsOpen(false)}
-                          >
-                            <RiCloseCircleLine className="menu__icon" /> 
-                          </button>
-                        
-                      </motion.div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-                   
-        </motion.div>
-       
-      </div> */}
-     
-      {/* <Schedule/>
-      <Tercerita/>
-      <Cuartita/> */}
-  
-  </div>
+  </div> */}
   </>
   )
 }

@@ -438,10 +438,14 @@ right: 0%;
 }
 .mov{
   position: absolute;
-  top: 75%;
-  left: 45%;
- transform: rotate(-90deg);
+  top: 50%;
+  right: 5%;
+
  
+}
+.mola{
+  width: 50px;
+  height: 50px;
 }
 .ready{
   position: absolute;
@@ -819,7 +823,7 @@ right: 0%;
   justify-content: center;
   width: 5rem;
   height: 5rem;
-  z-index: 4;
+  z-index: 10;
   cursor: pointer;
  
 } 
@@ -4554,6 +4558,19 @@ background-color: rgb(5, 11, 21);
   margin-right: 20%;
   width: 200px;
 }
+.insights{
+  position: relative;
+ margin: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgb(5, 11, 21);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  
+}
 /* .lauch{
   margin-left: auto;
   margin-right: auto;
@@ -4586,8 +4603,8 @@ background-color: rgb(5, 11, 21);
   justify-content: center;
   align-items: center;
   color: white;
-  gap: 2%;
- 
+  
+ z-index: 10;
 background-color: rgb(5, 11, 21);
 overflow: hidden;
  }
@@ -4864,6 +4881,7 @@ gap: 30%;
 align-items: start;
 padding-left: 15%;
 overflow: hidden;
+z-index: 10;
 }
 .reactiva__unoH {
   margin-bottom: 0 !important;
@@ -5249,6 +5267,7 @@ background-color: rgb(5, 11, 21);
   margin-left: 25%;
  
 }
+
 .reactiva__formula:hover{
   background-color: rgb(238, 66, 88);
   color: white;

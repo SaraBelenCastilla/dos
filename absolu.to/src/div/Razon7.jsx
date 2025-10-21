@@ -2,7 +2,7 @@ import React from 'react'
 
 import {motion} from 'framer-motion'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 function Razon7() {
   
@@ -65,14 +65,17 @@ function Razon7() {
                loop
                autoplay
              /></a> */}
-            {/* <a className="mov" href='#footer'
-            ><DotLottieReact className='abajo'
-                src="https://lottie.host/c1654a4f-f72f-4b20-8da2-cdbcc2231055/23yRTvIYdT.lottie"
-                loop
-                autoplay
-              />
+            <button className="mov" 
+            onClick={() => {
+    const section = document.getElementById('penultima');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+             >
+           <FaArrowAltCircleRight  className='mola'/>
             
-                  </a>   */}
+                  </button>   
          </section>
     
     </>

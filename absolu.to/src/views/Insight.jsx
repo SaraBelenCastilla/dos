@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react'
+import { useRef,useState,useEffect } from "react";
 import ReactPlayer from 'react-player'
   import video from '../assets/video.mp4'
   import Vertical from '../assets/vertical.mp4'
@@ -25,96 +25,243 @@ import Sevicios from './Servicios'
 
 import Hablamos from './Contacto'
 import { useMediaQuery } from 'react-responsive';
-import { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 import Equipo from '../views/Equipo.jsx'
 import Reactiva from '../views/Reactiva.jsx'
 import Razones from '../views/Razones.jsx'
+import Inicio from './Inicio.jsx'
+import {
+  motion,
+  useMotionTemplate,
+  useScroll,
+  useTransform,
+    AnimatePresence,
+} from "framer-motion";
+
+
+const sections = [
+     { id: 'section1', title1: 'EXPERIENCIAS', title2: 'QUE GENERAN', title3: 'CONTENIDO' },
+    { id: 'section2', title1: 'CONTENIDOS', title2: 'QUE ACTIVAN', title3: 'EXPERIENCIAS' },
+     { id: 'section3', title1: 'SIN CUENTOS' },
+    { id: 'section4', title1: 'SIN HISTORIAS' }
+   ];
 
 function Insight() {
+
+
+    const isMobile = useMediaQuery({ maxWidth: 768 }); // Detecta pantallas de ancho menor o igual a 768px
+    useEffect(() => {
+        const observerOptions = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.5
+        };
+    
+        const observerCallback = (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              window.scrollTo({
+                top: entry.target.offsetTop,
+                behavior: 'smooth'
+              });
+            }
+          });
+        };
+    
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+    
+        const sectionElements = document.querySelectorAll('.nosotros');
+        sectionElements.forEach(section => observer.observe(section));
+    
+        return () => {
+          sectionElements.forEach(section => observer.unobserve(section));
+        };
+      }, []);
+   
+   
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+   const overlayVariants = {
+     visible: {
+       opacity: 1,
+       transition: {
+         when: "beforeChildren",
+         duration: 0.3,
+         delayChildren: 0.4
+       }
+     },
+     hidden: {
+       opacity: 0,
+       transition: {
+         when: "afterChildren",
+         duration: 0.3,
+         delay: 0.4
+       }
+     }
+    }  
   return (
    <>
   
-    <section id='section1' className='primera'>
-        <div className='loop'>
-       
-            <Suspense fallback={<div>Cargando video...</div>}>
-        <ReactPlayer
-          url={video}
-          playing={true}
-          muted={true}
-          width="100%"
-          height="100%"
-          controls={true}
-        />
-      </Suspense>
-          
-             {/* <iframe
-              src="https://player.vimeo.com/video/1006688970?autoplay=1&muted=1"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-              title="prueba video inicio"
-            ></iframe>  */}
-         
-        
-        </div>
-        <a className='enlace-bajar' href="#section-with-carousel"><DotLottieReact
-                 src="https://lottie.host/653b6be2-63a6-4a21-8a3e-d72fc73303ea/muHGJJhidI.lottie"
-                 loop
-                 autoplay
-               /></a> 
-         <div className='loop__vertical'>
-       <Suspense fallback={<div>Cargando video...</div>}>
-       <ReactPlayer
-        url={Vertical}
-        playing={true}
-        muted={true}
-        width="100%"
-        height="100%"
-        controls={true}
-      /> 
-     </Suspense> 
-       {/* <iframe
-        src="https://player.vimeo.com/video/1006688970?autoplay=1&muted=1"
-        width="100%"
-        height="100%"
-        frameBorder="0"
-        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-        title="prueba video inicio"
-      ></iframe>  */}
-   
-  {/* <a className='enlace-bajar' href="#section-with-carousel"><DotLottieReact
-           src="https://lottie.host/653b6be2-63a6-4a21-8a3e-d72fc73303ea/muHGJJhidI.lottie"
-           loop
-           autoplay
-         /></a>  */}
-   </div> 
       
-      </section>
-      <section id="section-with-carousel">
-    <Carrusell0/>
-    </section>
    
-    {/* <div className='capa'> */}
-    {/* <Carrusell01/> */}
-    {/* </div> */}
-       
-    <section id={'section-with-carousel1'} >
-    <Carrusell  />
-    </section> 
-    
-    <section id={'section-with-carousel-2'}>
-   <CarrusellUno />
-   </section>
    
+   <Inicio/>
    <Equipo/>
     <Reactiva/>
+      <div className="snap">
+          <section id='section3' className='reactiva__uno' >
+            <motion.div className="experiencias"
+             initial={{ opacity: 0, y: 100 }}
+             whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
+             viewport={{ once: false, amount: .5 }}
+            >
+            <h2 className="reactiva__h2"
+             
+            >
+              EXPERIENCIAS
+            </h2>
+           
+              <h2 className="reactiva__h2"
+               
+              >
+               QUE GENERAN
+              </h2>
+            
+           
+              <h2 className="reactiva__h2"
+               
+              >
+                CONTENIDO
+              </h2>
+              </motion.div>
+           
+          </section>
+          <section id='section4' className='reactiva__uno' >
+            <motion.div className="contenidos"
+             initial={{ opacity: 0, y: 100 }}
+             whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 1, ease: 'easeInOut', type: 'spring' } }}
+             viewport={{ once: false, amount: .5 }}
+            >
+            <h2 className="reactiva__h2"
+             
+            >
+              CONTENIDOS
+            </h2>
+           
+              <h2 className="reactiva__h2"
+               
+              >
+               QUE ACTIVAN
+              </h2>
+            
+          
+              <h2 className="reactiva__h2"
+                
+              >
+                EXPERIENCIAS
+              </h2>
+              </motion.div>
+          
+          </section>
+          {isMobile ? (
+       
+        <section id="section5-6" className="reactiva__uno">
+        <motion.h2
+          className="reactiva__h2"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.4, duration: 1, ease: "easeInOut", type: "spring" },
+          }}
+          viewport={{ once: false, amount: 0.5 }}
+        >
+          SIN CUENTOS
+        </motion.h2>
+        <motion.h2
+          className="reactiva__h2"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.1, duration: 1, ease: "easeInOut", type: "spring" },
+          }}
+          viewport={{ once: false, amount: 0.5 }}
+        >
+          SIN HISTORIAS
+        </motion.h2>
+       
+          <div className="reactiva__formula">
+  <Link className="contactoF__email" to="/formula">
+    
+     <span className="contactoF__default-text">¡ACTIVA TU INSPIRACIÓN!</span>
+    <span className="contactoF__hover-text">DESCUBRE NUESTRO MÉTODO</span>
+  </Link>
+</div>
+        </section>
+        
+      ) : (
+        <>
+         <section id="section5" className="reactiva__uno">
+            <motion.h2
+              className="reactiva__h2"
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.4, duration: 1, ease: "easeInOut", type: "spring" },
+              }}
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              SIN CUENTOS
+            </motion.h2>
+          
+          </section>
+          <section id="section6" className="reactiva__unoH">
+            <motion.h2
+              className="reactiva__h2"
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.4, duration: 1, ease: "easeInOut", type: "spring" },
+              }}
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              SIN HISTORIAS
+            </motion.h2>
+           
+
+           <motion.div className="reactiva__formula"
+            initial={{ opacity: 0, y: 100 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.1, duration: 1, ease: "easeInOut", type: "spring" },
+              }}
+              viewport={{ once: false, amount: 0.5 }}
+           >
+  <Link className="reactiva__formula__link" to="/formula">
+   <p className="sinh">¡ACTIVA TU INSPIRACIÓN!</p>
+    <p className="sinhn">DESCUBRE NUESTRO MÉTODO</p>
+  </Link>
+</motion.div>
+          
+          </section>
+         
+        </>
+      )}
+       
+          
+        
+
+       
+  </div>
     <Razones/>
-     <section id={'section5'}>
-  < Section5/>
+     <section >
+  < Section5 id={'penultima'}/>
   </section  >
+ 
    </>
   )
 }
