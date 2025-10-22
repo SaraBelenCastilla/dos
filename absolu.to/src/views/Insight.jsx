@@ -106,7 +106,9 @@ function Insight() {
    
    
    <Inicio/>
-   <Equipo/>
+   <section id='equipo'>
+   <Equipo />
+   </section>
     <Reactiva/>
       <div className="snap">
           <section id='section3' className='reactiva__uno' >

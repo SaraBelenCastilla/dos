@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 import useWindowWidth from '../Components/useWindowWidth';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { IoIosArrowForward } from "react-icons/io"
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 function Section44() {
   const anchoVentana = useWindowWidth();
@@ -42,6 +43,17 @@ Minuto y medio para sorprender.
             
                         </motion.div>
     </div>
+      <button className="mov" 
+                onClick={() => {
+        const section = document.getElementById('equipo');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }}
+                 >
+               <FaArrowAltCircleRight  className='mola'/>
+                
+                      </button>   
      {/* <a className="boton__drch  boton__drch--section22" href='#section5'
              ><IoIosArrowForward className='drch' />
                </a>  */}

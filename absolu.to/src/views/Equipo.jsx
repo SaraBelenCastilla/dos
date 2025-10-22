@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
-function Equipo() {
+function Equipo({id}) {
   const isMobile = useMediaQuery({ maxWidth: 768 }); // Detecta pantallas de ancho menor o igual a 768px
    
   
@@ -117,7 +117,7 @@ const palabra = {
        </Helmet>
     <div
     
-     className="equipo" >
+     className="equipo" id={id}>
         {/* <ReactLenis
         root
         options={{

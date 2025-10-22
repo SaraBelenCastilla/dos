@@ -1,7 +1,9 @@
 import React ,{useEffect,useRef,useState} from 'react'
 import {motion} from 'framer-motion'
 import Transparente from '../assets/img/transparente.png'
-
+import Corporativo from '../assets/img/corporativo.jpg'
+import Marca from '../assets/img/marca.jpg'
+import Retail from '../assets/img/retail.jpg'
 function Hacemos() {
   return (
     <>
@@ -230,7 +232,7 @@ function Hacemos() {
      <div className='containero'>
    <><div className='container__box'>
     <figure className='container__figure'>
-   <img  className='container__img' src='https://live.staticflickr.com/65535/54870286231_0b88abb74c_w.jpg' alt="corporativo" />
+   <img  className='container__img' src={Corporativo} alt="corporativo" />
    </figure  >
    <div className="containero__descipcion">
        <h2 className="containero__h2">CORPORATIVO</h2>
@@ -254,7 +256,7 @@ function Hacemos() {
     </div>
     <div className='container__box'>
     <figure className='container__figure'>
-   <img  className='container__img' src='https://live.staticflickr.com/65535/54870298836_fb63c05669_w.jpg' alt="marca" />
+   <img  className='container__img' src={Marca} alt="marca" />
    </figure>
    <div className="containero__descipcion">
      <h2 className="containero__h2">MARCA</h2>
@@ -274,7 +276,7 @@ function Hacemos() {
     </div>
     <div className='container__box'>
     <figure className='container__figure'>
-   <img  className='container__img' src='https://live.staticflickr.com/65535/54870597115_8966b4a530_w.jpg' alt="retail" />
+   <img  className='container__img' src={Retail} alt="retail" />
    </figure>
     <div className="containero__descipcion">
         <h2 className="containero__h2">RETAIL</h2>
@@ -318,7 +320,7 @@ function Hacemos() {
     </div>
     <div className='container__box'>
     <figure className='container__figure'>
-   <img className='container__img'  src='https://live.staticflickr.com/65535/54870529653_f7da387f73_w.jpg' alt="espacios" />
+   <img className='container__img'  src='https://live.staticflickr.com/65535/54864539776_29299781aa_z.jpg' alt="espacios" />
    </figure>
    <div className="containero__descipcion">
      <h2 className="containero__h2">ESPACIOS</h2>
@@ -337,7 +339,7 @@ function Hacemos() {
     </div>
     <div className='container__box'>
     <figure className='container__figure'>
-   <img className='container__img' src='https://live.staticflickr.com/65535/54870286231_0b88abb74c_w.jpg' alt="cultura" />
+   <img className='container__img' src='https://live.staticflickr.com/65535/54870524143_48e8d4e9ba_w.jpg' alt="cultura" />
    </figure>
    <div className="containero__descipcion">
      <h2 className="containero__h2">CULTURA</h2>

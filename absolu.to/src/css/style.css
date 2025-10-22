@@ -440,12 +440,18 @@ right: 0%;
   position: absolute;
   top: 50%;
   right: 5%;
-
+z-index: 100;
+color: white;
+cursor: pointer;
+opacity: 0.8;
  
 }
+.mov:hover{
+  opacity: 1;
+}
 .mola{
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 .ready{
   position: absolute;
