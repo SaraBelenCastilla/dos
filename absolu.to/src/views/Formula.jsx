@@ -82,9 +82,17 @@ function Formula() {
                        
                           <button
                             className="formula-button"
-                            onClick={() => setModalIsOpen(false)}
-                          >
-                            <RiCloseCircleLine className="formula__icon"  onClick={() => setModalIsOpen(false)}/> 
+  onClick={() => {
+    setModalIsOpen(false);
+    setTimeout(() => {
+      const section = document.getElementById('section6');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 400); // espera a que termine la animación del modal
+  }}
+>
+  <RiCloseCircleLine className="formula__icon" />
                           </button>
                         <p className="formula__p">¿La química de Marcas no es lo tuyo?</p>
                         <p className="formula__p1">Si tu marca destila esencia, nosotros hacemos el resto.</p>

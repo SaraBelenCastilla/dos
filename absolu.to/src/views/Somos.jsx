@@ -15,7 +15,7 @@ const imagenes = [
     index:2,
     imagen:'https://live.staticflickr.com/65535/54854881165_638d23b426_n.jpg',
     h2:'FLEXIBLES',
-     p:'Cambiamos,giramos ,nos reinventámos',
+     p:'Cambiamos, giramos, nos reinventámos',
     
   },
   {
