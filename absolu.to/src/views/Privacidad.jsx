@@ -18,6 +18,7 @@ function Privacidad() {
         </p>
         <p className='privacidad__p'>Dirección: Calle del Manzanares nº4. 28005 Madrid
         </p>
+        
         <p className='privacidad__p'>Correo electrónico: <div className="privacidad__email"  onClick={(e) => {window.location.href ='mailto: hola@absolu.to';}}> hola@absolu.to </div>
         </p>
         <p className='privacidad__p'>Actividad: Servicios publicidad y marketing.
@@ -34,11 +35,11 @@ Adicionalmente, cuando visitas el sitio web, hay información que se almacena a
         <p className='privacidad__p'>El Reglamento (UE) 2018/1725 de protección de datos establece que se deberán aplicar los siguientes principios en el tratamiento de datos personales:
         </p>
         <ul className='privacidad__ul'>    
-         <li classname='li'>Principio de licitud, lealtad y transparencia: en todo momento es necesario tu consentimiento para el tratamiento de tus datos personales; para uno o varios fines específicos, de los que se te ha tenido que informar previamente con total transparencia.</li>
-         <li classname='li'>Principio de limitación del plazo de conservación: los datos personales se han de mantener solo el tiempo necesario según los fines y el propósito del tratamiento.</li>  
-            <li classname='li'>Principio de minimización: Únicamente se solicitarán los datos personales estrictamente necesarios con relación al fin para los que se requieren.
+         <li className='li'>Principio de licitud, lealtad y transparencia: en todo momento es necesario tu consentimiento para el tratamiento de tus datos personales; para uno o varios fines específicos, de los que se te ha tenido que informar previamente con total transparencia.</li>
+         <li className='li'>Principio de limitación del plazo de conservación: los datos personales se han de mantener solo el tiempo necesario según los fines y el propósito del tratamiento.</li>  
+            <li className='li'>Principio de minimización: Únicamente se solicitarán los datos personales estrictamente necesarios con relación al fin para los que se requieren.
             </li >
-            <li classname='li'>Principio de integridad y confidencialidad: Tus datos personales serán tratados de tal manera que se garantice su seguridad y confidencialidad.</li>
+            <li className='li'>Principio de integridad y confidencialidad: Tus datos personales serán tratados de tal manera que se garantice su seguridad y confidencialidad.</li>
            
         </ul>
         <p className='privacidad__p1'>¿Dónde se obtienen los datos?
@@ -46,19 +47,19 @@ Adicionalmente, cuando visitas el sitio web, hay información que se almacena a
         <p className='privacidad__p'>Los datos se pueden obtener a través de:
         </p>
         <ul className='privacidad__ul'>
-            <li classname='li'>El formulario de contacto general.</li>
-            <li classname='li'> Los formularios para la compra de productos digitales (libros electrónicos o materiales y recursos didácticos).
+            <li className='li'>El formulario de contacto general.</li>
+            <li className='li'> Los formularios para la compra de productos digitales (libros electrónicos o materiales y recursos didácticos).
             </li >
-            <li classname='li'>El formulario de comentarios del blog.</li>
+            <li className='li'>El formulario de comentarios del blog.</li>
         </ul>
         <p className='privacidad__p1'>Finalidad</p>
         <p className='privacidad__p'>Los datos se almacenan en un fichero para los siguientes fines:</p>
         <p className='privacidad__p'>Para el de envío de comunicaciones electrónicas:</p>
         <ul className='privacidad__ul'>
-          <li classname='li'>Boletines electrónicos (también llamados newsletters) relacionados con la temática de la web (publicidad, marketing, comunicación, audiovisual, diseño y similares). Pueden incluir artículos (también llamados entradas o posts), trabajos del propietario, ofertas comerciales u otras comunicaciones que el propietario entiende interesantes para sus usuarios.
+          <li className='li'>Boletines electrónicos (también llamados newsletters) relacionados con la temática de la web (publicidad, marketing, comunicación, audiovisual, diseño y similares). Pueden incluir artículos (también llamados entradas o posts), trabajos del propietario, ofertas comerciales u otras comunicaciones que el propietario entiende interesantes para sus usuarios.
           </li> 
-          <li classname='li'>Ofertas comerciales.</li> 
-          <li classname='li'>Otras comunicaciones que el propietario entiende interesantes para sus usuarios.
+          <li className='li'>Ofertas comerciales.</li> 
+          <li className='li'>Otras comunicaciones que el propietario entiende interesantes para sus usuarios.
 Cada tipo de comunicación electrónica incluye una casilla de verificación (también llamada checkbox) para la aceptación de la política de privacidad. Su cumplimentación es obligatoria e imprescindible para llevar a cabo la finalidad expresada. Algunas comunicaciones requerirán un procedimiento de comprobación doble (también conocida como opt-in o doble opt-in).
 </li>
         </ul>
@@ -68,11 +69,11 @@ Cada tipo de comunicación electrónica incluye una casilla de verificación (ta
         <p className='privacidad__p'>Otros fines de los datos almacenados:
         </p>
         <ul className='privacidad__ul'>
-            <li classname='li'>Para garantizar la seguridad, el cumplimiento de las condiciones de uso y la ley aplicable.
+            <li className='li'>Para garantizar la seguridad, el cumplimiento de las condiciones de uso y la ley aplicable.
             </li >
-            <li classname='li'>Para apoyar y mejorar los servicios y el funcionamiento del sitio web.
+            <li className='li'>Para apoyar y mejorar los servicios y el funcionamiento del sitio web.
             </li >
-            <li classname='li'>Para la gestión de los datos personales de los seguidores en las páginas oficiales del sitio web en redes sociales. Estos datos serán tratados conforme a lo expuesto en esta política de privacidad, así como por las condiciones de uso, políticas de privacidad y normativas de acceso de cada una de las redes sociales.</li>
+            <li className='li'>Para la gestión de los datos personales de los seguidores en las páginas oficiales del sitio web en redes sociales. Estos datos serán tratados conforme a lo expuesto en esta política de privacidad, así como por las condiciones de uso, políticas de privacidad y normativas de acceso de cada una de las redes sociales.</li>
         </ul>
         <p className='privacidad__p1'>Únicamente el titular tendrá acceso a sus datos. Bajo ningún concepto estos datos serán cedidos, compartidos, transferidos, ni vendidos a terceros con fines comerciales.
 
@@ -115,19 +116,19 @@ Cada tipo de comunicación electrónica incluye una casilla de verificación (ta
         <p className='privacidad__p'>Cualquier persona tiene derecho a saber si en el sitio web se están tratando sus datos personales o no, pudiendo solicitar:
         </p> 
         <ul className='privacidad__ul'>
-          <li classname='li'>El acceso a los datos personales relativos al interesado.</li>  
-          <li classname='li'>La rectificación o supresión.
+          <li className='li'>El acceso a los datos personales relativos al interesado.</li>  
+          <li className='li'>La rectificación o supresión.
           </li >
-          <li classname='li'>La oposición al tratamiento.</li>
-          <li classname='li'>La portabilidad de los datos.</li>
+          <li className='li'>La oposición al tratamiento.</li>
+          <li className='li'>La portabilidad de los datos.</li>
             </ul> 
             <p className='privacidad__p1'>Como interesado, tienes derecho a recibir los datos personales que te incumben y que hayas facilitado en un formato estructurado, de uso común y lectura mecánica, y a transmitirlos a otro responsable del tratamiento cuando:
 
         </p> 
         <ul className='privacidad__ul'>
-            <li classname='li'>El tratamiento esté basado en el consentimiento.</li>
-            <li classname='li'>Los datos hayan sido facilitados por la persona interesada.</li>
-            <li classname='li'>El tratamiento se efectúe por medios automatizados.</li>
+            <li className='li'>El tratamiento esté basado en el consentimiento.</li>
+            <li className='li'>Los datos hayan sido facilitados por la persona interesada.</li>
+            <li className='li'>El tratamiento se efectúe por medios automatizados.</li>
             </ul> 
             <p className='privacidad__p'>El interesado también tendrá derecho a la tutela judicial efectiva y a presentar una reclamación ante la autoridad de control, en este caso, la Agencia Española de Protección de Datos, si considera que el tratamiento de sus datos personales infringe la normativa vigente.
             </p>      

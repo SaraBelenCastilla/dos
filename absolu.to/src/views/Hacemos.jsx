@@ -4,6 +4,7 @@ import Transparente from '../assets/img/transparente.png'
 import Corporativo from '../assets/img/corporativo.jpg'
 import Marca from '../assets/img/marca.jpg'
 import Retail from '../assets/img/retail.jpg'
+import Digital from '../assets/img/digital.jpg'
 function Hacemos() {
   return (
     <>
@@ -297,7 +298,7 @@ function Hacemos() {
     </div>
     <div className='container__box'>
     <figure className='container__figure'>
-   <img className='container__img'  src='https://live.staticflickr.com/65535/54870588515_c3ca32266e_w.jpg' alt=" digital" />
+   <img className='container__img'  src={Digital} alt=" digital" />
    </figure>
     <div className="containero__descipcion">
      <h2 className="containero__h2">DIGITAL</h2>

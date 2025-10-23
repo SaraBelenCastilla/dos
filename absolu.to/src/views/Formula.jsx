@@ -58,7 +58,7 @@ function Formula() {
             <p className="aviso__p1">Aplícala bajo supervisión de nuestro personal para evitar </p>
             <p className="aviso__p">eventos indeseados.</p>
             <p className="aviso__p1">¿Te va el rollo kamikaze? ¡Adelante!</p>
-            <p className="aviso__p">Pero si la cosa empieza aponerse fea...</p>
+            <p className="aviso__p">Pero si la cosa empieza a ponerse fea...</p>
             <p className="aviso__p">¡llámanos de inmediato!</p>
           <button className="boton__aviso" onClick={() => setModalIsOpen(true)}>ENTENDIDO</button>
            <AnimatePresence>
