@@ -6423,8 +6423,67 @@ padding-top: 5%;
 } */
 /* -----somos------- ----- */
 .somos{
+  height: 30vh;
+}
+.somos__proposito{
+  flex-direction: column;
+  justify-content: center;
+}
+.cosa{
+  width: 150px;
+  height: 150px;
+}
+.contenedero__container{
+  grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.contenedero__h2{
+  font-size: 1em;
+}
+.contenedero__p{
+  font-size: 0.8em;
+}
+.contenedero__div{
+  width: 200px;
+}
+.proposito__div{
+  width: 100%;
+  padding: 5%;
+}
+.proposito__foto{
+  width: 60%;
   height: auto;
 }
+.proposito__fotoUno{
+  width: 50%;
+  height: auto;
+}
+.proposito__divUno{
+  width: 100%;
+  padding: 5%;
+}
+.proposito__h2{
+  font-size: 2em;
+  
+}
+.proposito__h3{
+  font-size: 1em;
+}
+.proposito__h3S{
+  font-size: 1em;
+}
+.proposito__h3Y{
+  font-size: 1em;
+}
+.contactoF__emailS{
+  top: 90%;
+}
+  .foto__somos {
+    display: none;
+  } 
+  .foto__somos.activa {
+    display: block;
+  }
 
 /* --------reactiva----------- */
 .reactiva{
@@ -6992,7 +7051,7 @@ padding-top: 5%;
   top: -100%;
   margin-bottom: 120%;
 }
------somos------- ----- */
+/* -----------somos------- ----- */   
 .somos{
   height: 20vh;
 }
