@@ -85,7 +85,7 @@ function Formula() {
   onClick={() => {
     setModalIsOpen(false);
     setTimeout(() => {
-      const section = document.getElementById('section6');
+      const section = document.getElementById('section5');
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
       }
