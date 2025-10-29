@@ -27,7 +27,7 @@ export default function Footer() {
          
           <div className="footer__direccion">
           <h3 className="footer__h3">Madrid</h3>
-          <p className="footer__p">C/ Concepción Jerónimo 22, 28012</p>
+          <p className="footer__p">C/ Concepción Jerónima 22, 28012</p>
           </div>
           <div className="footer__direccion">
           <h3 className="footer__h3">Sevilla</h3>
