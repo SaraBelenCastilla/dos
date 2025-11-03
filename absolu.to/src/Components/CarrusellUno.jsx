@@ -7,7 +7,8 @@ import Segunda from '../div/Section41'
 import Tercera from '../div/Section43'
 import Cuarta from '../div/Section44'
 import Quinta from '../div/Section45'
-
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 function CarrusellUno() {
     const imgs =[
         {
@@ -82,7 +83,7 @@ function CarrusellUno() {
                   className="boton__izq "
                   onClick={() => setIndex(index - 1)}
                 >
-                 <IoIosArrowBack className='izq'/>
+                 <FaArrowAltCircleLeft  className='mola'/>
                 </motion.button>
               )}
             </AnimatePresence>
@@ -96,7 +97,7 @@ function CarrusellUno() {
                   className="boton__drch"
                   onClick={() => setIndex(index + 1)}
                 >
-                  <IoIosArrowForward className='drch' />
+                 <FaArrowAltCircleRight  className='mola'/>
                 </motion.button>
               )}
             </AnimatePresence>

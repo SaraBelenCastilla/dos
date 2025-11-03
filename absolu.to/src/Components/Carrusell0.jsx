@@ -8,6 +8,8 @@ import Cero from '../div/Section1'
 import Uno from '../div/Section11'
 import Dos from '../div/Section2'
 import DosDos from '../div/Section22'
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 
 
 function CarrusellUno() {
@@ -107,7 +109,7 @@ function CarrusellUno() {
                   className="boton__izq "
                   onClick={() => setIndex(index - 1)}
                 >
-                 <IoIosArrowBack className='izq'/>
+                <FaArrowAltCircleLeft className='mola'/>
                 </motion.button>
               )}
             </AnimatePresence>
@@ -121,7 +123,7 @@ function CarrusellUno() {
                   className="boton__drch"
                   onClick={() => setIndex(index + 1)}
                 >
-                  <IoIosArrowForward className='drch' />
+                  <FaArrowAltCircleRight className='mola'/>
                 </motion.button>
               )}
             </AnimatePresence>

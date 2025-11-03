@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import useWindowWidth from '../Components/useWindowWidth';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { IoIosArrowForward } from "react-icons/io"
-
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 function Section34() {
   const anchoVentana = useWindowWidth();
@@ -67,7 +67,7 @@ function Section34() {
                 
                             </motion.div>
        <a className="boton__drch  boton__drch--section22 " href='#section-with-carousel-2'
-         > <IoIosArrowForward className='drch' />
+         > <FaArrowAltCircleRight className='mola'/>
            </a> 
         </div>
     {/* </div> */}

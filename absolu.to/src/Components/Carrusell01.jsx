@@ -4,7 +4,8 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io"
 import Dosd from '../div/Section2'
 import Trest from '../div/Section22'
-
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 
 function CarrusellUno() {
     const imgs =[
@@ -79,7 +80,7 @@ function CarrusellUno() {
                   className="boton__izq "
                   onClick={() => setIndex(index - 1)}
                 >
-                 <IoIosArrowBack className='izq'/>
+                <FaArrowAltCircleLeft  className='mola'/>
                 </motion.button>
               )}
             </AnimatePresence>
@@ -93,7 +94,7 @@ function CarrusellUno() {
                   className="boton__drch"
                   onClick={() => setIndex(index + 1)}
                 >
-                  <IoIosArrowForward className='drch' />
+                 <FaArrowAltCircleRight  className='mola'/>
                 </motion.button>
               )}
             </AnimatePresence>

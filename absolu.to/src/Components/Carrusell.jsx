@@ -7,7 +7,8 @@ import Nueve from '../div/Section34.jsx'
 import Diez from '../div/Section35.jsx'
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io"
-
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 function Carrusell() {
     const datas =[
         {
@@ -85,7 +86,7 @@ function Carrusell() {
                   className="boton__izq "
                   onClick={() => setIndex(index - 1)}
                 >
-                 <IoIosArrowBack className='izq'/>
+                <FaArrowAltCircleLeft  className='mola'/>
                 </motion.button>
               )}
             </AnimatePresence>
@@ -99,7 +100,7 @@ function Carrusell() {
                   className="boton__drch"
                   onClick={() => setIndex(index + 1)}
                 >
-                  <IoIosArrowForward className='drch' />
+                 <FaArrowAltCircleRight  className='mola'/>
                 </motion.button>
               )}
             </AnimatePresence>

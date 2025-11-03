@@ -6,7 +6,7 @@ import { redirect ,useNavigate,Navigate} from "react-router-dom";
 import Carrusell from '../Components/Carrusell'
 import useWindowWidth from '../Components/useWindowWidth';
 import { IoIosArrowForward } from "react-icons/io"
-
+import { FaArrowAltCircleRight } from "react-icons/fa";
 function mover() {
   window.location.replace('/Carrusell')
   
@@ -79,7 +79,7 @@ Cuando la &quot;Agencia&quot; se enfrenta a un brief complicado y los obstáculo
     /></a> */}
 
     <a className="boton__drch  boton__drch--section22" href={"#section-with-carousel1"}
-   >  <IoIosArrowForward className='drch' />
+   >  <FaArrowAltCircleRight  className='mola'/>
      </a>
          
       

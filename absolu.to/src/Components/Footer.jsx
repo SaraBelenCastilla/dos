@@ -106,6 +106,7 @@ export default function Footer() {
       <p className="footer__p"> 2025 Absoluto Experiential  </p>
       <p className="footer__p"> <Link className="footer__link" to="/privacidad"> | Privacidad</Link><br /> </p>
       <p className="footer__p"> <Link className="footer__link" to="/coockies">| We are Cookieless</Link>  </p>
+       <p className="footer__p"> <Link className="footer__link" to="/sostenibilidad">| Sostenibilidad</Link>  </p>
       </div>
     </footer>
     

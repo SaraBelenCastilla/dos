@@ -5,6 +5,7 @@ import Corporativo from '../assets/img/corporativo.jpg'
 import Marca from '../assets/img/marca.jpg'
 import Retail from '../assets/img/retail.jpg'
 import Digital from '../assets/img/digital.jpg'
+import Hacer from '../assets/img/hacer.jpeg'
 function Hacemos() {
   return (
     <>
@@ -29,7 +30,7 @@ function Hacemos() {
     </section>
     <div className="hacemos__div">
         <div className="hacemos__foto">
-        <motion.img className='hacemos__img' src="https://live.staticflickr.com/65535/54859370540_50021b3155_n.jpg" alt="que hacemos"
+        <motion.img className='hacemos__img' src={Hacer} alt="que hacemos"
          initial={{ opacity: 0, y: 0 }}
   whileInView={{ opacity: 1, y: 0, transition: { duration: 3.5, ease: "easeInOut" } }}
   viewport={{ once: false, amount: 0.5 }}

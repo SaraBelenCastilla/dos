@@ -2,6 +2,8 @@ import React ,{useEffect,useRef,useState} from 'react'
 import Transparente from '../assets/img/transparente.png'
 import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom';
+import Proposito from '../assets/img/proposito.jpeg'
+import Sostenible from '../assets/img/sostenible.jpeg'
 
 const imagenes = [
   {
@@ -135,7 +137,7 @@ function Somos() {
 <section  >
     <div className="somos__proposito">
         <div className="proposito__foto">
-        <motion.img className='proposito__img' src="https://live.staticflickr.com/65535/54851561117_6b2d402e27_n.jpg" alt="proposito"
+        <motion.img className='proposito__img' src={Proposito} alt="proposito"
         initial={{ opacity: 0, y: 0 }}
   whileInView={{ opacity: 1, y: 0, transition: { duration: 3.5, ease: "easeInOut" } }}
   viewport={{ once: false, amount: 0.5 }}
@@ -217,7 +219,7 @@ function Somos() {
   
     <div className="somos__proposito">
         <div className="proposito__fotoUno">
-        <motion.img className='proposito__img' src="https://live.staticflickr.com/65535/54857115899_9bed2ecf03_n.jpg" alt="sostenibilidad"
+        <motion.img className='proposito__img' src={Sostenible} alt="sostenibilidad"
         initial={{ opacity: 0, y: 0 }}
   whileInView={{ opacity: 1, y: 0, transition: { duration: 3.5, ease: "easeInOut" } }}
   viewport={{ once: false, amount: 0.5 }}

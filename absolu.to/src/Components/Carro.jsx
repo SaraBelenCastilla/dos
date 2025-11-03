@@ -9,7 +9,8 @@ import Marron from '../div/Razon4.jsx'
 import Palo from '../div/Razon5.jsx'
 import Turquesa from '../div/Razon6.jsx'
 import Rosa from '../div/Razon7.jsx'
-
+import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 const datas = [
     { index: 1, page: Celeste },
     { index: 2, page: Arena },
@@ -84,7 +85,7 @@ function Carro() {
                   className="boton__izq "
                   onClick={() => setIndex(index - 1)}
                 >
-                 <IoIosArrowBack className='izq'/>
+                 <FaArrowAltCircleLeft  className='mola'/>
                 </motion.button>
               )}
             </AnimatePresence>
@@ -98,7 +99,7 @@ function Carro() {
                   className="boton__drch"
                   onClick={() => setIndex(index + 1)}
                 >
-                  <IoIosArrowForward className='drch' />
+                  <FaArrowAltCircleRight  className='mola'/>
                 </motion.button>
               )}
             </AnimatePresence>
