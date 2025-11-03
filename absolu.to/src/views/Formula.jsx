@@ -17,7 +17,9 @@ import {
     AnimatePresence,
 } from "framer-motion";
 
+
 function Formula() {
+  
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const overlayVariants = {
      visible: {
@@ -105,9 +107,12 @@ function Formula() {
                     </motion.div>
                   )}
                 </AnimatePresence>
-                   
-        </motion.div>
+           
        
+        </motion.div>
+        <button className="volver-footer1" onClick={() => navigate(-1)}>
+        Volver 
+      </button>
       </div>
     {/* <div className='formula__div'>
          <h2 className="formula__h2">FÓRMULA by ABSOLUTO</h2>
