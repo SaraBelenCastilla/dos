@@ -6,9 +6,18 @@ import Marca from '../assets/img/marca.jpg'
 import Retail from '../assets/img/retail.jpg'
 import Digital from '../assets/img/digital.jpg'
 import Hacer from '../assets/img/hacer.jpeg'
+import { Helmet } from 'react-helmet-async';
 function Hacemos() {
   return (
     <>
+    <Helmet>
+        <title>Qué hacemos | Estrategia, creatividad y producción experiencial</title>
+        <meta
+          name="description"
+          content="Desarrollamos activaciones, eventos y campañas transmedia que conectan marcas con personas. Creatividad al servicio de los resultados."
+        />
+        <link rel="canonical" href="https://absolu.to/hacemos" />
+      </Helmet>
      <section className="hacemos">
      
     </section>

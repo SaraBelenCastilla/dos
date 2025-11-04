@@ -111,20 +111,34 @@ const explicacion = {
   return (
   <>
    <Helmet>
-          <title> Absoluto Experiential | Agencia de eventos y comunicación. </title>
-          <meta name="description" content="Agencia creativa especializada en marketing experiencial. Taller de cultura transmedia, 360 brand experience, eventos y activación de marca.
-  
-  
-      " />
-          <meta name="keywords" content="  contacto agencia marketing experiencial, hablar con absoluto experiential, presupuesto eventos creativos, contacto producción eventos.
-  
-  " />
-  <meta property='  og:title' content='Absoluto Experiencial | Absoluto Experiential' />
-          <meta property='og:description' content='¿Tienes una idea en marcha y necesitas aliados? Escríbenos y pongamos tu proyecto en marcha. Creatividad, estrategia y producción.' />
-          <meta property='og:type' content='website' />
-          <meta property='og:url' content='https://absolu.to/contacto' />
-         
-         
+          <title>Absoluto Experiential | Activamos marcas con experiencias memorables</title>
+        <meta
+          name="description"
+          content="Absoluto Experiential es un taller creativo de experiencias. Combinamos estrategia, emoción y diseño para crear proyectos que generan impacto real."
+        />
+        <meta
+          name="keywords"
+          content="marketing experiencial, activaciones de marca, eventos corporativos, branded content, estrategia de marca, creatividad, Absoluto Experiential, agencia creativa"
+        />
+        <link rel="canonical" href="https://absolu.to/" />
+  {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://absolu.to/" />
+        <meta property="og:title" content="Absoluto Experiential | Activamos marcas con experiencias memorables" />
+        <meta
+          property="og:description"
+          content="Activamos marcas con creatividad, estrategia y emoción. Descubre el método Absoluto."
+        />
+        <meta property="og:image" content="https://absolu.to/share-image.jpg" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Absoluto Experiential | Activamos marcas con experiencias memorables" />
+        <meta
+          name="twitter:description"
+          content="Activamos marcas con creatividad, estrategia y emoción. Descubre el método Absoluto."
+        />
+        <meta name="twitter:image" content="https://absolu.to/share-image.jpg" />
          
          </Helmet>
   {/* <Palabras />

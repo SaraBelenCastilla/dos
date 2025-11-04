@@ -37,23 +37,18 @@ const palabra = {
 };
   return (
     <>
-     <Helmet>
-        <title> Contacto | Absoluto Experiential</title>
-        <meta name="description" content="¿Tienes una idea en marcha y necesitas aliados? Escríbenos y pongamos tu proyecto en marcha. Creatividad, estrategia y producción.
-
-
-    " />
-        <meta name="keywords" content="  contacto agencia marketing experiencial, hablar con absoluto experiential, presupuesto eventos creativos, contacto producción eventos.
-
-" />
-<meta property='  og:title' content='Contacto | Absoluto Experiential' />
-        <meta property='og:description' content='¿Tienes una idea en marcha y necesitas aliados? Escríbenos y pongamos tu proyecto en marcha. Creatividad, estrategia y producción.' />
-        <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://absolu.to/contacto' />
+    
+          <Helmet>
+        <title>Contacto | Conecta con Absoluto Experiential</title>
+        <meta
+          name="description"
+          content="¿Quieres activar tu marca? Contacta con Absoluto Experiential y descubre cómo convertir tus ideas en experiencias memorables."
+        />
+        <link rel="canonical" href="https://absolu.to/contacto" />
+      </Helmet>
        
        
-       
-       </Helmet>
+      
      <div
         
          className="equipo" >

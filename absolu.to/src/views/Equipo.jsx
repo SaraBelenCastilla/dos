@@ -98,7 +98,7 @@ const palabra = {
   
   return (
     <>
-     <Helmet>
+     {/* <Helmet>
         <title>El equipo Absoluto | Creativos con identidades secretas
 </title>
         <meta name="description" content=" Conoce al equipo más creativo y enigmático del marketing experiencial. Ocultamos nuestras caras, pero nunca nuestras ideas.
@@ -114,7 +114,7 @@ const palabra = {
         <meta property='og:url' content='https://absolu.to/equipo' />
         
        
-       </Helmet>
+       </Helmet> */}
     <div
     
      className="equipo" id={id}>

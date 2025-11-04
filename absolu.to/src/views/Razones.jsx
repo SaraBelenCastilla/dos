@@ -26,7 +26,7 @@ const Inicio =()=>{
     return (
       
       <>
-       <Helmet>
+       {/* <Helmet>
           <title> 7 razones para elegir Absoluto Experiential
 </title>
           <meta name="description" content=" Siete motivos de peso para confiar en nosotros: experiencia, creatividad, eficiencia y una pasión inagotable por crear conexiones reales.
@@ -40,7 +40,7 @@ const Inicio =()=>{
           <meta property='og:url' content='https://absolu.to/razones' />
          
          
-         </Helmet>
+         </Helmet> */}
      <div className="razones"
        style={{with:anchoVentana}}
      >

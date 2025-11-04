@@ -102,7 +102,7 @@ const palabra = {
   
   return (
     <>
-     <Helmet>
+     {/* <Helmet>
         <title>Método Absoluto | La fórmula secreta del engagement</title>
         <meta name="description" content="Tras años de laboratorio, hemos creado la fórmula perfecta para generar experiencias memorables y conectar marcas con audiencias.
 
@@ -117,7 +117,7 @@ const palabra = {
         
        
        
-       </Helmet>
+       </Helmet> */}
     {/* <div
     
      className="nosotros" id="section1" > */}

@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom';
 import Proposito from '../assets/img/proposito.jpeg'
 import Sostenible from '../assets/img/sostenible.jpeg'
-
+import { Helmet } from 'react-helmet-async';
 const imagenes = [
   {
     index:1,
@@ -121,7 +121,14 @@ function Somos() {
 
   return (
     <>
-   
+     <Helmet>
+        <title>Somos Absoluto | Creatividad estratégica en acción</title>
+        <meta
+          name="description"
+          content="Somos un equipo multidisciplinar especializado en marketing experiencial. Diseñamos estrategias y conceptos que transforman marcas."
+        />
+        <link rel="canonical" href="https://absolu.to/somos" />
+      </Helmet>
     <section className="somos">
  
 </section>

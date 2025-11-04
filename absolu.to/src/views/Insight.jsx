@@ -38,7 +38,7 @@ import {
   useTransform,
     AnimatePresence,
 } from "framer-motion";
-
+import { Helmet } from 'react-helmet-async';
 
 const sections = [
      { id: 'section1', title1: 'EXPERIENCIAS', title2: 'QUE GENERAN', title3: 'CONTENIDO' },
@@ -101,7 +101,14 @@ function Insight() {
     }  
   return (
    <>
-  
+    <Helmet>
+        <title>Insights | Tendencias y perspectivas en marketing experiencial</title>
+        <meta
+          name="description"
+          content="Reflexiones, análisis y tendencias sobre creatividad, innovación y marketing experiencial desde la mirada de Absoluto."
+        />
+        <link rel="canonical" href="https://absolu.to/insights" />
+      </Helmet>
       
    
    

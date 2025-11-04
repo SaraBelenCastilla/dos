@@ -15,6 +15,7 @@ import LogoSlider3 from '../Components/LogoSlider3';
 import LogoSlider from '../Components/LogoSlider';
 import Foto from '../assets/img/cabezara.jpg';
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { Helmet } from 'react-helmet-async';
 
 const icons = [
   {
@@ -458,6 +459,14 @@ useEffect(() => {
 
   return (
     <>
+     <Helmet>
+        <title>Casos | Proyectos destacados de Absoluto Experiential</title>
+        <meta
+          name="description"
+          content="Explora algunos de nuestros proyectos más relevantes: experiencias de marca, eventos corporativos y campañas que generan impacto real."
+        />
+        <link rel="canonical" href="https://absolu.to/casos" />
+      </Helmet>
    <div
     className="porfolio"
     style={{

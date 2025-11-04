@@ -37,7 +37,7 @@ const Inicio =()=>{
   const ReactPlayer = lazy(() => import('react-player'))
   return (
     <>
-   <Helmet>
+   {/* <Helmet>
     <title>El Origen | Capitán Branding y la historia de Absoluto Experiential</title>
     <meta name="description" content="Capitán Branding y absoluto Experiential, misión: generar engagement en 90 segundos. Una historia ilustrada de creatividad y conexión.
 Palabras clave: capitán branding, origen absoluto experiential, storyliving, superhéroe marketing, engagement.
@@ -48,7 +48,7 @@ Palabras clave: capitán branding, origen absoluto experiential, storyliving, su
     <meta property='og:url' content='https://absolu.to/' />
    
    
-   </Helmet>
+   </Helmet> */}
    
     {/* <div> */}
     {/* <Pagepilling> */}
