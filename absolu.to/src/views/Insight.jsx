@@ -102,10 +102,10 @@ function Insight() {
   return (
    <>
     <Helmet>
-        <title>Insights | Tendencias y perspectivas en marketing experiencial</title>
+        <title>Insights | Las fuentes de nuestra inspiración</title>
         <meta
           name="description"
-          content="Reflexiones, análisis y tendencias sobre creatividad, innovación y marketing experiencial desde la mirada de Absoluto."
+          content="Descubre al Capitán Branding y su equipo, nuestra fórmula secreta y las razones para confiar en Absoluto Experiential."
         />
         <link rel="canonical" href="https://absolu.to/insights" />
       </Helmet>

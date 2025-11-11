@@ -26,7 +26,7 @@ function Header() {
   return (
     <>
     <header className="header">
-      <img src={logoFijo} alt="logo" className="logo__fijo" />
+      <Link to="/home"><img src={logoFijo} alt="logo" className="logo__fijo" /></Link>
       <div className="header__container">
         {/* <img className='logo' src={logo} alt="logo" /> */}
         <button className={`header__boton ${menu ? 'isActive' : ''}`}

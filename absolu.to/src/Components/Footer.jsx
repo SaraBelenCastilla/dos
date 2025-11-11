@@ -19,7 +19,7 @@ export default function Footer() {
     /></div>
       </div> */}
      
-     <img className='logo__footer' src={Lgo} alt="logo" />  
+     <Link to="/home"><img className='logo__footer' src={Lgo} alt="logo" /></Link>  
       
          
       <div className="footer__cuerpo">
