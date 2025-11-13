@@ -30,7 +30,7 @@ export default function Footer() {
           <p className="footer__p">C/ Concepción Jerónima 22, 28012</p>
           </div>
           <div className="footer__direccion">
-          <h3 className="footer__h3">Sevilla</h3>
+          <h2 className="footer__h3">Sevilla</h2>
           <p className="footer__p">Av. República Argentina 15, 41011</p>
           </div>
         
