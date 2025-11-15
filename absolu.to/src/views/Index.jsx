@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import AutoImageSlider from '../Components/AutoImageSlider';
 import Foto1 from '../assets/img/foto1.jpg'
 import Foto2 from '../assets/img/foto2.jpg'
@@ -11,7 +11,7 @@ import Foto8 from '../assets/img/foto8.jpg'
 
 
 function Index() {
-
+const [open, setOpen] = useState(false);
      const images = [
     Foto1   ,
    Foto2,
@@ -25,6 +25,7 @@ function Index() {
 
   return (
    <div className='containerS'>
+    
       <div className='wrapper'>
         {/* <div className='headerS'>
           <h1 className='title'>Slider Automático con Fundido</h1>
@@ -32,6 +33,7 @@ function Index() {
         </div> */}
         
         <div className='sliderWrapper'>
+          
           <AutoImageSlider 
             images={images}
             interval={1500}

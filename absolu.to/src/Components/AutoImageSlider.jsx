@@ -11,7 +11,7 @@ const AutoImageSlider = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-
+const [open, setOpen] = useState(false);
   useEffect(() => {
     if (images.length <= 1) return;
 
@@ -40,6 +40,7 @@ const AutoImageSlider = ({
 
   return (
    <div className={`sliderS ${className || ''}`}>
+    
   <img
     src={images[currentIndex]}
     alt={`${alt} ${currentIndex + 1}`}
