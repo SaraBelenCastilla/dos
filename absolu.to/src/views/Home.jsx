@@ -170,7 +170,7 @@ const explicacion = {
           <h2 className="dos__h2">EXPERIENTIAL</h2>
         </div>
       </AnimatedSection> */}
-      <button onClick={() => setOpen(true)} className="spotify-btn"
+      {/* <button onClick={() => setOpen(true)} className="spotify-btn"
         style={{
     position: "fixed",
     top: "80vh",      // distancia desde arriba
@@ -201,7 +201,7 @@ const explicacion = {
             ></iframe>
           </div>
         </div>
-      )}
+      )} */}
       <Index/>
        <motion.div
         className='dos__contenido'
