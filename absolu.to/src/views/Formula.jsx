@@ -43,7 +43,7 @@ function Formula() {
       window.calendar?.schedulingButton.load({
         url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2vuoU832a8lHnPMTU9yFylNcMJqADOtdJn1MTgcsCjgQ8TmkL5UcEIzDD45duQUzUUMY5VNR_M?gv=true",
         color: "#ED4358",
-        label: "Reservar una cita",
+        label: "QUIERO MI MUESTRA",
         target: buttonRef.current
       });
     };

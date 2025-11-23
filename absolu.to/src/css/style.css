@@ -213,6 +213,10 @@
   color: white;
   background-color: #EE4258;
 }
+.gc-scheduling-button,
+.gc-scheduling-button * {
+  color: #fff !important;
+}
   /* ----------header-------------- */
 /* .header{
 
@@ -3932,7 +3936,7 @@ background: linear-gradient(1deg,rgba(238, 66, 88, 1) 0%, rgba(238, 66, 88, .64)
 }
 .volver-footer1 {
   display: inline-block;
-  margin: 2em auto;
+  /* margin: 2em auto;
   padding: 0.7em 2em;
   background:rgb(15, 15, 15);
   color:  rgb(238, 66, 88);
@@ -3943,12 +3947,15 @@ background: linear-gradient(1deg,rgba(238, 66, 88, 1) 0%, rgba(238, 66, 88, .64)
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 2px solid rgb(238, 66, 88);
+  border: 2px solid rgb(238, 66, 88); */
+  color: white;
+  cursor: pointer;
   transition: background 0.2s;
+  margin: 2em auto;
 }
 .volver-footer1:hover {
-  background:  rgb(238, 66, 88);
-  color: white;
+  color:  rgb(238, 66, 88);
+  
 }
 
 /* -----------formula------------ */
