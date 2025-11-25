@@ -41,9 +41,9 @@ function Formula() {
 
     script.onload = () => {
       window.calendar?.schedulingButton.load({
-        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2vuoU832a8lHnPMTU9yFylNcMJqADOtdJn1MTgcsCjgQ8TmkL5UcEIzDD45duQUzUUMY5VNR_M?gv=true",
-        color: "#ED4358",
-        label: "QUIERO MI MUESTRA",
+        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ15YMusdbFgMUlMFqxg60gk7Mx-ZD-8gWVMgn4pdq3UqIixlqHbKb_yMEmBQA4dnTUG2qoMM6O7?gv=true',
+        color:'#ed4055',
+        label: "Quiero mi muestra",
         target: buttonRef.current
       });
     };
