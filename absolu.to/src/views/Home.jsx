@@ -49,8 +49,8 @@ React.useEffect(() => {
   setOpenIndex(null);
 }, []);
   const palabras = ["SOMOS", "ABSOLUTO", "EXPERIENTIAL"];
-  const frases = ["NO CONTAMOS HISTORIAS", "LAS FABRICAMOS"];
-  const sentences = ["Producimos:", "EVENTOS, ARTE Y CONTENIDO "];
+  const frases = ["NO CONTAMOS HISTORIAS,", "LAS FABRICAMOS."];
+  const sentences = [ "Eventos,activaciones,", "espacios interactivo y", "contenidos inmersivos."];
   const titulares = ["SOMOS", "ARTESANOS ","DEL","ENGAGEMENT"];
   const explicaciones = [
    {titular:"IRL",
@@ -232,7 +232,7 @@ const explicacion = {
                 <p className="tres__p">Un taller creativo</p>
                 <p className="tres__p">especializado en </p>
                <p className="tres__p">experiencias de marca </p>
-                <p className="tres__p">cultura transmedia. </p>
+                <p className="tres__p">y cultura transmedia. </p>
             </motion.div>
             
 
@@ -273,6 +273,11 @@ const explicacion = {
          
         }}
       >
+        <motion.h2 className='sentence__h2'
+         initial={{opacity:0, }}
+             whileInView={{opacity:1, transition:{delay:0.4, duration:3.5, }}}
+             viewport={{once: false, amount:.5}}
+        >Producimos:</motion.h2>
         {sentences.map((sent, i) => (
           <motion.h2 key={i} variants={sentence} className='nuevaC__h2'>
             {sent}
@@ -391,12 +396,12 @@ const explicacion = {
              initial={{opacity:0, }}
              whileInView={{opacity:1, transition:{delay:0.4, duration:3.5, }}}
              viewport={{once: false, amount:.5}}
-            >Expertos en:</motion.h2>
-             <motion.h2 className="newp__h2"
+            >Creamos experiencias transmedia que conectan audiencias.</motion.h2>
+             {/* <motion.h2 className="newp__h2"
              initial={{opacity:0, }}
              whileInView={{opacity:1, transition:{delay:0.4, duration:3.5,  }}}
              viewport={{once: false, amount:.5}}
-            >EXPERIENCIAS DE MARCA TRANSMEDIA.</motion.h2>
+            >EXPERIENCIAS DE MARCA TRANSMEDIA.</motion.h2> */}
              <motion.div
         className='explicacion__contenido'
         variants={container}
@@ -516,8 +521,8 @@ const explicacion = {
          
                </a>   */}
                 <div className="showroon__link">
-                                  <span className="contactoF__default-text"><Link    to="/porfolio">Las niñas de mis ojos</Link></span>
-                                  <span className="contactoF__hover-text"><Link    to="/porfolio"> CASOS</Link></span>
+                                  <span className="showroon__default-text"><Link    to="/porfolio">Las niñas de mis ojos</Link></span>
+                                  <span className="showroon__hover-text"><Link    to="/porfolio"> Play en Spotify</Link></span>
                                 </div> 
              </div>
             
@@ -549,8 +554,8 @@ const explicacion = {
 <Fotos/>
 
                                  <div className="porfolio__link">
-                                  <span className="contactoF__default-text"><Link    to="/insight">ver PORFOLIO</Link></span>
-                                  <span className="contactoF__hover-text"><Link    to="/insight"> CASOS</Link></span>
+                                  <span className="porfolio__default-text"><Link    to="/porfolio">VER PORFOLIO</Link></span>
+                                  <span className="porfolio__hover-text"><Link    to="/porfolio"> CASOS</Link></span>
                                 </div> 
      </div>
      <div className="new">
@@ -582,8 +587,8 @@ const explicacion = {
         ))}
       </motion.div> 
      <div className="new__link">
-                                  <span className="new__default-text"><Link    to="/porfolio">INSIGHTS</Link></span>
-                                  <span className="new__hover-text"><Link    to="/porfolio"> DESCUBRE EL ORIGEN</Link></span>
+                                  <span className="new__default-text"><Link    to="/insights">INSIGHTS</Link></span>
+                                  <span className="new__hover-text"><Link    to="/insights"> DESCUBRE EL ORIGEN</Link></span>
                                 </div> 
              
            </div>

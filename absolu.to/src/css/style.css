@@ -1499,6 +1499,9 @@ opacity: 0.8;
   padding-bottom: 40%;
   padding-top: 30%;
 }
+.tres__p{
+  line-height: 1.2em;
+}
 .nueva__h2{
 display: flex;
   flex-direction: column;
@@ -1509,6 +1512,18 @@ display: flex;
   font-size: 4.5em;
   color: black;
   line-height: 1em;
+}
+.sentence__h2{
+display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  color: white;
+ 
+  padding-bottom: 5%;
 }
 .nuevaC__h2{
 display: flex;
@@ -1979,7 +1994,7 @@ display: flex;
  height: auto;
  }
  .showroon__link{
-   width: auto;
+   width: 300px;
   height: auto;
   background-color: rgb(5, 11, 21);
   color:  rgb(238, 66, 88);
@@ -1999,6 +2014,29 @@ display: flex;
   color: white;
   border: none; /* Elimina el borde al hacer hover */
  }
+  .showroon__default-text{
+  font-family:"veneer", sans-serif;
+  font-size: 1.5em;
+  display: inline;
+}
+.showroon__hover-text{
+  font-family:"veneer", sans-serif;
+  font-size: 1.5em;
+  display: none;
+  text-align: center;
+}
+.showroon__link .showroon__hover-text {
+  display: none;
+}
+.showroon__link:hover .showroon__hover-text {
+  display: inline;
+}
+.showroon__link .showroon__default-text {
+  display: inline;
+}
+.showroon__link:hover .showroon__default-text {
+  display: none;
+}
  .new__link{
    width: 350px;
   height: auto;
@@ -2018,14 +2056,26 @@ display: flex;
   margin-top: 10%;
   margin-left: 25%;
  }
- .porfolio__h3default{
+ .porfolio__default-text{
   font-family:"veneer", sans-serif;
   font-size: 1.5em;
   display: inline;
 }
-.porfolio__h3hover{
+.porfolio__hover-text{
   font-family:"veneer", sans-serif;
   font-size: 1.5em;
+  display: none;
+}
+.porfolio__link .porfolio__hover-text {
+  display: none;
+}
+.porfolio__link:hover .porfolio__hover-text {
+  display: inline;
+}
+.porfolio__link .porfolio__default-text {
+  display: inline;
+}
+.porfolio__link:hover .porfolio__default-text {
   display: none;
 }
 .new__default-text{
