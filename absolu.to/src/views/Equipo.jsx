@@ -137,7 +137,14 @@ const palabra = {
        initial={{opacity:0, y:150,scale:0.5}}
          whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
          viewport={{once: false, amount:.5}}
-      >EL EQUIPO ES LO PRIMERO</motion.h1>
+      >EL EQUIPO </motion.h1>
+      <motion.h2 className="equipo__h2"
+       initial={{opacity:0, y:150,scale:0.5}}
+         whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
+         viewport={{once: false, amount:.5}}
+      >
+        Es lo primero
+      </motion.h2>
       </div>
       <div className="equipo__primera">
          <motion.div

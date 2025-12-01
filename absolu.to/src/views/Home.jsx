@@ -231,7 +231,8 @@ const explicacion = {
             >
                 <p className="tres__p">Un taller creativo</p>
                 <p className="tres__p">especializado en </p>
-               <p className="tres__p">cultura transmedia. </p>
+               <p className="tres__p">experiencias de marca </p>
+                <p className="tres__p">cultura transmedia. </p>
             </motion.div>
             
 
@@ -355,7 +356,7 @@ const explicacion = {
             </a> 
           */}
          
-           <div className="new">
+           {/* <div className="new">
             <motion.h2 className="new__h2"
              initial={{opacity:0, }}
              whileInView={{opacity:1, transition:{delay:0.4, duration:3.5,  }}}
@@ -384,7 +385,7 @@ const explicacion = {
         ))}
       </motion.div> 
 
-           </div>
+           </div> */}
            <div className="newp">
             <motion.h2 className="newp__h2"
              initial={{opacity:0, }}
@@ -419,7 +420,7 @@ const explicacion = {
         style={{ cursor: "pointer" }}
         onClick={() => setOpenIndex(openIndex === i ? null : i)}
       >
-        {expli.titular}<span><RxPlusCircled className='explicacion__icon' /></span> 
+       <span><RxPlusCircled className='explicacion__icon' /></span>  {expli.titular}
       </h2>
      
       <AnimatePresence initial={false}>
@@ -494,7 +495,7 @@ const explicacion = {
                 initial={{opacity:0, y:100}}
                 whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
                 viewport={{once: false, amount:.5}}
-               >LAS NIÑAS DE MIS OJOS</motion.h2>
+               >NUESTROS GREATEST HITS</motion.h2>
                <motion.div className="ojos"
                 initial={{opacity:0, y:100}}
                 whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
@@ -514,7 +515,12 @@ const explicacion = {
            />
          
                </a>   */}
+                <div className="showroon__link">
+                                  <span className="contactoF__default-text"><Link    to="/porfolio">Las niñas de mis ojos</Link></span>
+                                  <span className="contactoF__hover-text"><Link    to="/porfolio"> CASOS</Link></span>
+                                </div> 
              </div>
+            
                <div className='showroon' id='show'>
      
      
@@ -543,10 +549,44 @@ const explicacion = {
 <Fotos/>
 
                                  <div className="porfolio__link">
-                                  <span className="contactoF__default-text"><Link    to="/porfolio">ver PORFOLIO</Link></span>
-                                  <span className="contactoF__hover-text"><Link    to="/porfolio"> CASOS</Link></span>
+                                  <span className="contactoF__default-text"><Link    to="/insight">ver PORFOLIO</Link></span>
+                                  <span className="contactoF__hover-text"><Link    to="/insight"> CASOS</Link></span>
                                 </div> 
      </div>
+     <div className="new">
+            <motion.h2 className="new__h2"
+             initial={{opacity:0, }}
+             whileInView={{opacity:1, transition:{delay:0.4, duration:3.5,  }}}
+             viewport={{once: false, amount:.5}}
+            >Llevamos más de 20 años conectando </motion.h2>
+            <motion.h2 className="new__h2"
+             initial={{opacity:0,}}
+             whileInView={{opacity:1, transition:{delay:0.4, duration:3.5, }}}
+             viewport={{once: false, amount:.5}}
+            >marcas y personas.</motion.h2>
+             <motion.div
+        className='new__contenido'
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }}
+        style={{ display: "flex",  flexWrap: "wrap", gap:"15px",  justifyContent: "start", width: "100%"  ,
+           
+         
+        }}
+      >
+        {titulares.map((titu, i) => (
+          <motion.h2 key={i} variants={titular} className='news__h2'>
+            {titu}
+          </motion.h2>
+        ))}
+      </motion.div> 
+     <div className="new__link">
+                                  <span className="new__default-text"><Link    to="/porfolio">INSIGHTS</Link></span>
+                                  <span className="new__hover-text"><Link    to="/porfolio"> DESCUBRE EL ORIGEN</Link></span>
+                                </div> 
+             
+           </div>
         <Section6/>
     </>
   )

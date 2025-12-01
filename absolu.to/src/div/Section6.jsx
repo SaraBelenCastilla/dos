@@ -157,8 +157,9 @@ function Section6() {
       {/* </div> */}
       <div className="quintaUno__enlaces">
                       {/* <Link to={'/Contacto'}> */}
+                      <Link to={'/contacto'}>
                       <div className="quinta__card"
-                        onClick={(e) => {window.location.href ='mailto: hola@absolu.to';}}
+                        // onClick={(e) => {window.location.href ='mailto: hola@absolu.to';}}
                        >
                          <div className="quinta__icono">
                              {/* <img src={Boton} alt="icono" className="quinta__img" /> */}
@@ -171,7 +172,7 @@ function Section6() {
                           
                            </div>
                        </div>
-                      {/* </Link> */}
+                       </Link> 
                        
                         
                           

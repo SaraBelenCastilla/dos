@@ -24,7 +24,15 @@ function Section1() {
              viewport={{once: false, amount:.5}}
             />
         </div> */}
-       
+       <motion.h2 className='cero__h2'
+        style={{width:anchoVentana}}
+        initial={{opacity:0, y:100}}
+        whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
+        viewport={{once: false, amount:.5}}
+       >
+       La historia de Absoluto y el Capitan Branding.
+
+       </motion.h2>
        
          
 

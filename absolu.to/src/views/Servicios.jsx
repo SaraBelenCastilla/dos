@@ -8,7 +8,8 @@ import {
     AnimatePresence,
 } from "framer-motion";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-
+import { BsArrowUpRightSquare } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 const iconos = [
   {
     index:1,
@@ -214,6 +215,7 @@ function Servicios() {
         style={{backgroundColor:index.color}}
         >
           <h2 className="servicios__h2">{index.h2}</h2>
+          <Link to= '/hacemos'><BsArrowUpRightSquare className='indice' /></Link>
         </div>
        
         </motion.li> 

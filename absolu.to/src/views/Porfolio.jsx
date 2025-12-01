@@ -550,10 +550,24 @@ useEffect(() => {
      </div>
            
           </div>
-
+        
          
         </div>
       )}
+      <div className="titulo__logos">
+         <div className="logero__div">
+                <motion.p className="logero__p"
+                 initial={{opacity:0, y:100}}
+                whileInView={{opacity:1, y:0, transition:{delay:0.8, duration:1,  ease:'easyInOut',type:'spring'}}}
+                viewport={{once: false, amount:.5}}
+                >Han confiado</motion.p>
+                <motion.div className="conte__linea"
+                 initial={{width:0, }}
+                whileInView={{width:'100%',  transition:{delay:0.4, duration:2,  ease:'easyInOut',type:'spring'}}}
+                viewport={{once: false, amount:.5}}
+                ></motion.div>
+                </div> 
+      </div>
       <div className="show__logo" id='logos'>
      <LogoSlider2 />
      <LogoSlider />

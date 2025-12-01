@@ -386,7 +386,7 @@ right: 0%;
   width: 100%;
   height: 100vh;
   display: flex;
-  
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 5%;
@@ -399,6 +399,13 @@ right: 0%;
   font-size: 8em;
   padding-top: 2%;
   padding-left: 35%;
+}
+.cero__h2{
+  font-family: "Poppins", sans-serif;
+  
+  font-size: 1.5em;
+  
+  padding-left: 30%;
 }
 .segunda{
    position: relative;
@@ -1963,7 +1970,7 @@ display: flex;
  .show__h2{
   color: white;
   font-family: "veneer", sans-serif;
-  font-weight: 100;
+ 
   font-size: 6em; 
  padding-bottom: 5%;
  }
@@ -1971,6 +1978,83 @@ display: flex;
   width: auto;
  height: auto;
  }
+ .showroon__link{
+   width: auto;
+  height: auto;
+  background-color: rgb(5, 11, 21);
+  color:  rgb(238, 66, 88);
+  padding: 1%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  border-radius: 10px 10px 10px;
+  cursor: pointer;
+  border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+ }
+ .showroon__link:hover{
+  background-color: rgb(238, 66, 88);
+  color: white;
+  border: none; /* Elimina el borde al hacer hover */
+ }
+ .new__link{
+   width: 350px;
+  height: auto;
+  background-color: rgb(5, 11, 21);
+  color:  rgb(238, 66, 88);
+  padding: 1%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 10px 10px 10px;
+  cursor: pointer;
+  border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 10%;
+  margin-left: 25%;
+ }
+ .porfolio__h3default{
+  font-family:"veneer", sans-serif;
+  font-size: 1.5em;
+  display: inline;
+}
+.porfolio__h3hover{
+  font-family:"veneer", sans-serif;
+  font-size: 1.5em;
+  display: none;
+}
+.new__default-text{
+  font-family:"veneer", sans-serif;
+  font-size: 1.5em;
+  display: inline;
+}
+.new__hover-text{
+  font-family:"veneer", sans-serif;
+  font-size: 1.5em;
+  display: none;
+}
+.new__link:hover{
+  background-color: rgb(238, 66, 88);
+  color: white;
+  border: none; /* Elimina el borde al hacer hover */
+}
+.new__link .new__hover-text {
+  display: none;
+}
+.new__link:hover .new__hover-text {
+  display: inline;
+}
+.new__link .new__default-text {
+  display: inline;
+}
+.new__link:hover .new__default-text {
+  display: none;
+}
  .boton__bajar{
   color: white;
  
@@ -2487,7 +2571,28 @@ margin-bottom: 10%;
 }
 
 /* --------------slider logos----------- */
-
+.titulo__logos{
+  background-color: rgb(5, 11, 21);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+  height: auto;
+}
+.logero__div{
+  width: 30%;
+  margin-left: 10%;
+}
+.logero__p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.7em;
+  color: white;
+  text-align: start;
+}
 .show__logo{
   position: relative;
   max-width: 100%;
@@ -3252,6 +3357,7 @@ background: linear-gradient(1deg,rgba(238, 66, 88, 1) 0%, rgba(238, 66, 88, .64)
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color:  rgb(238, 66, 88);
@@ -3267,6 +3373,12 @@ background: linear-gradient(1deg,rgba(238, 66, 88, 1) 0%, rgba(238, 66, 88, .64)
   color: rgb(255, 255, 255);
   
   text-align: center;
+}
+.indice{
+  color: white;
+  padding-top: 5%;
+  width: 40px;
+  height: 40px;
 }
 /* .item:hover >.img__item{
 transform: scale(1.5);
@@ -4858,11 +4970,13 @@ padding-right: 10%;
   height: 100vh;
   background-color: rgb(5, 11, 21);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   z-index: 10;
 }
+
 .explosiva{
   color:rgb(238, 66, 88);
 }
@@ -5234,12 +5348,18 @@ width: auto;
   height: 100vh;
   background-color: rgb(5, 11, 21);
   display: flex;
-  
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
   z-index: 10;
+}
+.equipo__h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color:white;
 }
 /* .equipo__primera{
   width: 100%;

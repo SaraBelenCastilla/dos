@@ -140,7 +140,13 @@ const palabra = {
        initial={{opacity:0, y:150,scale:0.5}}
          whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
          viewport={{once: false, amount:.5}}
-      >REACTIVA Y CLANDESTINA</motion.h1>
+      >LA FORMULA</motion.h1>
+      <motion.h2 className="equipo__h2"
+      initial={{opacity:0, y:150,scale:0.5}}
+         whileInView={{opacity:1, y:0,scale:1, transition:{delay:0.4, duration:1.2,  ease:'easyInOut',type:'spring'}}}
+         viewport={{once: false, amount:.5}}>
+       Reactiva y Clandestina
+      </motion.h2>
       </div>
       {/* </div> */}
       <div className="reactiva__primera">
