@@ -50,7 +50,7 @@ React.useEffect(() => {
 }, []);
   const palabras = ["SOMOS", "ABSOLUTO", "EXPERIENTIAL"];
   const frases = ["NO CONTAMOS HISTORIAS,", "LAS FABRICAMOS."];
-  const sentences = [ "Eventos,activaciones,", "espacios interactivos y", "contenidos inmersivos."];
+  const sentences = [ "Eventos, activaciones,", "espacios interactivos y", "contenidos inmersivos."];
   const titulares = ["SOMOS", "ARTESANOS ","DEL","ENGAGEMENT"];
   const explicaciones = [
    {titular:"IRL",
