@@ -520,10 +520,42 @@ const explicacion = {
            />
          
                </a>   */}
-                <div className="showroon__link">
+                {/* <div className="showroon__link">
                                   <span className="showroon__default-text"><Link    to="/porfolio">La niña de mis ojos</Link></span>
                                   <span className="showroon__hover-text"><Link    to="/porfolio"> Play en Spotify</Link></span>
-                                </div> 
+                                </div>  */}
+              <button onClick={() => setOpen(true)} className="showroon__link"
+        style={{
+    // position: "fixed",
+    // top: "85vh",      // distancia desde arriba
+    // left: "35vw",    // distancia desde la derecha
+    // zIndex: 9999 ,
+    cursor:'pointer'     // por encima de todo
+  }}
+        >
+        <span className="showroon__default-text">La niña de mis ojos</span>
+                                  <span className="showroon__hover-text"> Play en Spotify</span>
+      </button>
+      {open && (
+        <div className="spotify-modal" style={{
+          position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
+         display: 'flex', justifyContent: 'left', alignItems: 'center', zIndex: 9999
+        }}>
+          <div style={{ position: 'relative', width: '300px', height: '380px', borderRadius: '12px', overflow: 'hidden' }}>
+            <button onClick={() => setOpen(false)} style={{ position: 'absolute', top: 10, right: 50, zIndex: 2 }}><IoMdCloseCircleOutline className='aspas' /></button>
+            <iframe
+              src="https://open.spotify.com/embed/playlist/2gSFtaSFr4AGdfF4wbvI3B?utm_source=generator&theme=0"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+              allowFullScreen
+              title="Spotify"
+            ></iframe> 
+           
+          </div>
+        </div>
+      )}                   
              </div>
             
                <div className='showroon' id='show'>
