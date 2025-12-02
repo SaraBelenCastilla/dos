@@ -50,7 +50,7 @@ React.useEffect(() => {
 }, []);
   const palabras = ["SOMOS", "ABSOLUTO", "EXPERIENTIAL"];
   const frases = ["NO CONTAMOS HISTORIAS,", "LAS FABRICAMOS."];
-  const sentences = [ "Eventos,activaciones,", "espacios interactivo y", "contenidos inmersivos."];
+  const sentences = [ "Eventos,activaciones,", "espacios interactivos y", "contenidos inmersivos."];
   const titulares = ["SOMOS", "ARTESANOS ","DEL","ENGAGEMENT"];
   const explicaciones = [
    {titular:"IRL",
@@ -521,7 +521,7 @@ const explicacion = {
          
                </a>   */}
                 <div className="showroon__link">
-                                  <span className="showroon__default-text"><Link    to="/porfolio">Las niñas de mis ojos</Link></span>
+                                  <span className="showroon__default-text"><Link    to="/porfolio">La niña de mis ojos</Link></span>
                                   <span className="showroon__hover-text"><Link    to="/porfolio"> Play en Spotify</Link></span>
                                 </div> 
              </div>

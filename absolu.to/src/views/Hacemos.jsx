@@ -7,6 +7,7 @@ import Retail from '../assets/img/retail.jpg'
 import Digital from '../assets/img/digital.jpg'
 import Hacer from '../assets/img/hacer.jpeg'
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 function Hacemos() {
   return (
     <>
@@ -391,6 +392,13 @@ function Hacemos() {
     
     </>
     </div>
+      <div className="hacemos__link">
+                                      <span className="hacemos__default-text"><Link    to="/porfolio">CASOS</Link></span>
+                                      <span className="hacemos__hover-text"><Link    to="/porfolio"> VER PORFOLIO</Link></span>
+                                    </div> 
+                 
+              
+    
     </div>
 
     </>

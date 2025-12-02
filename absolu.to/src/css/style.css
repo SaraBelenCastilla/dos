@@ -1438,7 +1438,7 @@ opacity: 0.8;
  line-height: 0.2em;
   }
   .cnco__contenido{
-   height: auto;
+   height: 90vh;
    padding-top: 15%;
  padding-left: 5%;
   display: flex;
@@ -1994,7 +1994,7 @@ display: flex;
  height: auto;
  }
  .showroon__link{
-   width: 300px;
+   width: auto;
   height: auto;
   background-color: rgb(5, 11, 21);
   color:  rgb(238, 66, 88);
@@ -2013,6 +2013,8 @@ display: flex;
   background-color: rgb(238, 66, 88);
   color: white;
   border: none; /* Elimina el borde al hacer hover */
+   padding-left: 4%;
+  padding-right: 4%;
  }
   .showroon__default-text{
   font-family:"veneer", sans-serif;
@@ -2056,6 +2058,53 @@ display: flex;
   margin-top: 10%;
   margin-left: 25%;
  }
+ .hacemos__link{
+   width: 350px;
+  height: auto;
+  background-color: rgb(5, 11, 21);
+  color:  rgb(238, 66, 88);
+  padding: 1%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 10px 10px 10px;
+  cursor: pointer;
+  border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 5%;
+  margin-left: 35%;
+  margin-bottom: 5%;
+ }
+ .hacemos__default-text{
+  font-family:"veneer", sans-serif;
+  font-size: 1.5em;
+  display: inline;
+}
+.hacemos__hover-text{
+  font-family:"veneer", sans-serif;
+  font-size: 1.5em;
+  display: none;
+}
+.hacemos__link:hover{
+  background-color: rgb(238, 66, 88);
+  color: white;
+   border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
+}
+.hacemos__link .hacemos__hover-text {
+  display: none;
+}
+.hacemos__link:hover .hacemos__hover-text {
+  display: inline;
+}
+.hacemos__link .hacemos__default-text {
+  display: inline;
+}
+.hacemos__link:hover .hacemos__default-text {
+  display: none;
+}
  .porfolio__default-text{
   font-family:"veneer", sans-serif;
   font-size: 1.5em;
