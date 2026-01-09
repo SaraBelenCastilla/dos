@@ -5781,7 +5781,7 @@ width: 100%;
     box-sizing: border-box !important;
     overflow-x: hidden !important;
   }
- .modal__image, .img__item {
+ .modal__image{
     width: 90vw !important;
     max-width: 90vw !important;
     height: auto !important;
@@ -6040,7 +6040,7 @@ max-width: 320px;
   height: 35vh;
 }
 .dos__h2{
-  font-size: 3em;
+  font-size: 2.5em;
 }
 .dos__contenido{
   padding-left: 10%;
@@ -6050,12 +6050,16 @@ max-width: 320px;
   font-size: 1.5em;
 }
 .nueva__h2{
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding-left: 5%;
 }
 .new__h2{
   font-size: 1.5em;
 }
+.sentence__h2{
+  font-size: 1.5em;
+}
+
 .news__h2{
   font-size: 2em;
 }
@@ -6806,7 +6810,7 @@ padding-top: 5%;
   justify-content: center;
 
 }
-.nosotros__cerDos{
+.__cerDos{
   padding: 5%;
  padding-top: 25%;
  height: 30vh;
@@ -6816,13 +6820,17 @@ padding-top: 5%;
 }
 .cnco__contenido{
   padding-left: 5%;
+  height: auto;
 }
 .nuevaC__h2{
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 1.5em;
 }
+.nosotros__cerDos{
+  height: auto;
+}
 .new{
-  height: 70vh;
+  height: 80vh;
 }
 .explicacion__h2{
   font-size: 2em;
@@ -6940,9 +6948,9 @@ padding-top: 5%;
     background-color: rgb(5, 11, 21);
   }
    .img__item {
-   width:auto;
+   width:150px;
   
-  height: auto;
+  height: 150px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
@@ -7053,6 +7061,20 @@ padding-top: 5%;
 .ojos{
   height: auto;
   width:auto;
+}
+/* ------servicios-------- */
+.servicios__containerUno{
+   
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
 }
 }
 
