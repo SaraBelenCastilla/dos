@@ -45,7 +45,7 @@
     font-weight: 900;
     font-style: normal;
   }
-  
+ 
    /* Reseteamos los margin y paddings de todas las etiquetas */
    * {
     margin: 0;
@@ -5616,10 +5616,10 @@ li{
 .contacto__email{
   margin-bottom: 5%;
 }
-.contactoF__email{
+/* .contactoF__email{
   margin-bottom: 5%;
   margin-top: 10%;
-}
+} */
 /* --------tamano---------- */
 /* ---------autoImageslider----------- */
 .sliderS {
@@ -5748,16 +5748,40 @@ width: 100%;
 @media only screen and (max-width: 400px) {
   html, body {
   width: 100vw;
-  max-width: 100vw;
+  max-width: 100vw !important;
   overflow-x: hidden;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+.tres__p{
+  font-size: .9em;
+}
 .section__uno{
   font-size: 1em;
   height: auto;
 }
+.wrapper{
+  width: 100vw !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+.sliderS{
+  width: 100vw !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+.sliderWrapper{
+  width: 100vw !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+ .imgUno, .img, .img__item {
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+ 
+ 
 .porfolio__container {
     width: 100vw !important;
     max-width: 100vw !important;
@@ -5800,6 +5824,13 @@ width: 100%;
     box-sizing: border-box !important;
     background-color: white !important;
   }
+  .showroon__link{
+    font-size: 1em;
+    width: 200px;
+  }
+  .itemUno{
+    width: 150px;
+  } 
  .servicios {
   display: none;
  
@@ -5883,7 +5914,7 @@ max-width: 320px;
   padding-top: 10%;
 }
 .razon__pie{
-  padding-top: 60%;
+  padding-top: 30%;
   font-size: 1em;
 }
 .razones{
@@ -5917,7 +5948,7 @@ max-width: 320px;
   
 }
 .razones__p{
-  font-size: 2em;
+  font-size: 1.2em;
 }
 .razones__p1{
   font-size: 2em;
@@ -5941,6 +5972,10 @@ max-width: 320px;
 }
 .pie{
   font-size: 1em;
+}
+.ojo{
+  width: 90%;
+  height: 90%;
 }
  .footer__cuerpo{
   height: 80%;
@@ -5993,6 +6028,14 @@ max-width: 320px;
   }
   .footer__pie{
     width: 95vw;
+    flex-wrap: wrap;
+  }
+  .copy{
+    width: 10px;
+    height: 10px;
+  }
+  .containerS{
+    max-width: 100vw;
   }
    .boton__drch--section22 {
     display: none !important;
@@ -6000,6 +6043,14 @@ max-width: 320px;
  .body{
   max-width: 100%;
   overflow-x: hidden;
+ }
+ .new__link{
+  font-size: 1em;
+  width: 150px;
+ }
+ .porfolio__link{
+  font-size: 1em;
+  width: 150px;
  }
  .primera{
   height: 100%;
@@ -6040,11 +6091,12 @@ max-width: 320px;
   height: 35vh;
 }
 .dos__h2{
-  font-size: 2.5em;
+  font-size: 2em;
 }
 .dos__contenido{
   padding-left: 10%;
   height: 50vh;
+  max-width: 100vw;
 }
 .parrafo__tres{
   font-size: 1.5em;
@@ -6054,20 +6106,24 @@ max-width: 320px;
   padding-left: 5%;
 }
 .new__h2{
-  font-size: 1.5em;
+  font-size: 1em;
 }
 .sentence__h2{
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .news__h2{
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .new{
   padding-left: 10%;
 }
+.newp{
+  max-width: 100vw;
+  padding-left: 8%;
+}
 .newp__h2{
-  font-size: 1.5em;
+  font-size: .9em;
 }
 .explicacion__div{
   width: auto;
@@ -6139,19 +6195,15 @@ max-width: 320px;
         margin-bottom: 10%;
     }
     .contactoF__email{
-  max-width: 200px;
-  background-color: white;
-  color:  rgb(238, 66, 88);
-  padding: 1%;
+  
+ 
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1em;
   text-align: center;
-  border-radius: 20px 20px 20px;
-  cursor: pointer;
-  border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
+ 
 }
- .contactoF__email:hover{
+ .reactiva__formula:hover{
   background-color: rgb(238, 66, 88);
   color: white;
   padding: 1%;
@@ -6170,9 +6222,16 @@ max-width: 320px;
 .nosotros{
   max-width: 100%;
 }
-
+.equipo__link{
+  font-size: 1em;
+  width: 200px;
+}
 .cero__h1{
-  font-size: 6em;
+  font-size: 4em;
+  padding-left: 15%;
+}
+.cero__h2{
+  font-size: 1em;
   padding-left: 15%;
 }
   .nosotros__h1 {
@@ -6208,15 +6267,12 @@ max-width: 320px;
 
 }
 .nosotros__pero{
-  padding-left: 15%;
+  padding-left: 8%;
 }
 .pero__h2{
-  font-size: 2.5em;
+  font-size: 2em;
 }
-.razon__pie{
-  padding-top: 70%;
-  margin-bottom: 5%;
-}
+
 .movimiento1{
   top: 50%;
   left: 60%;
@@ -6263,8 +6319,7 @@ max-width: 320px;
   font-weight: 800;
   font-size: 2em;
 }
-.pero__h2{
-  font-size: 2em;}
+
 .per__img{
   width: 100%;
   height: 100%;
@@ -6304,7 +6359,7 @@ width: 75%;}
   padding-top: 5%;}
 /* ----------niñas---------------- */
 .show__h2{
-  font-size: 10vw;
+  font-size: 8vw;
   width: 80%;
   padding-left: 5%;
   text-align: center;
@@ -6517,7 +6572,7 @@ width: 75%;}
   display: none;
 }
 .movil__h3{
-  font-size: 2.5em;
+  font-size: 2em;
   padding-top: 5%;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
@@ -6535,7 +6590,7 @@ width: 75%;}
   color: black;
 }
 .movil__h4{
-  font-size: 3em;
+  font-size: 2.5em;
   padding-top: 5%;
   font-family: var(--tipo-principal);
   font-weight: 300;
@@ -6614,7 +6669,7 @@ padding-top: 5%;
   padding: 2%;
 }
 .quinta__h1{
-  font-size: 2.3em;
+  font-size: 2em;
   padding-left: 5%;
   padding-bottom: 5%;
   padding-top: 35%;
@@ -6731,8 +6786,18 @@ padding-top: 5%;
   padding: 5%;
 }
 .proposito__h2{
-  font-size: 2em;
+  font-size: 1.5em;
   
+}
+.logero__p{
+  font-size: 1em;
+}
+.hacemos__link{
+  font-size: 1em;
+  width: 150px;
+}
+.proposito__pUno{
+  font-size: 1em;
 }
 .proposito__h3{
   font-size: 1em;
@@ -6823,7 +6888,7 @@ padding-top: 5%;
   height: auto;
 }
 .nuevaC__h2{
-  font-size: 1.3em;
+  font-size: .9em;
   line-height: 1.5em;
 }
 .nosotros__cerDos{
@@ -6833,7 +6898,16 @@ padding-top: 5%;
   height: 80vh;
 }
 .explicacion__h2{
-  font-size: 2em;
+  font-size: 1em;
+}
+.explicacion__h3{
+  font-size: 1em;
+}
+.explicacion__p{
+  font-size: .6em;
+}
+.explicacion__p1{
+  font-size: .6em;
 }
 /* ------------logos------------ */
 .show__logo{
@@ -6993,8 +7067,8 @@ padding-top: 5%;
   text-align: center;
 }
 .menu__icon{
-  width: 1.2em;
-  height: 1.2em;
+  width: .7em;
+  height: .7em;
 }
 .abajo{
   display: none;
@@ -7082,6 +7156,22 @@ padding-top: 5%;
 @media only screen and (min-width: 400px) and (max-width: 500px) {
    .boton__drch--section22 {
     display: none !important;
+  }
+   [class*="container"], [class*="__contenido"], [class*="__div"], [class*="__Uno"], [class*="__Dos"], [class*="__Tres"], [class*="__Cuatro"], [class*="__Cinco"], [class*="__Siete"], [class*="__Seis"] {
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    overflow-x: hidden !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  [class*="descripcion"] {
+    max-width: 95vw !important;
+    min-width: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    position: relative !important;
   }
  .body{
   max-width: 100%;
@@ -7291,7 +7381,7 @@ padding-top: 5%;
   .footer__pie{
     width: 95vw;
   }
- .contactoF__email{
+ /* .contactoF__email{
   max-width: 200px;
   background-color: white;
   color:  rgb(238, 66, 88);
@@ -7302,9 +7392,9 @@ padding-top: 5%;
   text-align: center;
   border-radius: 20px 20px 20px;
   cursor: pointer;
-  border: 2px solid rgb(238, 66, 88); /* Agrega un borde de 2px con el color deseado */ ;
-}
- .contactoF__email:hover{
+  border: 2px solid rgb(238, 66, 88); ;
+} */
+ .reactiva__formula:hover{
   background-color: rgb(238, 66, 88);
   color: white;
   padding: 1%;
@@ -8280,6 +8370,22 @@ padding-top: 5%;
 }
 @media only screen and (max-width: 500px){
    /* Estilos específicos para móviles pequeños */
+    .descripcion,
+  .descripcionUno,
+  .descripcionDos,
+  .descripcionTres,
+  .descripcionCuatro,
+  .descripcionCinco,
+  .descripcionSeis,
+  .descripcionSiete {
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 90vw !important;
+    max-width: 90vw !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
   .ojos{
     width: 300px;
     height: auto;
@@ -8302,7 +8408,8 @@ padding-top: 5%;
   }
   .imgUno{
     position: inherit;
-    width: 200px;
+    width: 100%;
+    max-width: 190px;
   }
 
   .reactiva__h2 {
@@ -8317,9 +8424,7 @@ padding-top: 5%;
     font-size: 0.8em; /* Reduce el tamaño de los botones */
     padding: 5px; /* Ajusta el padding */
   }
-  .cero__h1{
-    font-size: 6em;
-  }
+ 
   .segunda__h1Uno{
     font-size: 2em;
     padding-top: 80%;
@@ -8367,10 +8472,10 @@ padding-top: 5%;
     height: auto;
   }
   .movil__clara{
-    font-size: 1.2em;
+    font-size: 1em;
   }
-  .razones__p{
-    font-size: 1.5em;
+ .movil__clarap{
+    font-size: 1em;
   }
   .contacto__h2{
     font-size: 1.5em;
@@ -8467,8 +8572,7 @@ padding-top: 5%;
   }
   .itemUno {
    position: relative;
-    width: 150px;
-    height: auto;
+   
     padding: 0;
     margin: 0;
     background-color: rgb(5, 11, 21);

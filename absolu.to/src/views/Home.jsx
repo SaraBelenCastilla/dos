@@ -505,7 +505,7 @@ const explicacion = {
                 initial={{opacity:0, y:100}}
                 whileInView={{opacity:1, y:0, transition:{delay:0.4, duration:1,  ease:'easyInOut',type:'spring'}}}
                 viewport={{once: false, amount:.5}}
-               ><DotLottieReact
+               ><DotLottieReact className='ojo'
              src="https://lottie.host/7b0a117c-5505-439e-bd18-5e7558833e90/bUh6vjihUE.lottie"
              loop
              autoplay
