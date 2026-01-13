@@ -201,10 +201,9 @@ function Insight() {
         </motion.h2>
        
           <div className="reactiva__formula">
-  <Link className="contactoF__email" to="/formula">
-    
-     <span className="contactoF__default-text">¡ACTIVA TU INSPIRACIÓN!</span>
-    <span className="contactoF__hover-text">DESCUBRE NUESTRO MÉTODO</span>
+  <Link className="reactiva__formula__link" to="/formula">
+   <p className="sinh">¡ACTIVA TU INSPIRACIÓN!</p>
+    <p className="sinhn">DESCUBRE NUESTRO MÉTODO</p>
   </Link>
 </div>
         </section>
