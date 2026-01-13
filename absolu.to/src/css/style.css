@@ -6832,7 +6832,13 @@ padding-top: 5%;
   font-size: 2.5em;
 }
 .aviso__p{
+  font-size: .8em;
+}
+.aviso__p1{
   font-size: 1em;
+}
+.hur54b{
+  padding: 5%;
 }
 .formula__h2{
   font-size: 1.5em;
@@ -6847,6 +6853,24 @@ padding-top: 5%;
 .logo__formula{
   width: 30%;
 }
+
+  .formula iframe,
+  .formula__iframe {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100vw !important;
+    height: 350px !important;
+  }
+  
+  .agenda-btn, .gc-scheduling-button {
+    width: 100% !important;
+    font-size: 1.1em !important;
+    padding: 12px 0 !important;
+    margin-bottom: 10px !important;
+  }
+  .deLogo {
+    text-align: center !important;
+  }
 /* -----warning-------- */
 .reactiva__aviso{
   width: 80%;
@@ -7038,12 +7062,19 @@ padding-top: 5%;
     padding: 0;
     margin-top: 2%;
   }
-  
+  .logo__fijo{
+    width: 50px;
+  }
   .sinh{
   font-size: 1em;
 }
 .sinhn{
  font-size: 1em;
+}
+.privacidad{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20%;
 }
 .reactiva__formula{
   margin-top: 50%;
