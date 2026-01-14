@@ -494,7 +494,7 @@ const explicacion = {
            <section id={'servicios'}>
           <Servicios/>
           </section>
-         <FotosUno/>
+         {/* <FotosUno/> */}
           <div className="showroon__encabezado">
                <motion.h2 className='show__h2'
                 initial={{opacity:0, y:100}}

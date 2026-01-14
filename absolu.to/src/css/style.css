@@ -5832,7 +5832,7 @@ width: 100%;
     width: 150px;
   } 
  .servicios {
-  display: none;
+  
  
         position: relative;
         width: 100%;
@@ -5849,6 +5849,7 @@ width: 100%;
         overflow: hidden;
     }
     .servicios__container{
+      position: relative;
         width: 100%;
         height: auto;
         padding: 0;
@@ -5899,7 +5900,8 @@ width: 100%;
   }
 .item {
 
-max-width: 320px;
+  width: 100px;
+  height: 100px;
 }
  .item:hover{
   overflow: hidden;
@@ -6182,11 +6184,8 @@ max-width: 320px;
   font-size: 1em;
 }
   .servicios__container{
-    display: none;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin: 0;
+   
+        
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -6711,15 +6710,11 @@ padding-top: 5%;
   max-width: 100vw;
 }
 .item{
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 /* --------servicios---------- */
-.servicios{
-  display: none;
-  height: auto;
-  display: none;
-}
+
 .itemUno:hover >.servicios__descripcion{
   opacity: 1;
   visibility: visible;
@@ -7181,6 +7176,19 @@ padding-top: 5%;
         align-items: center;
         margin-bottom: 10%;
 }
+.servicios__container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: auto !important;
+    gap: 2% !important;
+    padding: 0 !important;
+    margin-bottom: 10% !important;
+  }
+
 }
 
 
@@ -7210,6 +7218,7 @@ html, body {
  .loop{
   display: none;
  }
+
  .loop__vertical{
   width: 100%;
   height: 100vh;
@@ -7336,7 +7345,7 @@ html, body {
   font-size: 1em;
 }
   .servicios__container{
-    display: none;
+   
         width: 100%;
         height: auto;
         padding: 0;
@@ -8015,11 +8024,7 @@ padding-top: 5%;
   height: 150px;
 }
 /* --------servicios---------- */
-.servicios{
-  display: none;
-  height: auto;
-  display: none;
-}
+
 .itemUno:hover >.servicios__descripcion{
   opacity: 1;
   visibility: visible;
@@ -8509,7 +8514,7 @@ padding-top: 5%;
     font-size: 0.8em;
   }
   .servicios {
-   display: none;
+  
     position: relative;
     width: 100%;
     height: auto; /* Cambia de 100vh a auto */
@@ -8526,10 +8531,7 @@ padding-top: 5%;
   .animacio{width: 400px;
   height: auto;}
  
-  .item {
-    width: auto; /* Reduce el tamaño */
-    height: auto;
-  }
+ 
   .movil__clara{
     font-size: 1em;
   }
@@ -8665,24 +8667,20 @@ padding-top: 5%;
 .itemUno:hover >.servicios__h2{
   margin: 50%;
 }
-   .servicios{
-    display: none;
-    width: 100%;
-    height: auto;
+ 
+  .servicios__container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: auto !important;
+    gap: 2% !important;
+    padding: 0 !important;
+    margin-bottom: 10% !important;
   }
-  .servicios__container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    gap: 2%;
-    padding: 0;
-    margin-bottom: 10%;
-  }
-  .item {
+  /* .item {
     width: 180px;
     height: auto;
     padding: 0;
@@ -8691,7 +8689,7 @@ padding-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 }
 /* -------porfolio---------- */
 
@@ -8711,8 +8709,8 @@ padding-top: 5%;
   .nosotros__div,
   .nosotros__primera,
   .nosotros__contenido,
-  .porfolio__container,
-  .servicios__container {
+  .porfolio__container
+   {
     max-width: 100vw !important;
     overflow-x: hidden !important;
    .loop{
