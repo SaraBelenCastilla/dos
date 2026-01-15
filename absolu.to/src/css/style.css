@@ -6122,7 +6122,7 @@ width: 100%;
 }
 .newp{
   max-width: 100vw;
-  padding-left: 8%;
+  padding-left: 15%;
 }
 .newp__h2{
   font-size: .9em;
@@ -6713,6 +6713,13 @@ padding-top: 5%;
   width: 100px;
   height: 100px;
 }
+.servicios__h2{
+  font-size: 0.7em;
+}
+.indice{
+  width: 20px;
+  height: 20px;
+}
 /* --------servicios---------- */
 
 .itemUno:hover >.servicios__descripcion{
@@ -6903,7 +6910,7 @@ padding-top: 5%;
   justify-content: center;
 }
 .cnco__contenido{
-  padding-left: 5%;
+ padding-left: 0;
   height: auto;
 }
 .nuevaC__h2{
