@@ -7225,7 +7225,12 @@ html, body {
  .loop{
   display: none;
  }
-
+.newp{
+  padding-left: 10%;
+}
+.sentence__h2{
+  font-size: 1.5em;
+}
  .loop__vertical{
   width: 100%;
   height: 100vh;
@@ -7289,7 +7294,7 @@ html, body {
   padding-left: 10%;
 }
 .newp__h2{
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .explicacion__div{
   width: auto;
@@ -7526,9 +7531,13 @@ html, body {
 }
 
 .cero__h1{
-  font-size: 6em;
+  font-size: 5em;
   padding-left: 15%;
 }
+.cero__h2{
+  padding-left: 15%;
+}
+
   .nosotros__h1 {
      /* Reduce aún más el tamaño del texto */
     padding-top: 100%;
@@ -7573,14 +7582,20 @@ html, body {
   padding-left: 5%;
 }
 .nuevaC__h2{
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.5em;
 }
 .new{
   height: 70vh;
 }
 .explicacion__h2{
-  font-size: 2em;
+  font-size: 1.5em;
+}
+.proposito__p1{
+  font-size: 1em;
+}
+.quintaS{
+  height: 70vh;
 }
 .nosotros__pero{
   padding-left: 15%;
@@ -7723,7 +7738,7 @@ width: 75%;}
 .segunda__h1Uno{
   font-size: 2.5em;
   padding-top: 110%;
-  padding-left: 10%;
+  padding-left: 20%;
   padding-bottom: 0;
   color: white;
 }
@@ -7812,7 +7827,7 @@ width: 75%;}
 }
 .ter__h2{
   font-size: 2.5em;
-  
+  padding-left: 15%;
   
 }
 .trs__div{
@@ -7870,7 +7885,7 @@ width: 75%;}
   gap: 0;   
 }
 .segunda__movil{
-  padding-left: 10%;
+  padding-left: 20%;
   width: 400px;
   padding-bottom: 5%;
   padding-top: 0;
@@ -7879,7 +7894,7 @@ width: 75%;}
 }
 .insta__movil{
   display: block;
-  padding-left: 15%;
+  padding-left: 20%;
   width: 400px;
   padding-bottom: 95%;
   padding-top: 0;
@@ -8305,6 +8320,11 @@ padding-top: 5%;
   top: 70%;
   left: 47%;
 }
+.privacidad{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 30%;
+}
  .porfolio {
     width: 100%;
     height: auto;
@@ -8441,7 +8461,7 @@ padding-top: 5%;
 }
 @media only screen and (max-width: 500px){
    /* Estilos específicos para móviles pequeños */
-    .descripcion,
+    /* .descripcion,
   .descripcionUno,
   .descripcionDos,
   .descripcionTres,
@@ -8456,7 +8476,7 @@ padding-top: 5%;
     max-width: 90vw !important;
     min-width: 0 !important;
     box-sizing: border-box !important;
-  }
+  } */
   .ojos{
     width: 300px;
     height: auto;
