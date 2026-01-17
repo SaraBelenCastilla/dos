@@ -7049,8 +7049,8 @@ padding-top: 5%;
   }
    .img__item {
    width:250px;
-  background-color: #1f2937;
-  height: auto;
+ background-color: rgb(5, 11, 21);
+  height: 250px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
