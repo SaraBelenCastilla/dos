@@ -7051,7 +7051,7 @@ padding-top: 5%;
    width:150px;
   
   height: 150px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   margin: 0 auto;
   }
