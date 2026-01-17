@@ -7048,9 +7048,9 @@ padding-top: 5%;
     background-color: rgb(5, 11, 21);
   }
    .img__item {
-   width:250px;
- background-color: rgb(5, 11, 21);
-  height: 250px;
+   width:100%;
+ background-color: transparent;
+  height: 100%;
   object-fit: cover;
   display: block;
   margin: 0 auto;
@@ -7190,7 +7190,7 @@ padding-top: 5%;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
-    height:100% !important;
+    height:auto !important;
     gap: 2% !important;
     padding: 0 !important;
     margin-bottom: 10% !important;
@@ -8359,9 +8359,9 @@ padding-top: 5%;
     background-color: rgb(5, 11, 21);
   }
    .img__item {
-   width:auto;
-  
-  height: auto;
+   width:100%;
+  background-color: transparent;
+  height: 100%;
   object-fit: cover;
   display: block;
   margin: 0 auto;
