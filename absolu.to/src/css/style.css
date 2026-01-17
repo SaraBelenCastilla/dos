@@ -3427,7 +3427,7 @@ background: linear-gradient(1deg,rgba(238, 66, 88, 1) 0%, rgba(238, 66, 88, .64)
 }
 .item{
   position: relative;
-  background-color: white;
+  /* background-color: white; */
   width: 150px;
   height: 150px;
   border-radius: 2%;
