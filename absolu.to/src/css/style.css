@@ -6185,7 +6185,7 @@ width: 100%;
 }
   .servicios__container{
    
-        
+      background-color: rgb(5, 11, 21); 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -7190,10 +7190,11 @@ padding-top: 5%;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
-    height: auto !important;
+    height:100% !important;
     gap: 2% !important;
     padding: 0 !important;
     margin-bottom: 10% !important;
+    background-color: rgb(5, 11, 21);
   }
 
 }
