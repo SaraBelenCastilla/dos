@@ -7048,6 +7048,7 @@ padding-top: 5%;
     background-color: rgb(5, 11, 21);
   }
    .img__item {
+    position: relative;
    width:100%;
  background-color: transparent;
   height: 100%;
