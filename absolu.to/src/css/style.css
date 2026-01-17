@@ -7048,10 +7048,10 @@ padding-top: 5%;
     background-color: rgb(5, 11, 21);
   }
    .img__item {
-   width:150px;
+   width:200px;
   
-  height: 150px;
-  object-fit: contain;
+  height: auto;
+  object-fit: cover;
   display: block;
   margin: 0 auto;
   }
