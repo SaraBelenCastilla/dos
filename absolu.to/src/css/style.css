@@ -6714,7 +6714,11 @@ padding-top: 5%;
   height: 100px;
 }
 .servicios__h2{
-  font-size: 0.7em;
+ width: 90% !important;
+    font-size: 0.7em !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
 }
 .indice{
   width: 20px;
@@ -6766,7 +6770,7 @@ padding-top: 5%;
   font-size: 1em;
 }
 .contenedero__p{
-  font-size: 0.8em;
+  display: none;
 }
 .contenedero__div{
   width: 200px;
@@ -7106,6 +7110,9 @@ padding-top: 5%;
 }
 .abajo{
   display: none;
+}
+.contenedero__descripcion{
+  justify-content: center;
 }
 .modal__p{
   font-size: .8em;
@@ -7639,6 +7646,13 @@ html, body {
   font-size: 1.5em;
   
   padding-bottom: 2%;
+}
+.servicios__h2{
+ width: 90% !important;
+    font-size: 0.7em !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
 }
 .formula__p{
   font-size: 1em;
@@ -8199,8 +8213,11 @@ padding-top: 5%;
 .contenedero__h2{
   font-size: 1em;
 }
+.contenedero__descripcion{
+  justify-content: center;
+}
 .contenedero__p{
-  font-size: 0.8em;
+ display: none;
 }
 .proposito__div{
   width: 100%;
@@ -8347,7 +8364,7 @@ padding-top: 5%;
     text-align: center;
   }
   .porfolio__h1{
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .ite{
      width: 100vw;
