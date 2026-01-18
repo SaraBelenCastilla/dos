@@ -8205,6 +8205,7 @@ padding-top: 5%;
 .cosa{
   width: 150px;
   height: 150px;
+  background-color: transparent;
 }
 .contenedero__container{
   grid-template-columns: repeat(2, 1fr);
@@ -8364,7 +8365,7 @@ padding-top: 5%;
     text-align: center;
   }
   .porfolio__h1{
-    font-size: 2.5em;
+    font-size: 3em;
   }
   .ite{
      width: 100vw;
