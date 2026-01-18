@@ -7039,7 +7039,7 @@ padding-top: 5%;
     text-align: center;
   }
   .porfolio__h1{
-    font-size: 2em;
+    font-size: 3em;
   }
   .ite{
      width: 100vw;
@@ -7059,6 +7059,10 @@ padding-top: 5%;
   object-fit: cover;
   display: block;
   margin: 0 auto;
+  }
+  .item:hover{
+   scale: 1;
+   transform: none;
   }
   .porfolio__container {
     display: grid;
@@ -8365,7 +8369,7 @@ padding-top: 5%;
     text-align: center;
   }
   .porfolio__h1{
-    font-size: 3em;
+    font-size: 3.5em;
   }
   .ite{
      width: 100vw;
@@ -8384,6 +8388,10 @@ padding-top: 5%;
   object-fit: cover;
   display: block;
   margin: 0 auto;
+  }
+  .item:hover{
+   scale: 1;
+   transform: none;
   }
   .porfolio__container {
     display: grid;
