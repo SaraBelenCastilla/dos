@@ -7040,6 +7040,7 @@ padding-top: 5%;
   }
   .porfolio__h1{
     font-size: 3em;
+    word-break: keep-all;
   }
   .ite{
      width: 100vw;
@@ -8370,7 +8371,9 @@ padding-top: 5%;
   }
   .porfolio__h1{
     font-size: 3.5em;
+    word-break: keep-all;
   }
+
   .ite{
      width: 100vw;
     max-width: 100vw;
